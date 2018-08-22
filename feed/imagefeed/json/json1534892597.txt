@@ -1,0 +1,4 @@
+{
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
+    "boxes": []
+}

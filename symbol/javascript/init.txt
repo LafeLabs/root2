@@ -1,0 +1,157 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+styleJSON = JSON.parse(document.getElementById("stylejsondiv").innerHTML);
+
+path = document.getElementById("pathdiv").innerHTML;
+backlink = document.getElementById("backurldata").innerHTML;
+
+if(backlink.length>1){
+    document.getElementById("backlink").href = backlink;
+    document.getElementById("backlink").innerHTML = backlink;
+}
+else{
+    document.getElementById("backlink").href = "tree.php";
+    document.getElementById("backlink").innerHTML = "tree.php";
+}
+
+if(path.length > 1){
+    document.getElementById("shapetablelink").href = "shapetableeditor.php?path=" + path;
+    document.getElementById("svglink").href = path + "svg/";
+    document.getElementById("stylelink").href = "stylejsoneditor.php?path=" + path;
+    
+    document.getElementById("phpfeedlink").href = "svgfeed.php?path=" + path;
+
+}
+
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+exturl = false;
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    rawJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+    if(rawJSON.length > 0){
+        currentJSON = rawJSON[0];
+    }
+    else{
+        currentJSON = rawJSON;
+    }
+    exturl = true;
+}
+else{
+    rawJSON = [];
+    rawJSON.push(currentJSON);
+}
+
+
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0],8);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
+imagedata[5].value = currentJSON.svgwidth;
+imagedata[6].value = currentJSON.svgheight;
+document.getElementById("mainImage").src = currentJSON.imgurl;
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+
+cleanGlyph = "";
+//currentGlyph = ",0207,";
+glyphEditMode = true;
+shapeTableEditMode = false;
+spellMode = false;
+
+zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+
+imgbuttons = document.getElementById("imageTable").getElementsByClassName("button");
+
+controls[1].select();
+
+softkeys = [
+    "010,020,021,030,031,032,033,01101,",
+    "0304,0305,0306,0350,0351,0352,0353,0340,",
+    "0310,0311,0312,0313,0314,0316,0341,0201,",
+    "0330,0331,0332,0333,0334,0335,0336,0337,",
+    "0362,0203,0363,0200,0220,0221,0222,0223,"
+    ];
+    
+for(var index = 0;index < softkeys.length;index++){
+    var newtr = document.createElement("TR");
+    var keyarray = softkeys[index].split(",");
+    for(var keyindex = 0;keyindex < keyarray.length;keyindex++){
+        if(keyarray[keyindex].length > 0){
+            var newtd = document.createElement("TD");
+            newtr.appendChild(newtd);
+            newtd.classList.add("button","softkey");
+            var newcan = document.createElement("CANVAS");
+            newcan.width = 45;
+            newcan.height = 45;
+            newtd.appendChild(newcan);
+            ctx = newcan.getContext("2d");
+            ctx.clearRect(0,0,45,45);
+            side = 40;
+            unit = 40;
+            x0 = 2;
+            y0 = 43;
+            doTheThing(0300);
+            newtd.id = "key" + keyarray[keyindex];
+            
+            if(parseInt(keyarray[keyindex],8) > 01000){
+                doTheThing(parseInt(keyarray[keyindex],8));
+            }
+            else{
+                doTheThing(01000 + parseInt(keyarray[keyindex],8));
+            }
+
+            newtd.onclick = function(){
+                var localkey = this.id.substring(3);
+                var localaction = parseInt(localkey,8);
+                if( (localaction >= 040 && localaction < 0400) ||  (localaction > 01000 && localaction < 02000)){
+                    var glyphSplit = currentGlyph.split(",");
+                    currentGlyph = "";
+                    for(var index = 0;index < glyphSplit.length;index++){
+                        if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                            currentGlyph += glyphSplit[index] + ",";
+                        }
+                        if(glyphSplit[index] == "0207"){
+                            currentGlyph += localkey + ",0207,";
+                        }
+                    }
+                    var glyphSplit = currentGlyph.split(",");
+                    currentGlyph = "";
+                    for(var index = 0;index < glyphSplit.length;index++){
+                        if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                            currentGlyph += glyphSplit[index] + ",";
+                        }
+                    }
+                    redraw();
+                }
+                if(localaction < 040){
+                    doTheThing(localaction);
+                    redraw();
+                }
+                
+            }
+        }
+    }
+    document.getElementById("keytable").appendChild(newtr);
+}
+
+unit = currentJSON.unit;
+x0 =  0.5*innerWidth + currentJSON.x0rel;
+y0 = 0.5*innerHeight + currentJSON.y0rel;
+currentGlyph = currentJSON.glyph + "0207,";
+    
+

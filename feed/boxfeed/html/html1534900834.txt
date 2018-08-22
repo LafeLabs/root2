@@ -1,0 +1,1 @@
+<div class="box"><img src="http://localhost:8000/symbol/svg/svg1534897356.svg" style="width: 100%;"></div><div class="box"><img src="http://localhost:8000/symbol/svg/svg1534897591.svg" style="width: 100%;"></div><div class="box"><img src="http://localhost:8000/symbol/svg/svg1534897450.svg" style="width: 100%;"></div>

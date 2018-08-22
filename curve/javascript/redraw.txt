@@ -1,0 +1,85 @@
+
+currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+
+
+currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\n</topfunctions>\n-->\n";
+
+currentSVG += "\n<!--\n<imgurl>\n" + document.getElementById("imgurlinput").value + "\n</imgurl>\n-->\n";
+
+currentSVG += "\n<!--\n<currentjson>\n" + JSON.stringify(currentjson,null, "    ") + "\n</currentjson>\n-->\n";
+
+currentSVG += "\n<!--\n<equation>\n" + document.getElementById("shadowequation").innerHTML + "\n</equation>\n-->\n";
+
+
+document.getElementById("mainCanvas").width = plotparams.plotwidth;
+document.getElementById("mainCanvas").height = plotparams.plotheight;
+document.getElementById("mainCanvas").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
+document.getElementById("mainImage").style.width = plotparams.plotwidth.toString() + "px";
+document.getElementById("mainImage").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
+ctx.lineWidth = 2;
+
+plotfunction();
+
+currentSVG += "</svg>";
+
+document.getElementById("textIO").value = currentSVG;
+
+currentjson = {};
+currentjson.constants = constants;
+currentjson.imgurl = document.getElementById("imgurlinput").value;
+currentjson.plotparams = plotparams;
+currentjson.funcparams = funcparams;
+
+
+if(path.length>1){
+    currentFile = path + "json/currentjson.txt";
+}
+else{
+    currentFile = "json/currentjson.txt";
+}
+
+document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
+
+if(paramDigitIndex == 0){
+    document.getElementById("delta").innerHTML = "10x"; 
+}
+if(paramDigitIndex == 1){
+    document.getElementById("delta").innerHTML = "10%"; 
+}
+if(paramDigitIndex == 2){
+    document.getElementById("delta").innerHTML = "1%"; 
+}
+if(paramDigitIndex == 3){
+    document.getElementById("delta").innerHTML = "0.1%"; 
+}
+
+
+
+data = encodeURIComponent(JSON.stringify(currentjson,null, "    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+data2 = encodeURIComponent(currentSVG);
+var httpc2 = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc2.open("POST", url, true);
+httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+if(path.length>1){
+    httpc2.send("data="+data2+"&filename="+path+"currentsvg.svg");//send text to filesaver.php
+}
+else{
+    httpc2.send("data="+data2+"&filename="+"currentsvg.svg");//send text to filesaver.php
+}
+
+
+
+

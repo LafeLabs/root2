@@ -1,0 +1,1 @@
+<a href = "pageeditor.php?path=foo/">pageeditor.php?path=foo/</a>

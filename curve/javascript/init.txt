@@ -1,0 +1,103 @@
+
+path = document.getElementById("pathdiv").innerHTML;
+backlink = document.getElementById("backurldata").innerHTML;
+
+if(path.length > 1){
+    document.getElementById("editorlink").href = "equationeditor.php?path=" + path;
+    document.getElementById("svgindexlink").href = path + "svg/index.html";
+    document.getElementById("svgfeedlink").href = "svgfeed.php?path=" + path;
+}
+
+if(backlink.length > 1){
+    document.getElementById("backlink").href = backlink;
+    document.getElementById("backlink").innerHTML = backlink;
+}
+
+currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
+constants = currentjson.constants;
+plotparams = currentjson.plotparams;
+funcparams = currentjson.funcparams;
+if(document.getElementById("plotdatadiv").innerHTML.length > 4){
+    plotdata  = JSON.parse(document.getElementById("plotdatadiv").innerHTML);
+}
+
+for(var param in plotparams){
+    var newtr = document.createElement("TR");
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = param + ":";
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = plotparams[param];
+    newinput.id = "params_" + param;
+    newinput.onchange = function(){
+        plotparams[this.id.substring(7)] = parseFloat(this.value);
+        redraw();
+    }
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd);
+    newtr.appendChild(newtd2);
+    document.getElementById("plotparamstable").appendChild(newtr);
+}
+
+
+for(var param in funcparams){
+    var newtr = document.createElement("TR");
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = param + ":";
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = funcparams[param];
+    newinput.id = "funcparams_" + param;
+    newinput.onchange = function(){
+        funcparams[this.id.substring(11)] = parseFloat(this.value);
+        redraw();
+    }
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd);
+    newtr.appendChild(newtd2);
+    document.getElementById("funcparamstable").appendChild(newtr);
+}
+
+
+if(document.getElementById("imgurldata").innerHTML.length > 4){
+    document.getElementById("imgurlinput").value = document.getElementById("imgurldata").innerHTML;
+    document.getElementById("mainImage").src = document.getElementById("imgurldata").innerHTML;
+}
+
+document.getElementById("imgurlinput").value = currentjson.imgurl;
+document.getElementById("mainImage").src = currentjson.imgurl;
+
+
+funcinputs = document.getElementById("funcparamstable").getElementsByTagName("INPUT");
+plotinputs = document.getElementById("plotparamstable").getElementsByTagName("INPUT");
+paraminputs = [];
+
+for(var index = 0;index < plotinputs.length;index++){
+    paraminputs.push(plotinputs[index]);    
+}
+for(var index = 0;index < funcinputs.length;index++){
+    paraminputs.push(funcinputs[index]);    
+}
+
+paramIndex = 0;
+paramDigitIndex = 1;// 10x, 0.1x, 0.01x, 0.001x = red, orange, yellow, green = 0,1,2,3
+
+paraminputs[paramIndex].style.borderWidth = "4px";
+
+if(paramDigitIndex == 0){
+    paraminputs[paramIndex].style.borderColor = "red";
+}
+if(paramDigitIndex == 1){
+    paraminputs[paramIndex].style.borderColor = "green";
+}
+if(paramDigitIndex == 2){
+    paraminputs[paramIndex].style.borderColor = "blue";
+}
+if(paramDigitIndex == 3){
+    paraminputs[paramIndex].style.borderColor = "purple";
+}
+
+document.getElementById("actioninput").select();
+
+
+

@@ -1,0 +1,172 @@
+body{
+    overflow:hidden;
+}
+
+#zoompan{
+    position:absolute;
+    left:20%;
+    top:0.5em;
+    font-size:18px;
+}
+.links{
+    position:absolute;
+    color:black;
+    background-color:white;
+    z-index:1;
+}
+.imgs{
+    position:absolute;
+    z-index:-1;
+}
+#backlink{
+    position:absolute;
+    left:60%;
+    top:0px;
+    z-index:2;
+}
+ #svglink{
+     position:absolute;
+     left:80%;
+     top:10px;
+     z-index:2;
+ }
+ #phpfeedlink{
+     position:absolute;
+     left:80%;
+     top:3em;
+     z-index:2;
+ }
+ #editorlink{
+     position:absolute;
+     left:70%;
+     top:10px;
+     z-index:2;
+ }
+ #uplink{
+     position:absolute;
+     left:60%;
+     top:2em;
+     z-index:2;
+ }
+ #factorylink{
+     position:absolute;
+     left:60%;
+     top:1.2em;
+     z-index:2;
+ }
+ #shapetablelink{
+     position:absolute;
+     left:70%;
+     top:50px;
+     z-index:2;
+ }
+ #stylelink{
+     position:absolute;
+     left:70%;
+     top:80px;
+     z-index:2;
+ }
+ #textIO{
+    position:absolute;
+    width:100px;
+    height:100px;
+    right:0px;
+    bottom:0px;
+    border:solid;
+}
+#mainCanvas{
+    position:absolute;
+    z-index:0;
+    left:0px;
+    top:0px;
+}
+#controlTable{
+    left:15px;
+    top:15px;
+}
+#imageTable{
+    right:10px;
+    top:20%;
+    position:absolute;
+
+}
+#imageTable input{
+    width:5em;
+    font-family:courier;
+}
+table{
+    font-family:courier;
+    font-size:18;
+    position:absolute;
+}
+#controlTable input{
+    width:3em;
+    font-family:courier;
+}
+
+.button{
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#keyboardlink{
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}
+#glyphspellinput{
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    width:90%;
+    font-family:courier;
+    font-size:16px;
+}
+#buttonTable{
+    position:absolute;
+    left:15px;
+    top:40%;
+}
+img{
+    position:absolute;
+    z-index:-2;
+}
+#mainImage{
+    position:absolute;
+    z-index:-2;
+}
+#editmodebutton{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:2;
+}
+#softkeybutton{
+    position:absolute;
+    right:0px;
+    top:3em;
+    z-index:2;
+}
+#keytable{
+    bottom:0px;
+    right:0px;
+    margin:auto;
+    display:block;
+    border:solid;
+    display:none;
+}
+.softkey{
+    width:55px;
+    height:55px;
+    border-radius:5px;
+    border:solid;
+    padding:5px 5px 5px 5px;
+}

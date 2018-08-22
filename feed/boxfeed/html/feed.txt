@@ -1,0 +1,349 @@
+<table id = "linktable">
+    <tr>
+        <td  id =  "nextsymbol" class = "button">NEXT SYMBOL SET</td>
+        <td id = "prevsymbol" class = "button">PREV SYMBOL SET</td>
+        <td  id =  "nextcurve" class = "button">NEXT CURVE SET</td>
+        <td id = "prevcurve" class = "button">PREV CURVE SET</td>
+        <td class = "button" id = "publishbutton">PUBLISH</td>
+        <td><a href = "feededitor.php?path=boxfeed/">EDIT CODE</a></td>
+    </tr> 
+    <tr>
+        <td></td>
+        <td></td>
+        <td><a href = "index.php?path=textfeed/">TEXTFEED</a></td>
+        <td><a href = "index.php?path=imagefeed/">IMAGEFEED</a></td>
+        <td><a href = "index.php?path=curvefeed/">CURVEFEED</a></td>
+        <td><a href = "index.php?path=symbolfeed/">SYMBOLFEED</a></td>
+    </tr>
+</table>
+
+<div id = "symbolfeed"></div>
+<div id = "curvefeed"></div>
+<div id = "imagefeed"></div>
+<div id = "textfeed"><h2>TEXT:</h2></div>
+<div id = "boxfeed"></div>
+
+<div id = "htmldatadiv" style = "display:none"></div>
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+htmldir = "textfeed/html/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        htmldata = this.responseText;
+        textinit();
+    }
+};
+httpc.open("GET", "loadhtmlfeed.php?htmldir=" + htmldir, true);
+httpc.send();
+
+function textinit(){
+    document.getElementById("htmldatadiv").innerHTML = htmldata;
+    htmldatadivs = document.getElementById("htmldatadiv").getElementsByTagName("feedbox");
+    for(var index = 0;index < htmldatadivs.length;index++){
+        var newp = document.createElement("p");
+        newp.innerHTML = htmldatadivs[index].innerHTML;
+        document.getElementById("textfeed").appendChild(newp);
+        newp.onclick = function(){
+            var newboxdiv = document.createElement("DIV");
+            newboxdiv.className = "box";
+            newboxdiv.innerHTML = this.innerHTML;
+            document.getElementById("boxfeed").appendChild(newboxdiv);
+        }
+    }
+
+}
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        symboljsondata = JSON.parse(this.responseText);
+        symbolfeedinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=symbolfeed/json/", true);
+httpc.send();
+
+symbolIndex = 0;
+function symbolfeedinit(){
+    document.getElementById("symbolfeed").innerHTML = "<h2>SYMBOL:</h2>";
+    for(var index = 0;index < symboljsondata[symbolIndex].symbols.length;index++){
+        if(symboljsondata[symbolIndex].symbols[index].length > 1){
+            var newimg = document.createElement("IMG");
+            newimg.src = symboljsondata[symbolIndex].symbols[index];
+            document.getElementById("symbolfeed").appendChild(newimg);
+            newimg.onclick = function(){
+                var newbox = document.createElement("DIV");
+                newbox.className = "box";
+                var boximg = document.createElement("IMG");
+                boximg.src = this.src;
+                boximg.style.width = "100%";
+                newbox.appendChild(boximg);
+                document.getElementById("boxfeed").appendChild(newbox);
+            }
+        }
+    }
+}
+
+document.getElementById("nextsymbol").onclick = function(){
+    symbolIndex++;
+    if(symbolIndex > symboljsondata.length - 1){
+        symbolIndex = 0;
+    }
+    symbolfeedinit();
+}
+document.getElementById("prevsymbol").onclick = function(){
+    symbolIndex--;
+    if(symbolIndex < 0){
+        symbolIndex = symboljsondata.length - 1;
+    }
+    symbolfeedinit();
+}
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        curvejsondata = JSON.parse(this.responseText);
+        curvefeedinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=curvefeed/json/", true);
+httpc.send();
+
+curveIndex = 0;
+function curvefeedinit(){
+    document.getElementById("curvefeed").innerHTML = "<h2>CURVE:</h2>";
+    for(var index = 0;index < curvejsondata[curveIndex].curves.length;index++){
+        if(curvejsondata[curveIndex].curves[index].length > 1){
+            var newimg = document.createElement("IMG");
+            newimg.src = curvejsondata[curveIndex].curves[index];
+            document.getElementById("curvefeed").appendChild(newimg);
+            newimg.onclick = function(){
+                var newbox = document.createElement("DIV");
+                newbox.className = "box";
+                var boximg = document.createElement("IMG");
+                boximg.src = this.src;
+                boximg.style.width = "100%";
+                newbox.appendChild(boximg);
+                document.getElementById("boxfeed").appendChild(newbox);
+            }
+        }
+    }
+}
+
+
+document.getElementById("nextcurve").onclick = function(){
+    curveIndex++;
+    if(curveIndex > curvejsondata.length - 1){
+        curveIndex = 0;
+    }
+    curvefeedinit();
+}
+document.getElementById("prevcurve").onclick = function(){
+    curveIndex--;
+    if(curveIndex < 0){
+        curveIndex = curvejsondata.length - 1;
+    }
+    curvefeedinit();
+}
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        imagejsondata = JSON.parse(this.responseText);
+        imagefeedinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=imagefeed/json/", true);
+httpc.send();
+
+function imagefeedinit(){
+    document.getElementById("imagefeed").innerHTML = "<h2>IMAGE:</h2>";
+    for(var index = 0;index < imagejsondata.length;index++){
+        if(imagejsondata[index].url.length > 1){
+            var newimg = document.createElement("IMG");
+            newimg.src = imagejsondata[index].url;
+            document.getElementById("imagefeed").appendChild(newimg);
+            newimg.onclick = function(){
+                var newbox = document.createElement("DIV");
+                newbox.className = "box";
+                var boximg = document.createElement("IMG");
+                boximg.src = this.src;
+                boximg.style.width = "100%";
+                newbox.appendChild(boximg);
+                document.getElementById("boxfeed").appendChild(newbox);
+
+            }
+        }
+    }
+}
+
+
+document.getElementById("publishbutton").onclick = function(){
+    
+    data = encodeURIComponent(document.getElementById("boxfeed").innerHTML);
+    timestamp = Math.round((new Date().getTime())/1000);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "html/html" + timestamp + ".txt");//send text to filesaver.php
+    
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makehtmlindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    document.getElementById("boxfeed").innerHTML = "";
+    
+}
+
+</script>
+<style>
+#boxfeed{
+    position:absolute;
+    right:0px;
+    width:15%;
+    top:4em;
+    bottom:0px;
+    overflow:scroll;
+}
+#textfeed{
+    position:absolute;
+    left:50%;
+    width:15%;
+    overflow:scroll;
+    top:4em;
+    bottom:0px;
+}
+#textfeed p{
+    cursor:pointer;
+}
+#textfeed p:hover{
+    background-color:green;
+}
+#textfeed p:active{
+    background-color:yellow;
+}
+
+#symbolfeed{
+    position:absolute;
+    left:5px;
+    top:4em;
+    width:15%;
+    bottom:0px;
+    overflow:scroll;
+}
+#symbolfeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    margin-bottom:1em;
+    cursor:pointer;
+}
+#curvefeed{
+    position:absolute;
+    left:16%;
+    top:4em;
+    width:15%;
+    bottom:0px;
+    overflow:scroll;
+}
+#curvefeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    margin-bottom:1em;
+    cursor:pointer;
+}
+#imagefeed{
+    position:absolute;
+    left:32%;
+    top:4em;
+    width:15%;
+    bottom:0px;
+    overflow:scroll;
+}
+#imagefeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    margin-bottom:1em;
+    cursor:pointer;
+}
+#imagefeed img:hover{
+    border-width:8px;
+    border:solid;
+    border-color:green;
+}
+#imagefeed img:active{
+    border-width:8px;
+    border:solid;
+    border-color:yellow;
+}
+#curvefeed img:hover{
+    border-width:8px;
+    border:solid;
+    border-color:green;
+}
+#curvefeed img:active{
+    border-width:8px;
+    border:solid;
+    border-color:yellow;
+}
+#symbolfeed img:hover{
+    border-width:8px;
+    border:solid;
+    border-color:green;
+}
+#symbolfeed img:active{
+    border-width:8px;
+    border:solid;
+    border-color:yellow;
+}
+
+
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+#topimagefeed{
+    right:10px;
+}
+#bottomimagefeed{
+    left:10px;
+}
+
+.button{
+    cursor:pointer;
+    font-size:22px;
+    border-radius:10px;
+    text-align:center;
+    border:solid;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#baseImage{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:30%;
+    z-index:-2;
+}
+.box{
+    width:80%;
+    text-align:center;
+    display:block;
+    margin:auto;
+}
+</style>

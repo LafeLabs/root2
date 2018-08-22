@@ -1,0 +1,93 @@
+<div id = "editmodebutton" class = "button">EDIT</div>
+<div id = "softkeybutton" class = "button">SOFTKEYS</div>
+<a  id = "svglink" href = "svg/">Graphics Feed</a>
+<a  id = "phpfeedlink" href = "svgfeed.php">php live feed</a>
+
+<a id = "backlink" href = ""></a>
+
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
+
+<a  id = "stylelink" href = "stylejsoneditor.php">stylejsoneditor.php</a>
+
+<a id = "uplink" href = "../">../</a>
+
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea>
+<table id = "zoompan">
+    <tr>
+        <td class = "button">up</td>
+        <td class = "button">down</td>
+        <td class = "button">left</td>
+        <td class = "button">right</td>
+        <td class = "button">out</td>
+        <td class = "button">in</td>
+    </tr>
+</table>
+<table id = "controlTable">
+    <tr id = "addressline" style = "display:none">
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>PRINT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>STACK:</td><td><input/></td>
+    </tr>
+</table>
+<table id = "imageTable">   
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE ANGLE:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>SVG WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>SVG HEIGHT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td class = "button">-</td><td class = "button">+</td>
+    </tr>
+    <tr>
+        <td class = "button">ccw</td><td class = "button">cw</td>
+    </tr>
+    <tr>
+        <td class = "button">up</td><td class = "button">down</td>
+    </tr>
+    <tr>
+        <td class = "button">left</td><td class = "button">right</td>
+    </tr>
+    <tr>
+        <td class = "button">reset xy</td>
+    </tr>
+</table>
+
+<table id = "buttonTable">
+<tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "savespelling">SPELL MODE</td></tr>
+<tr><td class = "button" id = "exportjson">EXPORT JSON</td></tr>
+<tr><td class = "button" id = "importjson">IMPORT JSON</td></tr>
+
+</table>
+<input id = "glyphspellinput"/>
+<img id = "mainImage"/>
+
+<table id = "keytable">
+    
+</table>

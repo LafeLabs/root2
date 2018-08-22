@@ -1,0 +1,256 @@
+<table id = "linktable">
+<tr>
+    <td>
+        <a href = "feededitor.php?path=symbolfeed/">EDIT</a>    
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href = "index.php?path=basefeed/">BASEFEED</a>    
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href = "index.php?path=boxfeed/">BOXFEED</a>    
+    </td>
+</tr>
+
+</table>
+symbol path:<input id = "pathinput"/>
+<div id = "mainfeed"></div>
+<div id = "secondfeed"></div>
+<div id = "dirbox"></div>
+<div id = "publishbutton" class=  "button">PUBLISH</div>
+
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+
+svgdir = "../symbol/svg/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        data = this.responseText;
+        symbolarray = data.split(",");
+        for(var index = 0;index < symbolarray.length;index++){
+            if(symbolarray[index].length > 2){
+                var newimg = document.createElement("IMG");
+                newimg.src = svgdir + symbolarray[index];
+                document.getElementById("mainfeed").appendChild(newimg);
+                newimg.onclick = function(){
+                    var secondimage = document.createElement("img");
+                    secondimage.src = this.src;
+                    document.getElementById("secondfeed").appendChild(secondimage);
+                    secondimage.onclick = function(){
+                        document.getElementById("secondfeed").removeChild(this);
+                    }
+                }
+            }
+        }
+    }
+};
+httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+httpc.send();
+
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        data = this.responseText;
+        patharray = data.split("\n");
+        for(var index = 0;index < patharray.length;index++){
+            if(patharray[index].length > 3){
+                var newdiv = document.createElement("div");
+                newdiv.className = "pathlink";
+                newdiv.innerHTML = patharray[index];
+                document.getElementById("dirbox").appendChild(newdiv);
+                newdiv.onclick = function(){
+                    loadpath(this.innerHTML);
+                }
+            }
+        }
+//        document.getElementById("dirbox").innerHTML = data;
+    }
+};
+httpc.open("GET", "symboltree.php", true);
+httpc.send();
+
+document.getElementById("pathinput").onchange = function(){
+    svgdir = "../symbol/" + this.value + "svg/";
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            data = this.responseText;
+            symbolarray = data.split(",");
+            for(var index = 0;index < symbolarray.length;index++){
+                if(symbolarray[index].length > 2){
+                    var newimg = document.createElement("IMG");
+                    newimg.src = svgdir + symbolarray[index];
+                    document.getElementById("mainfeed").appendChild(newimg);
+                    newimg.onclick = function(){
+                        var secondimage = document.createElement("img");
+                        secondimage.src = this.src;
+                        document.getElementById("secondfeed").appendChild(secondimage);
+                        secondimage.onclick = function(){
+                            document.getElementById("secondfeed").removeChild(this);
+                        }
+                    }
+                }
+            }       
+        }
+    }
+    httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+    httpc.send();
+}
+
+function loadpath(localpath){
+    document.getElementById("mainfeed").innerHTML = "";
+    svgdir = "../symbol/" + localpath + "svg/";
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            data = this.responseText;
+            symbolarray = data.split(",");
+            for(var index = 0;index < symbolarray.length;index++){
+                if(symbolarray[index].length > 2){
+                    var newimg = document.createElement("IMG");
+                    newimg.src = svgdir + symbolarray[index];
+                    document.getElementById("mainfeed").appendChild(newimg);
+                    newimg.onclick = function(){
+                        var secondimage = document.createElement("img");
+                        secondimage.src = this.src;
+                        document.getElementById("secondfeed").appendChild(secondimage);
+                        secondimage.onclick = function(){
+                            document.getElementById("secondfeed").removeChild(this);
+                        }
+                    }
+                }
+            }       
+        }
+    }
+    httpc.open("GET", "loadsvgfeed.php?svgdir=" + svgdir, true);
+    httpc.send();
+}
+
+
+document.getElementById("publishbutton").onclick = function(){
+    jsonoutput = {};
+    //jsonoutput.imgurl = jsondata[mapIndex].imgurl;
+    var secondimages = document.getElementById("secondfeed").getElementsByTagName("IMG");
+    jsonoutput.symbols = [];
+    for(var index = 0;index < secondimages.length;index++){
+        jsonoutput.symbols.push(secondimages[index].src);
+    }
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(jsonoutput,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+</script>
+
+<style>
+#dirbox{
+    position:absolute;
+    left:0%;
+    width:25%;
+    bottom:0px;
+    padding:1em 1em 1em 1em;
+    overflow:scroll;
+    top:10%;
+}
+#linktable{
+    position:absolute;
+    z-index:2;
+    right:0px;
+    top:0px;
+}
+#secondfeed{
+    position:absolute;
+    left:60%;
+    width:25%;
+    bottom:0px;
+    padding:1em 1em 1em 1em;
+    overflow:scroll;
+    top:10%;
+}
+#secondfeed img{
+    display:block;
+    margin:auto;
+    width:70%;
+    cursor:pointer;
+}
+#secondfeed img:hover{
+    border:solid;
+    border-radius:3px;
+    border-color:red;
+    background-color:#ffa0a0;
+}
+#mainfeed{
+    position:absolute;
+    left:30%;
+    width:25%;
+    bottom:0px;
+    padding:1em 1em 1em 1em;
+    overflow:scroll;
+    top:10%;
+}
+#mainfeed img{
+    display:block;
+    margin:auto;
+    width:80%;
+    cursor:pointer;
+}
+#mainfeed img:hover{
+    border:solid;
+    border-width:5px;
+    border-color:green;
+}
+#mainfeed img:active{
+    border:solid;
+    border-width:10px;
+    border-color:yellow;
+}
+.button{
+        cursor:pointer;
+        font-size:30px;
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:10px;
+        padding-bottom:10px;
+        border:solid;
+        border-radius:10px;
+}
+.button:hover{
+        background-color:green;
+}
+.button:active{
+        background-color:yellow;
+}
+#publishbutton{
+    position:absolute;
+    z-index:3;
+    right:20%;
+    top:0.5em;
+}
+.pathlink{
+    display:block;
+    margin-top:1em;
+    cursor:pointer;
+}
+.pathlink:hover{
+    background-color:#a0ffa0;
+}
+.pathlink:active{
+    background-color:#a0ffff;
+}
+
+</style>

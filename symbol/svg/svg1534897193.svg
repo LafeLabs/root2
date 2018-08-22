@@ -1,0 +1,67 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 752.5,
+    "y0": 439,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0336,0336,0333,0333,0331,0331,0337,0337,0337,0210,0210,0326,0331,0306,0350,0335,0336,0366,0334,0330,0330,0330,0335,0335,0335,0335,0335,0335,0335,0367,0334,0304,0335,0335,0331,0331,0332,0336,0330,0341,0333,0333,0333,0333,0347,0331,0331,0331,0331,0331,0332,0332,0334,0337,0337,0337,0320,0362,0203,0306,0335,0335,0203,0203,0335,0335,0203,0203,0335,0335,0203,0354,0330,0335,0335,0337,0316,0336,0304,0204,0330,0330,0204,0330,0330,0204,0332,0331,0204,0331,0331,0204,0330,0332,0204,0333,0333,0330,0330,0330,0306,0335,0335,0304,0336,0333,0332,0332,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0330,0340,0335,0335,0330,0333,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0330,0330,0330,0340,0335,0335,0332,0332,0330,0330,0340,0330,0330,0330,0330,0330,0340,0330,0330,0330,0330,0330,0340,0330,0330,0330,0330,0340,0330,0330,0335,0335,0333,0333,0340,0330,0330,0330,0330,0333,0340,0330,0330,0330,0330,0330,0340,0330,0330,0333,0330,0330,0333,0330,0340,0333,0333,0331,0331,0331,0331,0340,0331,0331,0331,0332,0332,0332,0332,0332,0331,0331,0332,0332,0331,0332,0331,0332,0332,0331,0332,0331,0331,0331,0331,0331,0331,0331,0331,0306,0334,0337,0337,0330,0304,0335,0335,0336,0336,0333,0333,0337,0337,0313,0362,0203,0306,0335,0335,0336,0336,0336,0203,0335,0335,0335,0203,0334,0334,0337,0337,0203,0364,0335,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M275,351 C294,318 256,270 275,237" fill = "none" stroke-width = "8" stroke = "blue" />    <circle cx="237" cy = "294" r = "19.09830056250526" stroke = "blue" stroke-width = "8" fill = "none" />
+    <circle cx="313" cy = "294" r = "19.09830056250526" stroke = "blue" stroke-width = "8" fill = "blue" />
+	<path d = "M275 390 L122 390 L199 257 L275 125 L351 257 L428 390 L275 390 Z" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M122 390 L153 337 L100 306 L69 359 L122 390 Z" stroke = "black" stroke-width = "8" fill = "black" />	<path d = "M183 284 L214 231 L161 200 L130 253 L183 284 Z" stroke = "black" stroke-width = "8" fill = "black" />	<path d = "M244 178 L275 125 L222 94 L192 147 L244 178 Z" stroke = "black" stroke-width = "8" fill = "black" />	<path d = "M161 200 L192 147 L139 117 L108 170 L161 200 Z" stroke = "black" stroke-width = "8" fill = "black" />	<path d = "M100 306 L130 253 L77 223 L47 276 L100 306 Z" stroke = "black" stroke-width = "8" fill = "black" />	<path d = "M77 223 L108 170 L55 139 L25 192 L77 223 Z" stroke = "black" stroke-width = "8" fill = "black" /><circle cx="286" cy = "119" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="292" cy = "129" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="298" cy = "140" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="304" cy = "151" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="310" cy = "161" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="316" cy = "172" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="322" cy = "182" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="328" cy = "193" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="334" cy = "204" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="341" cy = "214" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="347" cy = "225" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="353" cy = "235" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="359" cy = "246" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="365" cy = "256" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="371" cy = "267" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="377" cy = "278" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="383" cy = "288" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="389" cy = "299" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="396" cy = "309" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="402" cy = "320" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="408" cy = "331" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="414" cy = "341" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="420" cy = "352" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="426" cy = "362" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="432" cy = "373" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="431" cy = "346" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="412" cy = "314" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="394" cy = "282" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="376" cy = "250" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="357" cy = "219" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="339" cy = "187" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="321" cy = "155" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="302" cy = "123" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="336" cy = "132" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="366" cy = "185" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="397" cy = "238" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="421" cy = "280" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="455" cy = "289" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="441" cy = "241" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="410" cy = "188" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="401" cy = "123" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+<circle cx="446" cy = "153" r = "8" stroke = "black" stroke-width = "8" fill = "black" />
+	<path d = "M122 414 L428 414 L409 447 L428 414 L275 414 " stroke = "black" stroke-width = "8" fill = "none" /></svg>

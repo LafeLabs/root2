@@ -1,0 +1,5 @@
+{
+    "curves": [
+        "http://localhost:8000/curve/svg/svg1534893258.svg"
+    ]
+}

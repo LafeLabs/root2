@@ -1,0 +1,446 @@
+
+document.getElementById("editmodebutton").onclick = function(){
+    if(editMode){
+       document.getElementById("glyphspellinput").style.display = "none"; 
+       document.getElementById("buttonTable").style.display = "none"; 
+       document.getElementById("imageTable").style.display = "none"; 
+       document.getElementById("controlTable").style.display = "none"; 
+       document.getElementById("zoompan").style.display = "none"; 
+       document.getElementById("textIO").style.display = "none"; 
+       document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("shapetablelink").style.display = "none"; 
+       document.getElementById("svglink").style.display = "none";
+       document.getElementById("uplink").style.display = "none";
+       document.getElementById("phpfeedlink").style.display = "none";
+       document.getElementById("stylelink").style.display = "none";
+       document.getElementById("backlink").style.display = "none";
+    }
+    else{
+       document.getElementById("glyphspellinput").style.display = "block"; 
+       document.getElementById("buttonTable").style.display = "block"; 
+       document.getElementById("imageTable").style.display = "block"; 
+       document.getElementById("controlTable").style.display = "block"; 
+       document.getElementById("zoompan").style.display = "block"; 
+       document.getElementById("textIO").style.display = "block"; 
+       document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("shapetablelink").style.display = "block"; 
+       document.getElementById("svglink").style.display = "block"; 
+       document.getElementById("uplink").style.display = "block"; 
+       document.getElementById("phpfeedlink").style.display = "block"; 
+       document.getElementById("stylelink").style.display = "block"; 
+       document.getElementById("backlink").style.display = "block"; 
+    }
+
+    editMode = !editMode;
+    redraw();
+}
+
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
+
+document.getElementById("savesvg").onclick = function(){
+    svgwidth = currentJSON.svgwidth;
+    svgheight = currentJSON.svgheight;
+    tempx0 = x0;
+    tempy0 = y0;
+    x0 -= 0.5*(innerWidth - svgwidth);
+    y0 -= 0.5*(innerHeight - svgheight);
+    ctx = document.getElementById("invisibleCanvas").getContext("2d");
+    currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+    currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
+    doTheThing(0300);
+    drawGlyph(cleanGlyph);
+    currentSVG += "</svg>";
+    document.getElementById("textIO").value = currentSVG;
+
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    if(path.length > 1){
+         httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value) + "&path=" + path);//send text to feedsaver.php
+    }
+    else{
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+    }
+    x0 = tempx0;
+    y0 = tempy0;
+    redraw();
+    
+}
+ 
+saveSVG(); 
+function saveSVG(){
+    svgwidth = currentJSON.svgwidth;
+    svgheight = currentJSON.svgheight;
+    tempx0 = x0;
+    tempy0 = y0;        
+    x0 -= 0.5*(innerWidth - svgwidth);
+    y0 -= 0.5*(innerHeight - svgheight);
+    ctx = document.getElementById("invisibleCanvas").getContext("2d");
+    currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+    currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
+    doTheThing(0300);
+    drawGlyph(cleanGlyph);
+    currentSVG += "</svg>";
+
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";          
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+
+    if(path.length > 1){
+        httpc.send("data="+currentSVG+"&filename=" + path + "currentsvg.svg");//send text to filesaver.php
+    }
+    else{
+        httpc.send("data="+currentSVG+"&filename=" + "currentsvg.svg");//send text to filesaver.php
+
+    }
+    x0 = tempx0;
+    y0 = tempy0;
+
+
+
+ }
+ 
+ document.getElementById("savespelling").onclick = function(){
+    if(!spellMode){
+        var tempArray = cleanGlyph.split(',');
+        symbolGlyph = "";
+        for(var index = 0;index < tempArray.length;index++){
+            symbolGlyph += "0" + (parseInt(tempArray[index],8) + 01000).toString(8) + ","; 
+        }
+        currentGlyph = symbolGlyph + "0207,";
+    }
+    else{
+        var tempArray = cleanGlyph.split(',');
+        symbolGlyph = "";
+        for(var index = 0;index < tempArray.length;index++){
+            symbolGlyph += "0" + (parseInt(tempArray[index],8) - 01000).toString(8) + ","; 
+        }
+        currentGlyph = symbolGlyph + "0207,";
+    }
+
+    spellMode = !spellMode;
+    redraw();
+}
+ 
+document.getElementById("exportjson").onclick  = function(){
+    document.getElementById("textIO").value = JSON.stringify(currentJSON,null,"    ");
+} 
+
+document.getElementById("importjson").onclick  = function(){
+    currentJSON = JSON.parse(document.getElementById("textIO").value);
+    imagedata[0].value = currentJSON.imgurl;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    imagedata[4].value = currentJSON.imgangle;
+    imagedata[5].value = currentJSON.svgwidth;
+    imagedata[6].value = currentJSON.svgheight;
+    document.getElementById("mainImage").src = currentJSON.imgurl;
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
+    redraw();
+} 
+
+controls[0].onchange = function(){
+    currentAddress = parseInt(this.value,8);
+    currentGlyph = currentTable[currentAddress] + ",0207,";
+    redraw();
+}
+
+controls[1].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        arrowkey = false;
+        console.log(e);
+        if(e.key == "ArrowUp"){
+            arrowkey = true;
+        }
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+            arrowkey = true;
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+            arrowkey = true;
+
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+            arrowkey = true;
+
+        }
+
+    }
+    
+    controls[2].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        arrowkey = false;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+            arrowkey = true;
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+            arrowkey = true;
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+            arrowkey = true;
+        }
+    }
+    
+    controls[3].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        arrowkey = false;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+            arrowkey = true;
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+            arrowkey = true;
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+            arrowkey = true;
+        }
+
+    }
+controls[1].onkeypress = function(a){//action
+    charCode = a.keyCode || a.which;
+    //console.log(a.which.toString(8));
+    if(charCode != 010 && charCode != 047 && charCode != 050 && !arrowkey){
+            
+        if(parseInt(currentTable[charCode],8) >= 0200){
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+                if(glyphSplit[index] == "0207"){
+                    currentGlyph += currentTable[charCode] + ",0207,";
+                }
+            }
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+            }
+            redraw();
+        } 
+        if(parseInt(currentTable[charCode],8) < 040){
+            doTheThing(parseInt(currentTable[charCode],8));
+            redraw();
+        }
+        this.value = "";
+    }
+}
+    
+controls[2].onkeypress = function(a){//print
+    charCode = a.keyCode || a.which;
+    if(charCode != 010 && charCode != 047 && charCode != 050 && !arrowkey){
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+            if(glyphSplit[index] == "0207"){
+                currentGlyph += "0" + (charCode + 01000).toString(8) + ",0207,";
+            }
+        }
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+        }
+        redraw();
+        this.value = "";
+    }
+}
+    
+controls[3].onkeypress = function(a){//stack
+    charCode = a.keyCode || a.which;    
+    if(charCode != 010 && charCode != 047 && charCode != 050 && !arrowkey){
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+            if(glyphSplit[index] == "0207"){
+                currentGlyph += "0" + (charCode).toString(8) + ",0207,";
+            }
+        }
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+        }
+        redraw();
+        this.value = "";
+    }
+}
+    
+
+
+zoompanbuttons[0].onclick = function(){
+    doTheThing(030);
+}
+zoompanbuttons[1].onclick = function(){
+    doTheThing(031);
+}
+zoompanbuttons[2].onclick = function(){
+    doTheThing(032);
+}
+zoompanbuttons[3].onclick = function(){
+    doTheThing(033);
+}
+zoompanbuttons[4].onclick = function(){
+    doTheThing(036);
+}
+zoompanbuttons[5].onclick = function(){
+    doTheThing(037);
+}
+imagedata[0].onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    currentJSON.imgurl = this.value;
+    redraw();
+}
+    
+imagedata[1].onchange = function(){
+    currentJSON.imgw = parseFloat(this.value);
+    redraw();
+}
+imagedata[2].onchange = function(){
+    currentJSON.imgtop = parseFloat(this.value);
+    redraw();
+}
+imagedata[3].onchange = function(){
+    currentJSON.imgleft = parseFloat(this.value);
+    redraw();
+}
+imagedata[4].onchange = function(){
+    currentJSON.imgangle = parseFloat(this.value);
+    redraw();
+}
+imagedata[5].onchange = function(){
+    currentJSON.svgwidth = parseFloat(this.value);
+    redraw();
+}
+imagedata[6].onchange = function(){
+    currentJSON.svgheight = parseFloat(this.value);
+    redraw();
+}
+
+if(exturl){
+    document.getElementById("editmodebutton").click();
+}
+ 
+softkeyset = false;
+document.getElementById("softkeybutton").onclick = function(){
+    if(softkeyset){
+        document.getElementById("keytable").style.display = "none";
+    }
+    if(!softkeyset){
+        document.getElementById("keytable").style.display = "block";
+    }
+    softkeyset = !softkeyset;
+}
+
+imgbuttons[0].onclick  = function(){
+    currentJSON.imgw -= 2/currentJSON.unit;
+    currentJSON.imgleft += 1/currentJSON.unit;
+    currentJSON.imgtop += 1/currentJSON.unit;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+
+imgbuttons[1].onclick  = function(){
+    currentJSON.imgw += 2/currentJSON.unit;
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+
+imgbuttons[2].onclick  = function(){
+    currentJSON.imgangle -= 1;
+    imagedata[4].value = currentJSON.imgangle;
+    redraw();
+}
+
+imgbuttons[3].onclick  = function(){
+    currentJSON.imgangle += 1;
+    imagedata[4].value = currentJSON.imgangle;
+    redraw();
+}
+
+imgbuttons[4].onclick = function(){
+    currentJSON.imgtop -= 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[5].onclick = function(){
+    currentJSON.imgtop += 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[6].onclick = function(){
+    currentJSON.imgleft -= 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[7].onclick = function(){
+    currentJSON.imgleft += 1/currentJSON.unit;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    redraw();
+}
+imgbuttons[8].onclick  = function(){
+    currentJSON.x0rel = 0;
+    currentJSON.y0rel = 0;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    unit = 100;
+    currentJSON.unit = 100;    
+    redraw();
+}
+

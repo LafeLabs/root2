@@ -1,0 +1,421 @@
+
+myElement = document.getElementById("mainCanvas");
+mc = new Hammer(myElement);
+mc.get('pinch').set({ enable: true });
+mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+mc.on("swipeleft swiperight swipedown swipeup pinchin pinchout press", function(ev) {
+    console.log(ev.type);
+    if(ev.type == "press"){
+        if(paramIndex < plotinputs.length){
+            plotparams[paraminputs[paramIndex].id.substring(7)] *= -1;
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            funcparams[paraminputs[paramIndex].id.substring(11)] *= -1;
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+    }
+    if(ev.type == "pinchin"){
+          if(paramIndex < plotinputs.length){
+            if(paramDigitIndex == 0){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 10;
+            }
+            if(paramDigitIndex == 1){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.001;
+            }
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            if(paramDigitIndex == 0){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 10;
+            }
+            if(paramDigitIndex == 1){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.001;
+            }
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+    }
+    if(ev.type == "pinchout"){
+        if(paramIndex < plotinputs.length){
+            if(paramDigitIndex == 0){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 10;
+            }
+            if(paramDigitIndex == 1){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.001;
+            }
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            if(paramDigitIndex == 0){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 10;
+            }
+            if(paramDigitIndex == 1){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.001;
+            }
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+    }
+    if(ev.type == "swiperight"){
+                paramDigitIndex++;
+        if(paramDigitIndex > 3){
+            paramDigitIndex = 0;
+        }
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+        }
+        if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
+        }
+    }
+    if(ev.type == "swipeleft"){
+                paramDigitIndex--;
+        if(paramDigitIndex < 0){
+            paramDigitIndex = 3;
+        }
+        
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+       }
+       if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
+        }
+    }
+
+    if(ev.type == "swipeup"){
+                paraminputs[paramIndex].style.borderWidth = "1px";
+        paraminputs[paramIndex].style.borderColor = "black";
+            
+        paramIndex--;
+        if(paramIndex < 0){
+            paramIndex = paraminputs.length-1;
+        }
+        paraminputs[paramIndex].style.borderWidth = "4px";
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
+    }
+    if(ev.type == "swipedown"){
+        paraminputs[paramIndex].style.borderWidth = "1px";
+        paraminputs[paramIndex].style.borderColor = "black";
+            
+        paramIndex++;
+        if(paramIndex > paraminputs.length-1){
+            paramIndex = 0;
+        }
+        paraminputs[paramIndex].style.borderWidth = "4px";
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+    }
+});
+
+
+ document.getElementById("publish").onclick = function(){
+    data = encodeURIComponent(currentSVG);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    if(path.length>1){
+        httpc.send("data="+data +"&path=" + path);//send text to feedsaver.php
+    }
+    else{
+        httpc.send("data="+data);//send text to feedsaver.php
+    }
+ }
+ 
+ 
+
+document.getElementById("imgurlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+}
+
+
+document.getElementById("actioninput").onkeypress = function(a){
+    
+    if(a.key == "r"){
+        if(paramIndex < plotinputs.length){
+            plotparams[paraminputs[paramIndex].id.substring(7)] *= -1;
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            funcparams[paraminputs[paramIndex].id.substring(11)] *= -1;
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+
+    }
+    if(a.key == "a" || a.key == "ArrowUp"){
+        paraminputs[paramIndex].style.borderWidth = "1px";
+        paraminputs[paramIndex].style.borderColor = "black";
+            
+        paramIndex--;
+        if(paramIndex < 0){
+            paramIndex = paraminputs.length-1;
+        }
+        paraminputs[paramIndex].style.borderWidth = "4px";
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
+    }
+    if(a.key == "s" || a.key == "ArrowDown"){
+        paraminputs[paramIndex].style.borderWidth = "1px";
+        paraminputs[paramIndex].style.borderColor = "black";
+            
+        paramIndex++;
+        if(paramIndex > paraminputs.length-1){
+            paramIndex = 0;
+        }
+        paraminputs[paramIndex].style.borderWidth = "4px";
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        document.getElementById("varname").innerHTML = paraminputs[paramIndex].id;
+        document.getElementById("varvalue").innerHTML = paraminputs[paramIndex].value;
+
+    }
+    if(a.key == "d" || a.key == "ArrowLeft"){
+        paramDigitIndex--;
+        if(paramDigitIndex < 0){
+            paramDigitIndex = 3;
+        }
+        
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+       }
+       if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
+        }
+
+    }
+    if(a.key == "f"  || a.key == "ArrowRight"){
+        paramDigitIndex++;
+        if(paramDigitIndex > 3){
+            paramDigitIndex = 0;
+        }
+        if(paramDigitIndex == 0){
+            paraminputs[paramIndex].style.borderColor = "red";
+        }
+        if(paramDigitIndex == 1){
+            paraminputs[paramIndex].style.borderColor = "green";
+        }
+        if(paramDigitIndex == 2){
+            paraminputs[paramIndex].style.borderColor = "blue";
+        }
+        if(paramDigitIndex == 3){
+            paraminputs[paramIndex].style.borderColor = "purple";
+        }
+        if(paramDigitIndex == 0){
+            document.getElementById("delta").innerHTML = "10x"; 
+        }
+        if(paramDigitIndex == 1){
+            document.getElementById("delta").innerHTML = "10%"; 
+        }
+        if(paramDigitIndex == 2){
+            document.getElementById("delta").innerHTML = "1%"; 
+        }
+        if(paramDigitIndex == 3){
+            document.getElementById("delta").innerHTML = "0.1%"; 
+        }
+    }
+
+
+    if(a.key == "j"  || a.key == "-"){
+
+        if(paramIndex < plotinputs.length){
+            if(paramDigitIndex == 0){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 10;
+            }
+            if(paramDigitIndex == 1){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                plotparams[paraminputs[paramIndex].id.substring(7)] /= 1.001;
+            }
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            if(paramDigitIndex == 0){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 10;
+            }
+            if(paramDigitIndex == 1){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                funcparams[paraminputs[paramIndex].id.substring(11)] /= 1.001;
+            }
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+    }
+    if(a.key == "k" || a.key == "="){
+
+        if(paramIndex < plotinputs.length){
+            if(paramDigitIndex == 0){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 10;
+            }
+            if(paramDigitIndex == 1){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                plotparams[paraminputs[paramIndex].id.substring(7)] *= 1.001;
+            }
+            paraminputs[paramIndex].value = plotparams[paraminputs[paramIndex].id.substring(7)].toString();
+        }
+        else{
+            if(paramDigitIndex == 0){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 10;
+            }
+            if(paramDigitIndex == 1){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.1;
+            }
+            if(paramDigitIndex == 2){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.01;
+            }
+            if(paramDigitIndex == 3){
+                funcparams[paraminputs[paramIndex].id.substring(11)] *= 1.001;
+            }
+            paraminputs[paramIndex].value = funcparams[paraminputs[paramIndex].id.substring(11)].toString();
+        }
+        redraw();
+    }
+    
+    this.value = "";
+
+}
+

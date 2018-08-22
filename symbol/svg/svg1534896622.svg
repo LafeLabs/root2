@@ -1,0 +1,37 @@
+<svg width="300" height="300" viewbox = "0 0 300 300"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 300,
+    "svgheight": 300,
+    "unit": 100,
+    "x0": 752.5,
+    "y0": 439,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0210,0331,0332,0335,0336,0336,0331,0337,0337,0342,0330,0330,0335,0335,0336,0331,0337,0342,0333,0333,0342,0330,0336,0336,0330,0330,0337,0337,0342,0335,0336,0336,0332,0335,0335,0337,0337,0337,0342,0336,0336,0333,0337,0337,0342,0332,0342,0336,0336,0333,0337,0337,0342,0336,0336,0336,0330,0335,0337,0337,0342,0332,0336,0332,0337,0342,0335,0336,0336,0333,0331,0335,0335,0337,0342,0333,0333,0333,0342,0335,0335,0330,0330,0330,0330,0342,0333,0333,0333,0342,",
+    "table": []
+}
+</json>
+-->
+    <line x1="41" y1="237" x2="128" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="259" y1="237" x2="172" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="259" y1="63" x2="172" y2="63" style="stroke:black;stroke-width:8" />
+    <line x1="128" y1="63" x2="41" y2="63" style="stroke:black;stroke-width:8" />
+    <line x1="106" y1="63" x2="106" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="63" y1="63" x2="63" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="237" y1="63" x2="237" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="194" y1="63" x2="194" y2="237" style="stroke:black;stroke-width:8" />
+    <line x1="194" y1="84" x2="106" y2="84" style="stroke:black;stroke-width:8" />
+    <line x1="194" y1="216" x2="106" y2="216" style="stroke:black;stroke-width:8" />
+    <line x1="216" y1="237" x2="216" y2="281" style="stroke:black;stroke-width:8" />
+    <line x1="84" y1="237" x2="84" y2="281" style="stroke:black;stroke-width:8" />
+    <line x1="84" y1="63" x2="84" y2="19" style="stroke:black;stroke-width:8" />
+    <line x1="216" y1="63" x2="216" y2="19" style="stroke:black;stroke-width:8" />
+</svg>

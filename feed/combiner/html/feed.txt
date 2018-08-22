@@ -1,0 +1,139 @@
+<table id = "linktable">
+    <tr>
+        <td><a href = "feededitor.php?path=combiner/">EDIT CODE</a></td>
+    </tr>
+    <tr>
+        <td><a href = "index.php?path=boxfeed/">BOXFEED</a></td>
+    </tr>
+    <tr>
+        <td><a href = "index.php?path=basefeed/">BASEFEED</a></td>
+    </tr>
+</table>
+
+<div id = "basefeed"></div>
+<div id = "boxfeed"></div>
+    
+<img id = "baseImage"/>
+<div id = "boxofboxes"></div>
+<div id = "localmemedata" style = "display:none;"></div>
+
+<script>
+
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        basejsondata = JSON.parse(this.responseText);
+        basefeedinit();
+    }
+};
+httpc.open("GET", "loadjsonfeed.php?jsondir=basefeed/json/", true);
+httpc.send();
+
+function basefeedinit(){
+    for(var index = 0;index < basejsondata.length;index++){
+        var newimg = document.createElement("IMG");
+        newimg.src = basejsondata[index].url;
+        document.getElementById("basefeed").appendChild(newimg);
+        newimg.onclick = function(){
+            document.getElementById("baseImage").src = this.src;
+        }
+    }
+}
+    
+memedir = "purememe1/memes/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("localmemedata").innerHTML = this.responseText;
+        memeinit();
+    }
+};
+httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
+httpc.send();
+
+function memeinit(){
+    memes = document.getElementById("localmemedata").getElementsByClassName("meme");
+    
+}
+
+</script>
+<style>
+#baseImage{
+    position:absolute;
+    right:0px;
+    top:20%;
+    width:30%;
+    z-index:-1;
+}
+#boxofboxes{
+    position:absolute;
+    right:0px;
+    top:10%;
+    width:10%;
+    bottom:0px;
+    overflow:scroll;
+}
+.box{
+    width:90%;
+}
+#basefeed{
+    position:absolute;
+    left:0px;
+    width:25%;
+    top:30%;
+    bottom:0px;
+    overflow:scroll;
+}
+#basefeed img{
+    width:80%;
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    cursor:pointer;
+}
+#basefeed img:hover{
+    border:solid;
+    border-width:5px;
+    border-color:green;
+}
+#basefeed img:active{
+    border:solid;
+    border-width:5px;
+    border-color:yellow;
+}
+
+#boxfeed{
+    position:absolute;
+    left:30%;
+    width:20%;
+    bottom:0px;
+    top:30%;
+    overflow:scroll;
+}
+
+
+#linktable{
+    position:absolute;
+    right:10px;
+    top:10px;
+    z-index:1;
+}
+.button{
+        cursor:pointer;
+        font-size:30px;
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:10px;
+        padding-bottom:10px;
+        border:solid;
+        border-radius:10px;
+}
+.button:hover{
+        background-color:green;
+}
+.button:active{
+        background-color:yellow;
+}
+
+</style>

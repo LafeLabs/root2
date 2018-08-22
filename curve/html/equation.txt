@@ -1,0 +1,45 @@
+
+
+
+<h2>Golden Spiral</h2>
+<p>
+    Radius reduced by $\phi$ on every quarter turn.  One full turn takes T, so a quarter turn is $\frac{T}{4}$.  If we consider a quarter rotation starting at time $t_0$ and going to time $t_0 + \frac{T}{4}$ that should go down by $\phi$.  So  
+    $$
+    \frac{e^{-t_0/\tau}}{e^{-(t_0 + \frac{T}{4})/\tau}}=\phi
+    $$
+    $$
+    e^{T/4\tau} = \phi
+    $$
+    $$
+    \frac{T}{4\tau} = \ln{\phi}
+    $$
+    $$
+    \tau = \frac{T}{4\ln{\phi}}
+    $$
+    
+</p>
+<p class="bigeq">
+$$
+(X,Y) = (e^{-t/\tau}\cos{\frac{2\pi t}{T}},e^{-t/\tau}\sin{\frac{2\pi t}{T}})
+$$
+</p>
+<p></p>
+
+$$
+X = g(x - x_0) - X_0
+$$
+$$
+Y = f(X)
+$$
+    
+$$
+y = y_0 - G(Y - Y_0)
+$$
+
+
+<p>
+    X and Y, and $X_0$ and $Y_0$ in physical units of the System. x and y and x0 and y0 in pixels.  G is in pixels per Y unit and g is in X units per pixel. 
+</p>
+
+
+

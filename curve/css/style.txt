@@ -1,0 +1,156 @@
+#valuedisplaytable{
+    left:16em;
+    top:1em;
+}
+#plotparamstable{
+    left:0px;
+    top:4em;
+}
+#funcparamstable{
+    left:0px;
+    top:50%;
+}
+table input{
+    border:solid;
+    border-width:1px;
+}
+#editorlink{
+    position:absolute;
+    top:22em;
+    right:1em;
+}
+#backlink{
+    position:absolute;
+    top:16em;
+    right:1em;
+}
+#uplink{
+    position:absolute;
+    top:23em;
+    right:1em;
+}
+#svgfeedlink{
+    position:absolute;
+    top:10em;
+    right:1em;
+}
+#treelink{
+    position:absolute;
+    top:30em;
+    right:1em;
+}
+#svgindexlink{
+    position:absolute;
+    top:24em;
+    right:1em;
+}
+ #textIO{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:0px;
+    bottom:0px;
+    border:solid;
+}
+
+#equation{
+    position:absolute;
+    left:30%;
+    top:60%;
+    right:30%;
+    bottom:1em;
+    border:solid;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-size:20px;
+    overflow:scroll;
+}
+#eqtext{
+    position:absolute;
+    left:12%;
+    bottom:1em;
+    height:35%;
+    width:25%;
+    border:solid;
+    font-family:courier;
+    font-size:20px;
+}
+#equation .bigeq{
+    width:94%;
+    overflow:scroll;
+    margin:auto;
+    display:block;
+    background-color:#e0e0e0;
+}
+#publish{
+    position:absolute;
+    right:1em;
+    top:1em;
+}
+input{
+    font-family:courier;
+    font-size:16px;
+    width:5em;
+}
+table{
+    font-family:courier;
+    font-size:18;
+    position:absolute;
+    z-index:1;
+}
+.button{
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#scroll{
+    position:absolute;
+    right:1%;
+    left:80%;
+    top:10%;
+    bottom:2%;
+    padding:1em 1em 1em 1em;
+    border:solid;
+    border-radius:0.5em;
+    border-width:4px;
+    overflow:scroll;
+}
+#scroll img{
+    width:100%;
+}
+#mainCanvas{
+    display:block;
+    border:solid;
+    position:absolute;
+    top:1em;
+    z-index:0;
+}
+#mainImage{
+    display:block;
+    position:absolute;
+    top:1em;
+    z-index:-1;
+}
+
+#inputbox{
+    top:1.7em;
+    font-size:18px;
+    position:absolute;
+    left:5px;
+}
+#actionbox{
+    top:0.1em;
+    font-size:18px;
+    position:absolute;
+    left:5px;
+}
+#actioninput{
+    width:1em;
+}
