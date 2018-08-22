@@ -17,8 +17,6 @@
 
 <script>
 
-path = document.getElementById("pathdiv").innerHTML;
-
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -62,53 +60,6 @@ function boxesinit(){
             document.getElementById("boxofboxes").innerHTML = this.innerHTML;
         }
     }
-}
-
-document.getElementById("publishbutton").onclick = function(){
-    var newdiv = document.createElement("DIV");
-    var newmeme = document.createElement("DIV");
-    newmeme.className = "meme";
-    var newjsondiv= document.createElement("DIV");
-    newjsondiv.className = "jsondata";
-    var newjson = {};
-    newjson.url = document.getElementById("baseImage").src;
-    newjson.boxes = [];
-    
-    var currentboxes = document.getElementById("boxofboxes").getElementsByClassName("box");
-    for(var index = 0;index < currentboxes.length;index++){
-        var newboxjson = {
-            "xoverw":0.5,
-            "yoverw":0.5,
-            "woverw":0.25,
-            "fontoverw":0.15,
-            "angle":0
-        };
-        newjson.boxes.push(newboxjson);
-    }
-    newjsondiv.innerHTML = JSON.stringify(newjson,null,"    ");
-    newdiv.appendChild(newmeme);
-    newmeme.appendChild(newjsondiv);
-    newmeme.innerHTML += document.getElementById("boxofboxes").innerHTML;
-    
-    timestamp = Math.round((new Date().getTime())/1000);
-    data = encodeURIComponent(newdiv.innerHTML);
-
-    var httpc = new XMLHttpRequest();
-    var url = "filesaver.php";        
-    httpc.open("POST", url, true);
-    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data=" + data + "&filename=" + path + "memes/meme" + timestamp + ".txt");//send text to filesaver.php
-    
-    var httpc = new XMLHttpRequest();
-    if(path.length > 3){
-        var url = "makememeindex.php?path=" + path;        
-    }
-    else{
-        var url = "makememeindex.php";        
-    }
-    httpc.open("GET", url, true);
-    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send();//send text to filesaver.php
 }
 
 </script>

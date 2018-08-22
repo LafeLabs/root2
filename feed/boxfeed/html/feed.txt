@@ -9,11 +9,11 @@
     </tr> 
     <tr>
         <td></td>
-        <td></td>
         <td><a href = "index.php?path=textfeed/">TEXTFEED</a></td>
         <td><a href = "index.php?path=imagefeed/">IMAGEFEED</a></td>
         <td><a href = "index.php?path=curvefeed/">CURVEFEED</a></td>
         <td><a href = "index.php?path=symbolfeed/">SYMBOLFEED</a></td>
+        <td><a href = "index.php?path=combiner/">COMBINER</a></td>
     </tr>
 </table>
 

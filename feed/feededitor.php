@@ -151,10 +151,10 @@ document.getElementById("savebutton").onclick = function(){
     
     var httpc = new XMLHttpRequest();
     if(pathset){
-        var url = "makepagesindex.php?path=" + path;        
+        var url = "makefeedsindex.php?path=" + path;        
     }
     else{
-        var url = "makepagesindex.php";        
+        var url = "makefeedsindex.php";        
     }
     httpc.open("GET", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
@@ -175,10 +175,10 @@ document.getElementById("loadbutton").onclick = function(){
         }
     };
     if(pathset){
-        httpc.open("GET", "loadpage.php?path=" + path, true);
+        httpc.open("GET", "loadfeed.php?path=" + path, true);
     }
     else{
-        httpc.open("GET", "loadpage.php", true);
+        httpc.open("GET", "loadfeed.php", true);
     }
     httpc.send();
 
