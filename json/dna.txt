@@ -54,33 +54,26 @@
 			"fileloader.txt",
 			"filesaver.txt",
 			"index.txt",
+			"loadfeed.txt",
 			"loadhtmlfeed.txt",
 			"loadjsonfeed.txt",
 			"loadmemefeed.txt",
 			"loadsvgfeed.txt",
-			"loadwall.txt",
+			"makefeedsindex.txt",
 			"makehtmlindex.txt",
 			"makejsonindex.txt",
 			"makememeindex.txt",
 			"makesvgindex.txt",
 			"newdir.txt",
-			"post.txt",
-			"posttowall.txt",
-			"remotefeed.txt",
-			"savewall.txt",
 			"symboltree.txt",
 			"text2php.txt",
-			"tree.txt",
-			"wall.txt",
-			"walleditor.txt",
-			"wallhistory.txt"
+			"tree.txt"
 		]
 	},
 	{
 		"path":"feed/html",
 		"files":[
-			"feed.txt",
-			"wall.txt"
+			"feed.txt"
 		]
 	},
 	{
@@ -173,7 +166,12 @@
 	},
 	{
 		"path":"deck/php",
-		"files":
+		"files":[
+			"editor.txt",
+			"fileloader.txt",
+			"filesaver.txt",
+			"index.txt",
+			"text2php.txt"
 		]
 	},
 	{
