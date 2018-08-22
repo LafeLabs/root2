@@ -1,0 +1,102 @@
+<p>
+    <a href = "feededitor.php?path=memefeed/">EDIT</a>     <a href = "index.php?path=aligner/">ALIGNER</a>
+</p>
+<div id = "localmemedata" style = "display:none;"></div>
+<div id = "memefeed"></div>
+
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+memes = document.getElementById("localmemedata").getElementsByClassName("meme");
+imageWidth = 0.8*innerWidth;
+
+memedir = "aligner/memes/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("localmemedata").innerHTML = this.responseText;
+        init();
+    }
+};
+httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
+httpc.send();
+
+function init(){
+    for(var memeIndex = 0;memeIndex < memes.length;memeIndex++){
+    memejson = JSON.parse(memes[memeIndex].getElementsByClassName("jsondata")[0].innerHTML);    
+    var newdiv = document.createElement("DIV");
+    newdiv.className = "imgbox";
+    newdiv.id = "div" + memeIndex.toString();
+    document.getElementById("memefeed").appendChild(newdiv);
+    var newimg = document.createElement("IMG");
+    newimg.id = "img" + memeIndex.toString();
+    newimg.className = "mainimg";
+    newimg.src = memejson.url;
+    newimg.onload = function(){
+        document.getElementById("div" + this.id.substr(3)).style.height = this.height + "px";
+    }
+    newdiv.appendChild(newimg);
+    var boxes = memes[memeIndex].getElementsByClassName("box");
+    for(var boxIndex = 0;boxIndex < memejson.boxes.length;boxIndex++){
+        var newbox = document.createElement("div");
+        newbox.className = "box";
+        newbox.innerHTML = boxes[boxIndex].innerHTML;
+        newdiv.appendChild(newbox);
+        newbox.style.left = (memejson.boxes[boxIndex].xoverw*imageWidth).toString() + "px";
+        newbox.style.top = (memejson.boxes[boxIndex].yoverw*imageWidth).toString() + "px";
+        newbox.style.width = (memejson.boxes[boxIndex].woverw*imageWidth).toString() + "px";
+        newbox.style.fontSize = (memejson.boxes[boxIndex].woverw*memejson.boxes[boxIndex].fontoverw*imageWidth).toString() + "px";
+        newbox.style.transform = "rotate(" + (memejson.boxes[boxIndex].angle).toString() + "deg)";
+        
+    }
+}
+    
+}
+
+</script>
+<style>
+#memefeed{
+    position:absolute;
+    top:3em;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:scroll;
+}
+.imgbox{
+    position:relative;
+    width:80%;
+    display:block;
+    margin:auto;
+    height:220%;
+    margin-top:1em;
+    margin-bottom:1em;
+    z-index:0;
+}
+.mainimg{
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:0;
+}
+.bottom{
+    width:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+.top{
+    position:absolute;
+    width:100%;
+    left:0px;
+    top:0px;
+    z-index:0;
+}
+.box{
+    position:absolute;
+    z-index:1;
+}
+
+</style>

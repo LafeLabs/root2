@@ -1,0 +1,379 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<div id = "localmemedata" style = "display:none;"></div>
+<div style = "display:none;"  id = "memetemplate"><div class= "meme">
+    <div class= "jsondata">
+        {
+            "url":"",
+            "boxes":[
+                {
+                    "xoverw":0.5,
+                    "yoverw":0.5,
+                    "woverw":0.3,
+                    "fontoverw":0.15,
+                    "angle":0
+                }
+            ]
+        }
+    </div>
+    <div class = "box">text</div>
+</div></div>
+
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=aligner/">EDIT CODE</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=memefeed/">MEME FEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=combiner/">COMBINER</a>
+        </td>
+    </tr>
+    <tr>
+        <td class= "button" id  = "publishbutton">PUBLISH</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "nextmeme">NEXT MEME</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "prevmeme">PREV MEME</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "newmeme">NEW MEME</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "nextbox">NEXT BOX</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "prevbox">PREV BOX</td>
+    </tr>
+    <tr>
+        <td class = "button" id = "newbox">NEW BOX</td>
+    </tr>
+</table>
+
+<div id = "memecontainer">
+    <img id = "mainImage"/>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+    <div class = "box"></div>
+</div>
+
+<table id = "pantable">
+    <tr><td>BOX SCALE</td></tr>
+    <tr><td>FONT SCALE</td></tr>
+    <tr><td>ROTATE</td></tr>
+</table>
+
+
+<textarea id = "boxinput"></textarea>
+<input id = "urlinput"/>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+imageWidth = 0.6*smallerWidth;
+
+memedir = "combiner/memes/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("localmemedata").innerHTML = this.responseText;
+        document.getElementById("memedata").innerHTML += this.responseText;
+        combinermemesinit();
+    }
+};
+httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
+httpc.send();
+
+function combinermemesinit(){
+    
+}
+
+document.getElementById("memecontainer").style.width = imageWidth.toString() + "px";
+
+if(document.getElementById("memedata").innerHTML.length < 5){
+    document.getElementById("memedata").innerHTML = document.getElementById("memetemplate").innerHTML;
+}
+
+memes = document.getElementById("memedata").getElementsByClassName("meme");
+memeIndex = 0;
+staticboxes = document.getElementById("memecontainer").getElementsByClassName("box");
+
+initmeme();
+
+
+document.getElementById("mainImage").onload = function(){
+    document.getElementById("memecontainer").style.height = this.height.toString() + "px"; 
+}
+
+document.getElementById("nextmeme").onclick = function(){
+    memeIndex++;
+    if(memeIndex > memes.length - 1){
+        memeIndex = 0;
+    }
+    initmeme();
+}
+
+document.getElementById("prevmeme").onclick = function(){
+    memeIndex--;
+    if(memeIndex < 0){
+        memeIndex = memes.length - 1;
+    }
+    initmeme();
+}
+
+document.getElementById("newmeme").onclick = function(){
+    document.getElementById("memedata").innerHTML += "\n" + document.getElementById("memetemplate").innerHTML + "\n";
+    memes = document.getElementById("memedata").getElementsByClassName("meme");
+    memeIndex = memes.length - 1;
+    initmeme();
+}
+
+document.getElementById("newbox").onclick = function(){
+    var newboxjson = {
+                    "xoverw":0.5,
+                    "yoverw":0.5,
+                    "woverw":0.3,
+                    "fontoverw":0.15,
+                    "angle":0
+                };
+    memejson.boxes.push(newboxjson);
+    memes[memeIndex].getElementsByClassName("jsondata")[0].innerHTML = JSON.stringify(memejson,null,"    ");
+    memes[memeIndex].innerHTML += "    <div class = \"box\">text</div>";
+    initmeme();
+}
+
+document.getElementById("nextbox").onclick = function(){
+    boxIndex++;
+    if(boxIndex > boxes.length - 1){
+        boxIndex = 0;
+    }
+    document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
+    for(var index = 0;index < memejson.boxes.length;index++){
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+    }    
+}
+document.getElementById("prevbox").onclick = function(){
+    boxIndex--;
+    if(boxIndex < 0){
+        boxIndex = boxes.length - 1;
+    }
+    document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
+    for(var index = 0;index < memejson.boxes.length;index++){
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+    }    
+}
+
+function initmeme(){
+    boxes = memes[memeIndex].getElementsByClassName("box");
+    boxIndex = boxes.length - 1;
+    memejson = JSON.parse(memes[memeIndex].getElementsByClassName("jsondata")[0].innerHTML);
+    document.getElementById("mainImage").src = memejson.url;
+    document.getElementById("boxinput").value = boxes[boxIndex].innerHTML;
+    for(var index = 0;index < memejson.boxes.length;index++){
+        staticboxes[index].style.display = "block";
+        staticboxes[index].innerHTML = boxes[index].innerHTML;
+        staticboxes[index].style.left = (memejson.boxes[index].xoverw*imageWidth).toString() + "px";
+        staticboxes[index].style.top = (memejson.boxes[index].yoverw*imageWidth).toString() + "px";
+        staticboxes[index].style.width = (memejson.boxes[index].woverw*imageWidth).toString() + "px";
+        staticboxes[index].style.fontSize = (memejson.boxes[index].fontoverw*memejson.boxes[index].woverw*imageWidth).toString() + "px";    
+        staticboxes[index].style.transform = "rotate(" + (memejson.boxes[index].angle).toString() + "deg)";
+        
+        if(index == boxIndex){
+            staticboxes[index].style.border = "solid";
+        }
+        else{
+            staticboxes[index].style.border = "none";
+        }
+        
+    }
+    for(var index = memejson.boxes.length;index < staticboxes.length;index++){
+        staticboxes[index].style.display = "none";
+    }
+    
+}
+
+document.getElementById("urlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    memejson.url = this.value;
+}
+document.getElementById("boxinput").onkeyup = function(){
+    boxes[boxIndex].innerHTML = this.value;
+    staticboxes[boxIndex].innerHTML = this.value;
+}
+
+mc = new Hammer(document.getElementById("memecontainer"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    memejson.boxes[boxIndex].xoverw = 0.5 + (ev.deltaX/imageWidth);
+    memejson.boxes[boxIndex].yoverw = 0.5 + (ev.deltaY/imageWidth);
+    redraw();
+});
+
+pans = document.getElementById("pantable").getElementsByTagName("TD");
+mc1 = new Hammer(pans[0]);
+mc1.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc1.on("panleft panright panup pandown tap press", function(ev) {
+    memejson.boxes[boxIndex].woverw = 0.3 + ev.deltaX/imageWidth;
+    redraw();
+});
+
+mc2 = new Hammer(pans[1]);
+mc2.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc2.on("panleft panright panup pandown tap press", function(ev) {
+    memejson.boxes[boxIndex].fontoverw = 0.15 + ev.deltaX/(imageWidth*memejson.boxes[boxIndex].woverw);    
+    redraw();
+});
+
+mc3 = new Hammer(pans[2]);
+mc3.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc3.on("panleft panright panup pandown tap press", function(ev) {
+    memejson.boxes[boxIndex].angle = Math.PI*ev.deltaX/10;
+    redraw();
+});
+
+
+function redraw(){
+    
+    staticboxes[boxIndex].style.left = (memejson.boxes[boxIndex].xoverw*imageWidth).toString() + "px";
+    staticboxes[boxIndex].style.top = (memejson.boxes[boxIndex].yoverw*imageWidth).toString() + "px";
+    staticboxes[boxIndex].style.width = (memejson.boxes[boxIndex].woverw*imageWidth).toString() + "px";
+    staticboxes[boxIndex].style.fontSize = (memejson.boxes[boxIndex].fontoverw*memejson.boxes[boxIndex].woverw*imageWidth).toString() + "px";    
+    staticboxes[boxIndex].style.transform = "rotate(" + (memejson.boxes[boxIndex].angle).toString() + "deg)";
+
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    data = "\n<div class = \"meme\">\n";
+    data += "    <div class = \"jsondata\">\n";
+    data += JSON.stringify(memejson,null,"    ");
+    data += "\n    </div>\n";
+    for(var index = 0;index < memejson.boxes.length;index++){
+        data += "    <div class = \"box\">";
+        data += boxes[index].innerHTML;
+        data += "    </div>";
+    }
+    data += "</div>";  
+    
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(data);
+
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "memes/meme" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    if(path.length > 3){
+        var url = "makememeindex.php?path=" + path;        
+    }
+    else{
+        var url = "makememeindex.php";        
+    }
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+</script>
+<style>
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+    z-index:3;
+}
+#memecontainer{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:0;
+    height:100%;
+}
+#mainImage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    z-index:-1;
+}
+.box{
+    position:absolute;
+    z-index:1;
+}
+.button{
+    border:solid;
+    border-radius:1px;
+    cursor:pointer;
+    font-size:25px;
+    text-align:center;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#boxinput{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    border:solid;
+    font-size:22px;
+    width:12em;
+    font-family:courier;
+}
+#urlinput{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+#pantable{
+    position:absolute;
+    top:5em;
+    right:12%;
+    z-index:1;
+}
+#pantable td{
+    height:100px;
+    width:30%;
+    font-size:22px;
+    border:solid;
+    text-align:center;
+}
+
+</style>

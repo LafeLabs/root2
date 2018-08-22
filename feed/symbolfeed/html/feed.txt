@@ -14,6 +14,11 @@
         <a href = "index.php?path=boxfeed/">BOXFEED</a>    
     </td>
 </tr>
+<tr>
+    <td>
+        <a href = "../symbol/index.php?backlink=../feed/index.php?path=symbolfeed/">/SYMBOL/</a>    
+    </td>
+</tr>
 
 </table>
 symbol path:<input id = "pathinput"/>

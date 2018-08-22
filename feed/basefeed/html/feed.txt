@@ -11,7 +11,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td><a href = "index.php?path=combiner/">COMBINER</a></td>
         <td><a href = "index.php?path=curvefeed/">CURVEFEED</a></td>
         <td><a href = "index.php?path=symbolfeed/">SYMBOLFEED</a></td>
     </tr>
