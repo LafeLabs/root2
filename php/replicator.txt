@@ -17,14 +17,11 @@
         mkdir("scroll/scrolls");
         mkdir("scrolls/figures");
     mkdir("deck");
-        mkdir("deck/decks");
     mkdir("symbol");
         mkdir("symbol/svg");
     mkdir("curve");
         mkdir("curve/svg");
     mkdir("map");
-        mkdir("map/maps");
-        mkdir("map/svg");
 
     foreach($dna as $dirs){
         mkdir($dirs->path);

@@ -1,27 +1,9 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/root2/master/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/root2/master/feed/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
-
-    //Seven Sources
-    mkdir("page");
-        mkdir("page/pages");
-        mkdir("page/json");
-    mkdir("feed");
-        mkdir("feed/feed");
-    mkdir("scroll");    
-        mkdir("scroll/latex");
-        mkdir("scroll/jupyter");
-        mkdir("scroll/scrolls");
-        mkdir("scrolls/figures");
-    mkdir("deck");
-    mkdir("symbol");
-        mkdir("symbol/svg");
-    mkdir("curve");
-        mkdir("curve/svg");
-    mkdir("map");
 
     foreach($dna as $dirs){
         mkdir($dirs->path);
@@ -40,4 +22,4 @@
     }
 ?>
 
-<a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>
+<a href = "index.php?tree.php" style = "font-size:5em;">TREE</a>

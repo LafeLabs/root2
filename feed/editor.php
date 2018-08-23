@@ -58,6 +58,11 @@ EGO DEATH:
 
     <div class = "php file">php/symboltree.txt</div>
     <div class = "php file">php/curvetree.txt</div>
+    
+    <div class = "php file">php/replicator.txt</div>
+    <div class = "php file">php/dnagenerator.txt</div>
+
+    <div class = "json file">json/dna.txt</div>
 
 </div>
 

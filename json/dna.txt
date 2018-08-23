@@ -49,6 +49,7 @@
 		"path":"feed/php",
 		"files":[
 			"curvetree.txt",
+			"dnagenerator.txt",
 			"editor.txt",
 			"feededitor.txt",
 			"fileloader.txt",
@@ -65,6 +66,7 @@
 			"makememeindex.txt",
 			"makesvgindex.txt",
 			"newdir.txt",
+			"replicator.txt",
 			"symboltree.txt",
 			"text2php.txt",
 			"tree.txt"
@@ -175,26 +177,6 @@
 		]
 	},
 	{
-		"path":"deck/html",
-		"files":
-		]
-	},
-	{
-		"path":"deck/javascript",
-		"files":
-		]
-	},
-	{
-		"path":"deck/bytecode",
-		"files":
-		]
-	},
-	{
-		"path":"deck/json",
-		"files":
-		]
-	},
-	{
 		"path":"curve/javascript",
 		"files":[
 			"init.txt",
@@ -246,31 +228,6 @@
 			"filesaver.txt",
 			"index.txt",
 			"text2php.txt"
-		]
-	},
-	{
-		"path":"map/html",
-		"files":
-		]
-	},
-	{
-		"path":"map/css",
-		"files":
-		]
-	},
-	{
-		"path":"map/javascript",
-		"files":
-		]
-	},
-	{
-		"path":"map/bytecode",
-		"files":
-		]
-	},
-	{
-		"path":"map/json",
-		"files":
 		]
 	}
 ]
