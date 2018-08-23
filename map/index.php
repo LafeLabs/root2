@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>index</title>
+<title>Map</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
@@ -45,16 +45,12 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 if(isset($_GET['meme'])){
     echo file_get_contents($_GET['meme']);
 }?></div>
-<div class= "no-mathjax" id = "deckdatadiv" style = "display:none"><?php
-if(isset($_GET['deck'])){
-    echo file_get_contents($_GET['deck']);
-}
-?></div>
 <div class= "no-mathjax" id = "listdatadiv" style = "display:none"><?php
     
-    echo file_get_contents("../feed/aligner/memes/list.txt");
-
+    echo file_get_contents("../feed/mapassembler/mapx1y1/memes/list.txt");
+    
 ?></div>
+
 <div id = "mainContainer">
 <input id = "memeurlinput"/>
     <img id = "mainImage"/>
@@ -70,38 +66,22 @@ if(isset($_GET['deck'])){
 <p><a href = "editor.php">editor</a></p>
 <script>
 
-deckmode = false;
 mememode = false;
-memeIndex  =0;
+memeIndex  = 0;
 deck = [];
+
 if(document.getElementById("memedatadiv").innerHTML.length > 5){
     memejson =  JSON.parse(document.getElementById("memedatadiv").getElementsByClassName("jsondata")[0].innerHTML);
     mememode = true;
 }
-if(document.getElementById("deckdatadiv").innerHTML.length > 5){
-    deckjson =  JSON.parse(document.getElementById("memedatadiv").innerHTML);
-    deckmode = true;
-    mememode = false;
-    deckIndex = 0;
-    currentFile = deckjson[deckIndex];
-    var httpc = new XMLHttpRequest();
-    httpc.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("memedatadiv").innerHTML = this.responseText;
-            
-        }
-    };
-    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-    httpc.send();
-
-}
-if(!mememode && !deckmode){
+else{
+    
     list = document.getElementById("listdatadiv").innerHTML;
     listarray = list.split(",");
     deck = [];
     for(var index = 0;index < listarray.length;index++){
         if(listarray[index].length > 1){
-            deck.push("../feed/aligner/memes/" + listarray[index]);
+            deck.push("../feed/mapassembler/mapx1y1/memes/" + listarray[index]);
         }
     }
     currentFile = deck[memeIndex];
@@ -115,6 +95,7 @@ if(!mememode && !deckmode){
     httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
     httpc.send();
 }
+
 
 document.getElementById("memeurlinput").onchange = function(){
     currentFile = this.value;
@@ -140,24 +121,9 @@ function initmeme(){
 }
 
 document.getElementById("mainImage").onload = function(){
-    image_aspect_ratio = this.width/this.height;// "widthiness", "wideness"
-    screen_aspect_ratio = innerWidth/innerHeight;
-    if(image_aspect_ratio >= screen_aspect_ratio){
-        this.width = innerWidth;
-        this.style.left = "0px";
-        this.style.top = (0.5*(innerHeight - this.height)).toString() + "px";
-        x0 = 0;
-        y0 = 0.5*(innerHeight - this.height);
-        w = this.width;
-    }
-    if(image_aspect_ratio < screen_aspect_ratio){
-        this.height = innerHeight;
-        this.style.top = "0px";
-        this.style.left = (0.5*(innerWidth - this.width)).toString() + "px";
-        x0 = 0.5*(innerWidth - this.width);
-        y0 = 0;
-        w = this.width;
-    }
+    x0 = 0;
+    y0 = 0;
+    w = innerWidth;
     for(var index = 0;index < databoxes.length;index++){
         displayboxes[index].innerHTML = databoxes[index].innerHTML;
         displayboxes[index].style.display = "block";
@@ -225,7 +191,6 @@ body{
     font-size:1.5em;
     font-family:helvetica;
 }
-
 #memeurlinput{
     position:absolute;
     left:0px;
@@ -235,6 +200,9 @@ body{
 #mainImage{
     position:absolute;
     z-index:-1;
+    left:0px;
+    top:0px;
+    width:100%;
 }
 .box{
     position:absolute;

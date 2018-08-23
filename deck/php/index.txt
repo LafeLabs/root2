@@ -38,7 +38,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
 <!--  forward to another page:  -->
 <!--<meta http-equiv="Refresh" content="0;url=tree.php">-->
-
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 </head>
 <body>
 <div class= "no-mathjax" id = "memedatadiv" style = "display:none"><?php
@@ -48,7 +48,13 @@ if(isset($_GET['meme'])){
 <div class= "no-mathjax" id = "deckdatadiv" style = "display:none"><?php
 if(isset($_GET['deck'])){
     echo file_get_contents($_GET['deck']);
-}?></div>
+}
+?></div>
+<div class= "no-mathjax" id = "listdatadiv" style = "display:none"><?php
+    
+    echo file_get_contents("../feed/aligner/memes/list.txt");
+
+?></div>
 <div id = "mainContainer">
 <input id = "memeurlinput"/>
     <img id = "mainImage"/>
@@ -61,10 +67,13 @@ if(isset($_GET['deck'])){
     <div class = "box"></div>
     <div class = "box"></div>
 </div>
+<p><a href = "editor.php">editor</a></p>
 <script>
 
 deckmode = false;
 mememode = false;
+memeIndex  =0;
+deck = [];
 if(document.getElementById("memedatadiv").innerHTML.length > 5){
     memejson =  JSON.parse(document.getElementById("memedatadiv").getElementsByClassName("jsondata")[0].innerHTML);
     mememode = true;
@@ -85,6 +94,26 @@ if(document.getElementById("deckdatadiv").innerHTML.length > 5){
     httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
     httpc.send();
 
+}
+if(!mememode && !deckmode){
+    list = document.getElementById("listdatadiv").innerHTML;
+    listarray = list.split(",");
+    deck = [];
+    for(var index = 0;index < listarray.length;index++){
+        if(listarray[index].length > 1){
+            deck.push("../feed/aligner/memes/" + listarray[index]);
+        }
+    }
+    currentFile = deck[memeIndex];
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("memedatadiv").innerHTML = this.responseText;
+            initmeme();
+        }
+    };
+    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+    httpc.send();
 }
 
 document.getElementById("memeurlinput").onchange = function(){
@@ -146,6 +175,49 @@ document.getElementById("mainImage").onload = function(){
 
 }
 
+mc = new Hammer(document.getElementById("mainContainer"));
+mc.on("swipeleft swiperight", function(ev) {
+    if(ev.type == "swipeleft"){
+        prevmeme();
+    }
+    if(ev.type == "swiperight"){
+        nextmeme();
+    }
+
+});
+
+function nextmeme(){
+    memeIndex++;
+    if(memeIndex > deck.length - 1){
+        memeIndex = 0;
+    }
+    currentFile = deck[memeIndex];
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("memedatadiv").innerHTML = this.responseText;
+            initmeme();
+        }
+    };
+    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+    httpc.send();
+}
+function prevmeme(){
+    memeIndex--;
+    if(memeIndex < 0){
+        memeIndex = deck.length - 1;
+    }
+    currentFile = deck[memeIndex];
+    var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("memedatadiv").innerHTML = this.responseText;
+            initmeme();
+        }
+    };
+    httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+    httpc.send();
+}
 
 </script>
 <style>

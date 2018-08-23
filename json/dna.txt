@@ -240,7 +240,12 @@
 	},
 	{
 		"path":"map/php",
-		"files":
+		"files":[
+			"editor.txt",
+			"fileloader.txt",
+			"filesaver.txt",
+			"index.txt",
+			"text2php.txt"
 		]
 	},
 	{
