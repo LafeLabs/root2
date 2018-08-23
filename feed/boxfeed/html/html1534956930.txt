@@ -1,0 +1,1 @@
+<div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Aries.svg" style="width: 100%;"></div>

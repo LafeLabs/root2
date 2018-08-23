@@ -1,0 +1,265 @@
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+<table id = "linktable">
+<tr>
+    <td>
+        <a href = "feededitor.php?path=mapassembler/mapx1y1/">EDIT</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href = "index.php?path=mapassembler/mapx0y0/">X0 Y0</a>
+    </td>
+</tr>
+</table>
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<table id = "markertable">
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<img id = "mainImage"/>
+<canvas id = "mainCanvas"></canvas>
+
+<div id ="localmemedatadiv" style = "display:none;"></div>
+<script>
+
+markers = document.getElementById("markertable").getElementsByTagName("TD");
+path = document.getElementById("pathdiv").innerHTML;
+localjsondata = JSON.parse(document.getElementById("jsondata").innerHTML);
+mapIndex = 0;
+
+memedir = "mapassembler/mapx0y0/memes/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("localmemedatadiv").innerHTML = this.responseText;
+        init();
+    }
+};
+
+httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
+httpc.send();
+
+
+function init(){
+    memes = document.getElementById("localmemedatadiv").getElementsByClassName("meme");
+    currentJSON = JSON.parse(memes[mapIndex].getElementsByClassName("jsondata")[0].innerHTML);
+    document.getElementById("mainImage").src =  currentJSON.url;
+    markers[0].innerHTML = "marker 1: " + currentJSON.marker1;
+    
+}
+
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.strokeStyle= "black";
+ctx.lineWidth = 4;    	
+ctx.fillStyle = "black";
+
+if(innerWidth < innerHeight){
+    smallerWidth = innerWidth;
+}
+else{
+    smallerWidth = innerHeight;
+}
+
+
+imageWidth = 0.85*smallerWidth;
+document.getElementById("mainImage").width = imageWidth;
+
+document.getElementById("mainImage").onload = function(){
+    document.getElementById("mainCanvas").width = document.getElementById("mainImage").width;
+    document.getElementById("mainCanvas").height = document.getElementById("mainImage").height;
+    x0 = 0.5*document.getElementById("mainImage").width;
+    y0 = 0.5*document.getElementById("mainImage").height;
+    x = x0;
+    y = y0;
+    document.getElementById("mainCanvas").style.left = (x0).toString() + "px";
+    document.getElementById("mainImage").style.left = (x0).toString() + "px";
+    redraw();
+}
+
+function redraw(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    ctx.lineWidth = 2;    	
+    ctx.beginPath();
+    ctx.arc(x, y, 10, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x,y - 100);
+    ctx.lineTo(x,y + 100);
+    ctx.stroke();		
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.moveTo(x - 100,y);
+    ctx.lineTo(x + 100,y);
+    ctx.stroke();		
+    ctx.closePath();
+}
+
+
+mc = new Hammer(document.getElementById("mainCanvas"));
+mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+mc.on("panleft panright panup pandown tap press", function(ev) {
+    x = x0 + ev.deltaX;
+    y = y0 + ev.deltaY;
+    redraw();
+});
+
+
+
+document.getElementById("publishbutton").onclick = function(){
+
+    currentJSON.x1overwidth = x/document.getElementById("mainImage").width;
+    currentJSON.y1overwidth = y/document.getElementById("mainImage").width;
+
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+    var newcontainer = document.createElement("DIV");
+    var newmemediv = document.createElement("DIV");
+    newmemediv.className = "meme";
+    newcontainer.appendChild(newmemediv);
+    var newjsondatadiv = document.createElement("DIV");
+    newjsondatadiv.className = "jsondata";
+    newjsondatadiv.innerHTML = JSON.stringify(currentJSON,null,"    ");
+    newmemediv.appendChild(newjsondatadiv);
+    var localboxes = memes[mapIndex].getElementsByClassName("box");
+    for(var index = 0;index < localboxes.length;index++){
+        var newlocalbox = document.createElement("DIV");
+        newlocalbox.className = "box";
+        newlocalbox.innerHTML = localboxes[index].innerHTML;
+        newmemediv.appendChild(newlocalbox);
+    }
+    
+    memedata = encodeURIComponent(newcontainer.innerHTML);
+
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + memedata + "&filename=" + path + "memes/meme" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makememeindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= memes.length){
+        mapIndex = 0;
+    }
+
+    currentJSON = JSON.parse(memes[mapIndex].getElementsByClassName("jsondata")[0].innerHTML);
+    document.getElementById("mainImage").src =  currentJSON.url;
+    markers[0].innerHTML = currentJSON.marker0;
+
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = memes.length - 1;
+    }
+    
+    currentJSON = JSON.parse(memes[mapIndex].getElementsByClassName("jsondata")[0].innerHTML);
+    document.getElementById("mainImage").src =  currentJSON.url;
+    markers[0].innerHTML = currentJSON.marker0;
+    
+}
+
+
+</script>
+<style>
+
+p{
+    text-align:right;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+#mainCanvas{
+    position:absolute;
+    z-index:0;
+    left:0px;
+    top:0px;
+}
+#mainImage{
+   position:absolute;
+   z-index:-1;
+   left:0px;
+   top:0px;
+}
+#backbutton{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    z-index:3;
+}
+#fwdbutton{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:3;
+}
+#publishbutton{
+    position:absolute;
+    z-index:3;
+    bottom:0px;
+    left:35%;
+    width:30%;
+}
+#flowdecklink{
+    position:relative;
+    z-index:3;
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    height:4em;
+    padding-top:2em;
+    padding-left:2em;
+    padding-right:2em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#markertable{
+    position:absolute;
+    left:0px;
+    top:50%;
+}
+#linktable{
+    position:absolute;
+    z-index:2;
+    right:0px;
+    top:0px;
+}
+</style>

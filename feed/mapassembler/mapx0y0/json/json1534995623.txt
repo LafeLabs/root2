@@ -1,0 +1,18 @@
+{
+    "url": "https://i.imgur.com/F1tAEiF.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.06766917293233077,
+            "yoverw": 0.8926482873851296,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ],
+    "marker0": "SE corner wells",
+    "marker1": "NE corner wells",
+    "latlon0": "38.858019, -77.050848",
+    "latlon1": "38.858544, -77.050798",
+    "x0overwidth": 0.5693215339233039,
+    "y0overwidth": 0.6091445427728613
+}

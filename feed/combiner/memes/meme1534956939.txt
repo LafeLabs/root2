@@ -1,0 +1,12 @@
+<div class="meme"><div class="jsondata">{
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}</div><div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Aries.svg" style="width: 100%;"></div></div>
