@@ -11,6 +11,7 @@
         mkdir("page/json");
     mkdir("feed");
         mkdir("feed/feed");
+        mkdir("feed/json");
     mkdir("scroll");    
         mkdir("scroll/latex");
         mkdir("scroll/jupyter");
@@ -40,4 +41,4 @@
     }
 ?>
 
-<a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>
+<a href = "index.php" style = "font-size:5em;">index.php</a>

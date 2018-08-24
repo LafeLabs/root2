@@ -47,7 +47,7 @@ if(isset($_GET['meme'])){
 }?></div>
 <div class= "no-mathjax" id = "listdatadiv" style = "display:none"><?php
     
-    echo file_get_contents("../feed/mapassembler/mapx1y1/memes/list.txt");
+    echo file_get_contents("../feed/mapx1y1/memes/list.txt");
     
 ?></div>
 
@@ -81,7 +81,7 @@ else{
     deck = [];
     for(var index = 0;index < listarray.length;index++){
         if(listarray[index].length > 1){
-            deck.push("../feed/mapassembler/mapx1y1/memes/" + listarray[index]);
+            deck.push("../feed/mapx1y1/memes/" + listarray[index]);
         }
     }
     currentFile = deck[memeIndex];

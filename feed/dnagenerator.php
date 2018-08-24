@@ -1,38 +1,16 @@
 <?php
 
-function getfiles($localpath){
-    $outstring = "";
-    $files = scandir(getcwd()."/".$localpath);
-    $outstring .= "\t{\n\t\t\"path\":\"".$localpath."\",\n\t\t\"files\":[\n";
-    
-    foreach($files as $value){
-        if($value != "." && $value != ".."){
-            if(substr($value,-4) == ".txt"){
-                $outstring .= "\t\t\t\"".$value."\",\n";
-            }
-        }
-    }
-    $outstring = substr($outstring,0,-2);
-    $outstring .= "\n\t\t]\n\t}";
-    return $outstring;
-}
-
-
-
-
 $finalstring = "[\n";
 
-
 $basefiles = scandir(getcwd());
-foreach($basefiles as $dirvalue){
-    if($dirvalue != "html" && $dirvalue != "svg" && $dirvalue != "memes" && $dirvalue != "json" && $dirvalue != "php" && $dirvalue != "." && $value != ".."){
-            if(substr($value,-4) == ".txt"){
-                $outstring .= "\t\t\t\"".$value."\",\n";
-            }
+
+foreach($basefiles as $value){
+    if($value != "html" && $value != "svg" && $value != "memes" && $value != "json" && $value != "php" && $value != "." && $value != ".." && is_dir($value)){
+                $finalstring .= "\"".$value."\",";
     }
 }
 
-
+$finalstring = rtrim($finalstring, ",");
 $finalstring .= "\n]";
 
 echo $finalstring;

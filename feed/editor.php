@@ -25,6 +25,7 @@ EGO DEATH:
     <a href = "index.php">index.php</a>
     <a href = "feededitor.php">feededitor.php</a>
     <a href = "feed/">feed/</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "text2php.php">text2php.php</a>
     <a href = "tree.php">tree.php</a>
 </div>

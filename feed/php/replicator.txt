@@ -6,19 +6,16 @@
     $baseurl = explode("json",$url)[0];
 
     foreach($dna as $dirs){
-        mkdir($dirs->path);
-        $files = $dirs->files;
-        foreach($files as $filename){
-            $data = file_get_contents($baseurl.$dirs->path."/".$filename);
-            $file = fopen($dirs->path."/".$filename,"w");// create new file with this name
-            fwrite($file,$data); //write data to file
-            fclose($file);  //close file
-            if(substr($dirs->path,-3) == "php" && $filename != "php/replicator.txt"){
-                $file = fopen(substr($dirs->path,0,-3).explode(".",$filename)[0].".php","w");// create new file with this name
-                fwrite($file,$data); //write data to file
-                fclose($file);  //close file                
-            }
-        }    
+        mkdir($dirs);
+        mkdir($dirs."/html");
+        mkdir($dirs."/svg");
+        mkdir($dirs."/feeds");
+        mkdir($dirs."/json");
+        mkdir($dirs."/memes");
+        $data = file_get_contents($baseurl."/".$dirs."/html/feed.txt");
+        $file = fopen($dirs."/html/feed.txt","w");// create new file with this name
+        fwrite($file,$data); //write data to file
+        fclose($file);  //close file
     }
 ?>
 

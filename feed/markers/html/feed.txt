@@ -1,0 +1,223 @@
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "index.php?path=imagefeed/">IMAGEFEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=latlons/">LATLONS</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=markers/">EDIT CODE</a>
+        </td>
+    </tr>
+
+</table>
+
+<div class = "button" id = "backbutton">BACK</div>
+<div class = "button" id = "fwdbutton">FWD</div>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+
+<div id = "feedbox">
+    <img id = "backgroundimage"/>
+</div>
+
+<table id = "inputtable">
+    <tr>
+        <td>MARKER 0(CENTER):</td>
+        <td><input/></td>
+    </tr>
+    <tr>
+        <td>MARKER 1:</td>
+        <td><input/></td>
+    </tr>
+</table>
+
+<div id = "localmemedatadiv" style = "display:none"></div>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+inputs = document.getElementById("inputtable").getElementsByTagName("input");
+mapIndex = 0;
+
+memedir = "aligner/memes/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("localmemedatadiv").innerHTML = this.responseText;
+        init();
+    }
+};
+
+httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
+httpc.send();
+    
+
+
+function init(){
+    memes = document.getElementById("localmemedatadiv").getElementsByClassName("meme");
+    redraw();
+}
+
+function redraw(){
+    currentJSON = JSON.parse(memes[mapIndex].getElementsByClassName("jsondata")[0].innerHTML);
+    document.getElementById("backgroundimage").src = currentJSON.url;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+
+    currentJSON.marker0 = inputs[0].value;
+    currentJSON.marker1 = inputs[1].value;
+
+//publish meme and also json, because why not?
+//json first:
+    timestamp = Math.round((new Date().getTime())/1000);
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+//then meme:
+    var newcontainer = document.createElement("DIV");
+    var newmemediv = document.createElement("DIV");
+    newmemediv.className = "meme";
+    newcontainer.appendChild(newmemediv);
+    var newjsondatadiv = document.createElement("DIV");
+    newjsondatadiv.className = "jsondata";
+    newjsondatadiv.innerHTML = JSON.stringify(currentJSON,null,"    ")
+    newmemediv.appendChild(newjsondatadiv);
+    var localboxes = memes[mapIndex].getElementsByClassName("box");
+    for(var index = 0;index < localboxes.length;index++){
+        var newlocalbox = document.createElement("DIV");
+        newlocalbox.className = "box";
+        newlocalbox.innerHTML = localboxes[index].innerHTML;
+        newmemediv.appendChild(newlocalbox);
+    }
+    
+    
+    memedata = encodeURIComponent(newcontainer.innerHTML);
+
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + memedata + "&filename=" + path + "memes/meme" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makememeindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    mapIndex++;
+    if(mapIndex >= memes.length){
+        mapIndex = 0;
+    }
+    redraw();
+}
+document.getElementById("backbutton").onclick = function(){
+    mapIndex--;
+    if(mapIndex < 0){
+        mapIndex = memes.length - 1;
+    }
+    redraw();
+}
+
+
+
+</script>
+<style>
+#feedbox{
+    position:absolute;
+    left:10%;
+    right:10%;
+    bottom:4em;
+    top:4em;
+    overflow:scroll;
+    border:solid;
+    border-radius:1em;
+}
+p{
+    text-align:right;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+#backbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    left:0px;
+    width:10%;
+    height:2em; 
+    padding-bottom:1em;
+    padding-top:1em;
+
+}
+#fwdbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:0px;
+    width:10%;
+    height:2em;
+    padding-bottom:1em;
+    padding-top:1em;
+}
+#publishbutton{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:35%;
+    width:30%;
+    padding-bottom:1em;
+    padding-top:1em;
+    
+}
+.button{
+    cursor:pointer;
+    text-align:center;
+    border:solid;
+    border-radius:10px;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>

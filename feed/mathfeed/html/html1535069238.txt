@@ -1,0 +1,1 @@
+$$E=h\nu$$ is also famous, and gets its own line with different syntax.

@@ -1,0 +1,1 @@
+$S_I = 2eI\coth{\frac{eV}{2k_BT}}$

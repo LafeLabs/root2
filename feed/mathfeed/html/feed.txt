@@ -1,0 +1,140 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+
+<table id = "linktable">
+    <tr>
+        <td><a href = "feededitor.php?path=mathfeed/">EDIT CODE</a></td>
+    </tr>
+</table>
+
+<div class="no-mathjax" id = "wordsinputbox">WORDS:<input  class = "mathjax" id = "wordsinput"/></div>
+<div  class="no-mathjax" id = "datadiv" style = "display:none"></div>
+
+<div id = "scrolldiv"  class = "mathjax"></div>
+
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+document.getElementById("wordsinput").select();
+
+htmldir = "mathfeed/html/";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        htmldata = this.responseText;
+        init();
+    }
+};
+httpc.open("GET", "loadhtmlfeed.php?htmldir=" + htmldir, true);
+httpc.send();
+
+function init(){
+    mathIndex = 0;
+    document.getElementById("datadiv").innerHTML = htmldata;
+    htmldatadivs = document.getElementById("datadiv").getElementsByTagName("feedbox");
+    for(var index = 0;index < htmldatadivs.length;index++){
+        var newp = document.createElement("p");
+        newp.innerHTML = htmldatadivs[index].innerHTML;
+        document.getElementById("scrolldiv").appendChild(newp);
+    }
+    MathJax.Hub.Typeset();//tell Mathjax to update the math
+}
+
+document.getElementById("wordsinput").onchange = function(){
+    data = encodeURIComponent(this.value);
+    timestamp = Math.round((new Date().getTime())/1000);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "html/html" + timestamp + ".txt");//send text to filesaver.php
+    var httpc = new XMLHttpRequest();
+    var url = "makehtmlindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+    
+    var newp = document.createElement("P");
+    newp.innerHTML = this.value;
+    
+    if(document.getElementById("scrolldiv").innerHTML.length > 0){
+        var ps = document.getElementById("scrolldiv").getElementsByTagName("P");
+        document.getElementById("scrolldiv").insertBefore(newp,ps[0]);
+    }
+    else{
+        document.getElementById("scrolldiv").appendChild(newp);
+    }
+    MathJax.Hub.Typeset();//tell Mathjax to update the math
+    this.value = "";
+}
+
+document.getElementById("wordsinput").onkeydown = function(e) {
+    charCode = e.keyCode || e.which;
+    if(charCode == 050){
+        this.value = htmldatadivs[mathIndex].innerHTML;
+        mathIndex++;
+        if(mathIndex > htmldatadivs.length - 1){
+            mathIndex = 0;
+        }
+    }
+    if(charCode == 046){
+        this.value = htmldatadivs[mathIndex].innerHTML;
+        mathIndex--;
+        if(mathIndex < 0){
+            mathIndex = htmldatadivs.length - 1;
+        }
+    }
+}
+
+
+</script>
+<style>
+
+    .button{
+        cursor:pointer;
+        font-size:30px;
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .button:hover{
+        background-color:green;
+    }
+    .button:active{
+        background-color:yellow;
+    }
+    #wordsinput{
+        width:25em;
+        font-size:30px;
+    }
+    #wordsinputbox{
+        position:absolute;
+        top:3em;
+        left:1em;
+    }
+    #linktable{
+        position:absolute;
+        right:10px;
+        top:10px;
+    }
+    #scrolldiv{
+        position:absolute;
+        top:6em;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        overflow:scroll;
+        padding:1em 1em 1em 1em;
+        border-top:solid;
+    }
+</style>
