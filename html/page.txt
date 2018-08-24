@@ -1,6 +1,7 @@
 <script>
-//redirect to page in "pages":
-window.location.href = "page/index.php?path=pagefromfeed/";
+//redirect to page in "pages": (uncomment to redirect)
+//window.location.href = "page/index.php?path=pagefromfeed/";
+
 </script>
 
 <h1>root2</h1>
