@@ -1,3 +1,8 @@
+<script>
+//redirect to page in "pages":
+window.location.href = "page/index.php?path=pagefromfeed/";
+</script>
+
 <h1>root2</h1>
 
 <ul>
@@ -11,6 +16,9 @@
 </ul>
 <p>
     <a href = "editor.php">editor.php</a>
+</p>
+<p>
+    <a href = "index.php?path=pagefromfeed/">pagefromfeed/</a>
 </p>
 <style>
     h1{
