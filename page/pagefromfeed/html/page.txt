@@ -1,8 +1,5 @@
-<!doctype html>
-<html>
-<body>
 <p>
-    <a href = "pageeditor.php?path=foo/">EDIT</a> </p>
+    <a href = "pageeditor.php?path=pagefromfeed/">EDIT</a> </p>
     <h2>Quantum Art:</h2>
     <h5>graphical communication for quantum information</h5>
 <div id = "localmemedata" style = "display:none;"></div>
@@ -108,5 +105,3 @@ function init(){
 }
 
 </style>
-</body>
-</html>

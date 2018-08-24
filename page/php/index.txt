@@ -20,6 +20,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
 
+
 <!-- links to MathJax JavaScript library, un-comment to use math-->
 <!--
 
@@ -35,6 +36,7 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
 </script>
 -->
+
 </head>
 <body>
 <div id = "jsondiv" style = "display:none"><?php
@@ -68,6 +70,11 @@ body{
     font-family:Helvetica;
     font-size:1.5em;
 }
+h1,h2,h3,h4,h5{
+    width:100%;
+    text-align:center;
+}
 </style>
+
 </body>
 </html>

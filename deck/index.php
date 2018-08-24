@@ -224,6 +224,7 @@ function prevmeme(){
 body{
     font-size:1.5em;
     font-family:helvetica;
+    overflow:hidden;
 }
 
 #memeurlinput{
