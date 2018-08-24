@@ -8,7 +8,7 @@
 
 path = document.getElementById("pathdiv").innerHTML;
 memes = document.getElementById("localmemedata").getElementsByClassName("meme");
-imageWidth = 0.8*innerWidth;
+imageWidth = innerWidth;
 
 memedir = "aligner/memes/";
 var httpc = new XMLHttpRequest();
@@ -62,10 +62,11 @@ function init(){
     left:0px;
     right:0px;
     overflow:scroll;
+    overflow-x: hidden;
 }
 .imgbox{
     position:relative;
-    width:80%;
+    width:100%;
     display:block;
     margin:auto;
     height:220%;

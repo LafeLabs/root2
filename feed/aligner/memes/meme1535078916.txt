@@ -1,0 +1,45 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "http://localhost:8000/symbol/svg/svg1534896622.svg",
+    "boxes": [
+        {
+            "xoverw": 0.37050960735171257,
+            "yoverw": 0.3788638262322473,
+            "woverw": 0.07652464494569755,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.4728487886382623,
+            "yoverw": 0.3057644110275689,
+            "woverw": 0.10785296574770256,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.3538011695906432,
+            "yoverw": 0.4519632414369256,
+            "woverw": 0.14544695071010857,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.1120300751879699,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.3538011695906432,
+            "yoverw": 0.28905597326649957,
+            "woverw": 0.09532163742690056,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534897356.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534897591.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896799.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896512.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896470.svg" style="width: 100%;">    </div></div>
