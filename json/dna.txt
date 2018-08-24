@@ -20,6 +20,7 @@
 	{
 		"path":"json",
 		"files":[
+			"currentjson.txt",
 			"dna.txt"
 		]
 	},
@@ -105,6 +106,7 @@
 	{
 		"path":"symbol/php",
 		"files":[
+			"dnagenerator.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"fileloader.txt",
@@ -115,6 +117,7 @@
 			"loadtable.txt",
 			"meme.txt",
 			"newdir.txt",
+			"replicator.txt",
 			"savetable.txt",
 			"shapetableeditor.txt",
 			"stylejsoneditor.txt",
@@ -163,6 +166,7 @@
 		"path":"symbol/json",
 		"files":[
 			"currentjson.txt",
+			"dna.txt",
 			"stylejson.txt"
 		]
 	},

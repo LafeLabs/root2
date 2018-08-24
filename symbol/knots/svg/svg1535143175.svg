@@ -1,0 +1,115 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0336,0330,0337,0331,0331,0332,0332,0224,0225,0224,0225,0335,0335,0332,0224,0225,0224,0225,0335,0335,0333,0224,0225,0224,0225,0335,0335,0332,0224,0225,0224,0225,0336,0332,0343,0334,0350,0334,0343,0334,0304,0330,0332,0330,0330,0330,0330,0330,0330,0330,0332,0343,0331,0331,0331,0331,0331,0331,0331,0331,0335,0335,0333,0333,0343,0335,0335,0330,0330,0330,0330,0330,0330,0330,0330,0332,0332,0343,0335,0335,0335,0332,0332,0332,0332,0332,0332,0330,0330,0343,0335,0335,0330,0330,0330,0330,0330,0330,0330,0330,0332,0332,0343,0334,0334,0330,0330,0330,0330,0330,0330,0330,0330,0333,0333,0343,0335,0330,0333,0333,0333,0333,0333,0333,0333,0333,0335,0362,0203,0203,0354,0333,0350,0334,0343,0335,0330,0335,0335,0304,0362,0203,0203,0203,0203,0203,0203,0203,0354,0333,0350,0334,0343,0335,0330,0335,0335,0304,0362,0203,0203,0203,0203,0203,0203,0203,0203,0354,0333,0350,0334,0343,0335,0330,0335,0335,0342,0304,",
+    "table": []
+}
+</json>
+-->
+    <line x1="100" y1="275" x2="100" y2="225" style="stroke:black;stroke-width:6" />
+    <line x1="125" y1="250" x2="113" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="113" y1="250" x2="106" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="94" y1="250" x2="88" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="88" y1="250" x2="75" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="75" y1="200" x2="125" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="225" x2="100" y2="213" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="213" x2="100" y2="206" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="194" x2="100" y2="188" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="188" x2="100" y2="175" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="175" x2="100" y2="125" style="stroke:black;stroke-width:6" />
+    <line x1="125" y1="150" x2="113" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="113" y1="150" x2="106" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="94" y1="150" x2="88" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="88" y1="150" x2="75" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="75" y1="100" x2="125" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="125" x2="100" y2="113" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="113" x2="100" y2="106" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="94" x2="100" y2="88" style="stroke:black;stroke-width:6" />
+    <line x1="100" y1="88" x2="100" y2="75" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="75" x2="150" y2="125" style="stroke:black;stroke-width:6" />
+    <line x1="125" y1="100" x2="138" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="138" y1="100" x2="144" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="156" y1="100" x2="163" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="163" y1="100" x2="175" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="175" y1="150" x2="125" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="125" x2="150" y2="138" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="138" x2="150" y2="144" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="156" x2="150" y2="163" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="163" x2="150" y2="175" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="175" x2="150" y2="225" style="stroke:black;stroke-width:6" />
+    <line x1="125" y1="200" x2="138" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="138" y1="200" x2="144" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="156" y1="200" x2="163" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="163" y1="200" x2="175" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="175" y1="250" x2="125" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="225" x2="150" y2="238" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="238" x2="150" y2="244" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="256" x2="150" y2="263" style="stroke:black;stroke-width:6" />
+    <line x1="150" y1="263" x2="150" y2="275" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="275" x2="200" y2="225" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="250" x2="213" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="213" y1="250" x2="206" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="194" y1="250" x2="188" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="188" y1="250" x2="175" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="175" y1="200" x2="225" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="225" x2="200" y2="213" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="213" x2="200" y2="206" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="194" x2="200" y2="188" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="188" x2="200" y2="175" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="175" x2="200" y2="125" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="150" x2="213" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="213" y1="150" x2="206" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="194" y1="150" x2="188" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="188" y1="150" x2="175" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="175" y1="100" x2="225" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="125" x2="200" y2="113" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="113" x2="200" y2="106" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="94" x2="200" y2="88" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="88" x2="200" y2="75" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="75" x2="250" y2="125" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="100" x2="238" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="238" y1="100" x2="244" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="256" y1="100" x2="263" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="263" y1="100" x2="275" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="275" y1="150" x2="225" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="125" x2="250" y2="138" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="138" x2="250" y2="144" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="156" x2="250" y2="163" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="163" x2="250" y2="175" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="175" x2="250" y2="225" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="200" x2="238" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="238" y1="200" x2="244" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="256" y1="200" x2="263" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="263" y1="200" x2="275" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="275" y1="250" x2="225" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="225" x2="250" y2="238" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="238" x2="250" y2="244" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="256" x2="250" y2="263" style="stroke:black;stroke-width:6" />
+    <line x1="250" y1="263" x2="250" y2="275" style="stroke:black;stroke-width:6" />
+  <path d="M300 275           A25 25 0 0 1 250 275" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M275 250           A25 25 0 0 1 300 275" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M200 75           A25 25 0 0 1 250 75" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M200 275           A25 25 0 0 1 150 275" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M100 75.00000000000004           A25 25 0 0 1 150 75.00000000000001" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M75.0000000000001 250.00000000000009           A25 25 0 0 1 75.00000000000003 200.00000000000009" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M274.99999999999994 149.99999999999986           A25 25 0 0 1 275 199.99999999999986" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M74.99999999999994 150.0000000000003           A25 25 0 0 1 74.99999999999983 100.00000000000031" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M275 100 L300 100 L325 100 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M324.9999999999998 100.00000000000017           A25 25 0 0 1 349.99999999999983 125.00000000000016" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M350 125 L350 150 L350 175 L350 200 L350 225 L350 250 L350 275 L350 300 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M349.99999999999983 300.0000000000001           A25 25 0 0 1 324.99999999999983 325.0000000000001" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M325 325 L300 325 L275 325 L250 325 L225 325 L200 325 L175 325 L150 325 L125 325 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M124.99999999999991 324.99999999999966           A25 25 0 0 1 99.99999999999994 299.9999999999996" fill = "none" stroke = "black" stroke-width = "6" />
+    <line x1="100" y1="300" x2="100" y2="275" style="stroke:black;stroke-width:6" />
+</svg>

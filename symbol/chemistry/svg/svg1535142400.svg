@@ -1,0 +1,31 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0331,0337,0332,0232,0333,0335,0335,0201,0334,0201,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M100 250 L13 200 L13 100 L100 50 L187 100 L187 200 L100 250 Z" stroke = "black" stroke-width = "4" fill = "none" />    <line x1="100" y1="225" x2="57" y2="200" style="stroke:black;stroke-width:4" />
+    <line x1="57" y1="200" x2="35" y2="188" style="stroke:black;stroke-width:4" />
+    <line x1="35" y1="113" x2="78" y2="88" style="stroke:black;stroke-width:4" />
+    <line x1="78" y1="88" x2="100" y2="75" style="stroke:black;stroke-width:4" />
+    <line x1="165" y1="112" x2="165" y2="162" style="stroke:black;stroke-width:4" />
+    <line x1="165" y1="162" x2="165" y2="187" style="stroke:black;stroke-width:4" />
+    <line x1="187" y1="200" x2="273" y2="250" style="stroke:black;stroke-width:4" />
+    <line x1="273" y1="250" x2="360" y2="200" style="stroke:black;stroke-width:4" />
+</svg>

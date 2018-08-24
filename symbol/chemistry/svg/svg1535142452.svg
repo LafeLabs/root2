@@ -1,0 +1,29 @@
+<svg width="300" height="300" viewbox = "0 0 300 300"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 300,
+    "svgheight": 300,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0331,0337,0336,0331,0337,0222,0230,0220,0230,0222,0331,0335,0230,0334,0222,0332,0334,0230,0335,0222,",
+    "table": []
+}
+</json>
+-->
+    <text x="138" y = "263" fill = "black" font-size = "25px" font-family = "arial">H</text>
+	<path d = "M150 238 L150 188 L150 175 L150 169 Z" stroke = "black" stroke-width = "4" fill = "none" /><circle cx="150" cy = "150" r = "4" stroke = "black" stroke-width = "4" fill = "black" />
+    <text x="138" y = "163" fill = "black" font-size = "25px" font-family = "arial">C</text>
+	<path d = "M150 138 L150 88 L150 75 L150 69 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="138" y = "63" fill = "black" font-size = "25px" font-family = "arial">H</text>
+	<path d = "M163 150 L213 150 L225 150 L231 150 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="238" y = "163" fill = "black" font-size = "25px" font-family = "arial">H</text>
+	<path d = "M138 150 L88 150 L75 150 L69 150 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="38" y = "163" fill = "black" font-size = "25px" font-family = "arial">H</text>
+</svg>

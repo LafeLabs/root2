@@ -1,0 +1,19 @@
+<div class="meme"><div class="jsondata">{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}</div><div class="box"><img src="http://localhost:8000/symbol/three/svg/svg1535116835.svg" style="width: 100%;"></div><div class="box"><img src="http://localhost:8000/symbol/three/svg/svg1535116812.svg" style="width: 100%;"></div></div>

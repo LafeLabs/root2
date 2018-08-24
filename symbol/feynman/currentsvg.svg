@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0332,0332,0232,0233,0231,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M129 129 L125 105 L118 118 L105 125 L129 129 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="129" y1="129" x2="59" y2="59" style="stroke:black;stroke-width:4" />
+    <line x1="129" y1="129" x2="200" y2="200" style="stroke:black;stroke-width:4" />
+	<path d = "M129 271 L154 267 L140 260 L133 246 L129 271 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="129" y1="271" x2="200" y2="200" style="stroke:black;stroke-width:4" />
+    <line x1="129" y1="271" x2="59" y2="341" style="stroke:black;stroke-width:4" />
+<path    d = "M200,200 C202,194 203,191 206,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M206,191 C212,191 212,209 219,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M219,209 C225,209 225,191 231,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M231,191 C238,191 237,209 244,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M244,209 C250,209 250,191 256,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M256,191 C263,191 262,209 269,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M269,209 C275,209 275,191 281,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M281,191 C288,191 287,209 294,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M294,209 C300,209 300,191 306,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M306,191 C312,191 312,209 319,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M319,209 C325,209 325,191 331,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M331,191 C337,191 337,209 344,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M344,209 C350,209 350,191 356,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M356,191 C362,191 363,209 369,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M369,209 C375,209 375,191 381,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M381,191 C387,191 388,209 394,209" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M394,209 C400,209 400,191 406,191" fill = "none" stroke-width = "8" stroke = "blue" /><path    d = "M406,191 C409,191 410,194 412,200" fill = "none" stroke-width = "8" stroke = "blue" />	<path d = "M483 129 L508 125 L494 118 L487 105 L483 129 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="483" y1="129" x2="554" y2="59" style="stroke:black;stroke-width:4" />
+    <line x1="483" y1="129" x2="413" y2="200" style="stroke:black;stroke-width:4" />
+	<path d = "M483 271 L479 246 L472 260 L459 267 L483 271 Z" stroke = "black" stroke-width = "4" fill = "black" />    <line x1="483" y1="271" x2="413" y2="200" style="stroke:black;stroke-width:4" />
+    <line x1="483" y1="271" x2="554" y2="341" style="stroke:black;stroke-width:4" />
+</svg>

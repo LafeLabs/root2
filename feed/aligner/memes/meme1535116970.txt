@@ -1,0 +1,24 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.7652464494569757,
+            "yoverw": 0.8822055137844612,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 32.044245066615886
+        },
+        {
+            "xoverw": 0.48955722639933164,
+            "yoverw": 0.8968253968253969,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img src="http://localhost:8000/symbol/three/svg/svg1535116835.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/three/svg/svg1535116812.svg" style="width: 100%;">    </div></div>

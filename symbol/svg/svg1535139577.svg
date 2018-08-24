@@ -1,0 +1,27 @@
+<svg width="250" height="250" viewbox = "0 0 250 250"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 250,
+    "svgheight": 250,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0333,0331,0337,0200,0336,0336,0330,0332,0337,0200,0335,0350,0335,0310,0336,0342,0334,0334,0337,0332,0336,0342,0334,0334,0337,0332,0336,0342,0334,0334,0337,0332,0336,0342,0331,0335,0304,0335,0337,0313,0337,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M225 225 L225 25 L25 25 L25 225 L225 225 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M175 175 L175 75 L75 75 L75 175 L175 175 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="175" y1="175" x2="225" y2="225" style="stroke:black;stroke-width:6" />
+    <line x1="175" y1="75" x2="225" y2="25" style="stroke:black;stroke-width:6" />
+    <line x1="75" y1="75" x2="25" y2="25" style="stroke:black;stroke-width:6" />
+    <line x1="75" y1="175" x2="25" y2="225" style="stroke:black;stroke-width:6" />
+</svg>

@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0331,0331,0336,0332,0330,0220,0220,0220,0220,0220,0220,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M150,350 C150,300 200,350 200,300" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,350 C200,325 175,344 175,331" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,319 C175,306 150,325 150,300" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M150,300 C150,250 200,300 200,250" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,300 C200,275 175,294 175,281" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,269 C175,256 150,275 150,250" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M150,250 C150,200 200,250 200,200" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,250 C200,225 175,244 175,231" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,219 C175,206 150,225 150,200" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M150,200 C150,150 200,200 200,150" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,200 C200,175 175,194 175,181" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,169 C175,156 150,175 150,150" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M150,150 C150,100 200,150 200,100" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,150 C200,125 175,144 175,131" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,119 C175,106 150,125 150,100" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M150,100 C150,50 200,100 200,50" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,100 C200,75 175,94 175,81" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M175,69 C175,56 150,75 150,50" fill = "none" stroke-width = "4" stroke = "black" /></svg>
