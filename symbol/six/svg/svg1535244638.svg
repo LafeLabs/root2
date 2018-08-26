@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0331,0331,0332,0336,0330,0332,0337,0326,0221,0335,0221,0335,0221,0334,0221,0334,0322,0221,0334,0221,0334,0221,0335,0221,0334,0334,0324,0221,0334,0330,0334,0325,0221,0335,0335,0330,0330,0335,0335,0327,0221,0335,0335,0335,0323,0221,0334,0327,0221,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M72 212 L94 250 L72 288 L28 288 L6 250 L28 212 L72 212 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M180 200 L158 238 L115 238 L93 200 L115 162 L158 162 L180 200 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M245 288 L201 288 L180 250 L201 212 L245 212 L267 250 L245 288 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M354 200 L332 238 L288 238 L266 200 L288 162 L332 162 L354 200 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M332 62 L354 100 L332 138 L288 138 L266 100 L288 62 L332 62 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M201 12 L245 12 L267 50 L245 88 L201 88 L180 50 L201 12 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M93 100 L115 62 L158 62 L180 100 L158 138 L115 138 L93 100 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M28 12 L72 12 L94 50 L72 88 L28 88 L6 50 L28 12 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M28 188 L6 150 L28 112 L72 112 L94 150 L72 188 L28 188 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M267 150 L245 188 L201 188 L180 150 L201 112 L245 112 L267 150 Z" stroke = "green" stroke-width = "6" fill = "black" />	<path d = "M115 262 L158 262 L180 300 L158 338 L115 338 L93 300 L115 262 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M245 388 L201 388 L180 350 L201 312 L245 312 L267 350 L245 388 Z" stroke = "orange" stroke-width = "6" fill = "orange" />	<path d = "M354 300 L332 338 L288 338 L266 300 L288 262 L332 262 L354 300 Z" stroke = "purple" stroke-width = "6" fill = "purple" /></svg>

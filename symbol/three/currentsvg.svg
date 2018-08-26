@@ -15,9 +15,21 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "",
+    "glyph": "0336,0230,0231,0232,0233,",
     "table": []
 }
 </json>
 -->
-</svg>
+<path    d = "M200,200 C157,175 150,100 200,100" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,100 C250,100 243,175 200,200" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,200 C243,175 312,207 287,250" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M287,250 C262,293 200,250 200,200" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,200 C200,250 138,293 113,250" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M113,250 C88,207 157,175 200,200" fill = "none" stroke-width = "4" stroke = "black" />    <circle cx="200" cy = "150" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="243" cy = "225" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="157" cy = "225" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="200" cy = "100" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="287" cy = "250" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="113" cy = "250" r = "50" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="200" cy = "125" r = "25" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="265" cy = "237" r = "25" stroke = "black" stroke-width = "4" fill = "none" />
+    <circle cx="135" cy = "238" r = "25" stroke = "black" stroke-width = "4" fill = "none" />
+    <line x1="200" y1="200" x2="200" y2="150" style="stroke:black;stroke-width:4" />
+    <line x1="200" y1="200" x2="243" y2="225" style="stroke:black;stroke-width:4" />
+    <line x1="200" y1="200" x2="157" y2="225" style="stroke:black;stroke-width:4" />
+<path    d = "M200,200 C200,183 243,192 243,175" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,200 C214,208 186,242 200,250" fill = "none" stroke-width = "4" stroke = "black" /><path    d = "M200,200 C186,208 171,167 157,175" fill = "none" stroke-width = "4" stroke = "black" /></svg>

@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0330,0332,0336,0336,0336,0333,0331,0337,0337,0337,0337,0210,0335,0322,0226,0323,0226,0324,0226,0325,0226,0326,0226,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M156 156 L244 156 L200 22 L156 156 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M244 156 L271 239 L385 156 L244 156 Z" stroke = "orange" stroke-width = "6" fill = "orange" />	<path d = "M271 239 L200 291 L314 374 L271 239 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M200 291 L129 239 L86 374 L200 291 Z" stroke = "green" stroke-width = "6" fill = "black" />	<path d = "M129 239 L156 156 L15 156 L129 239 Z" stroke = "blue" stroke-width = "6" fill = "blue" /></svg>

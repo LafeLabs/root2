@@ -1,0 +1,7 @@
+{
+    "symbols": [
+        "http://localhost:8000/symbol/chemistry/svg/svg1535142400.svg",
+        "http://localhost:8000/symbol/eight/svg/svg1535254732.svg",
+        "http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg"
+    ]
+}

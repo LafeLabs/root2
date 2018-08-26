@@ -1,0 +1,26 @@
+<div class="meme"><div class="jsondata">{
+    "url": "http://localhost:8000/symbol/svg/svg1534896622.svg",
+    "boxes": [
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}</div><div class="box"><img src="http://localhost:8000/symbol/chemistry/svg/svg1535142400.svg" style="width: 100%;"></div><div class="box"><img src="http://localhost:8000/symbol/eight/svg/svg1535254732.svg" style="width: 100%;"></div><div class="box"><img src="http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg" style="width: 100%;"></div></div>

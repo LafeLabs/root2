@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0211,0211,0211,0327,0335,0335,0231,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M200 200  M200,200 C200,500 -85,293 200,200 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M200 200  M200,200 C-85,293 24,-42 200,200 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M200 200  M200,200 C24,-42 376,-42 200,200 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M200 200  M200,200 C376,-42 485,293 200,200 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M200 200  M200,200 C485,293 200,500 200,200 Z" stroke = "purple" stroke-width = "6" fill = "purple" /></svg>

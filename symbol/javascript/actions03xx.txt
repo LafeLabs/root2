@@ -95,7 +95,7 @@
         ctx.lineWidth = styleJSON.line5;    	
         ctx.fillStyle = styleJSON.fill5;
         currentStroke = styleJSON.color5;
-        currentFill = styleJSON.fill0;
+        currentFill = styleJSON.fill5;
     }
     if(localCommand == 0326){
         ctx.strokeStyle= styleJSON.color6;

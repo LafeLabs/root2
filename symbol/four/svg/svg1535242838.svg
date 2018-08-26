@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0210,0224,0225,0336,0225,0224,0336,0225,0224,0336,0225,0224,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M287 287 L287 113 L113 113 L113 287 L287 287 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M375 200 L200 25 L25 200 L200 375 L375 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M287 200 L200 113 L113 200 L200 287 L287 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M244 244 L244 156 L156 156 L156 244 L244 244 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M244 200 L200 156 L156 200 L200 244 L244 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M222 222 L222 178 L178 178 L178 222 L222 222 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M222 200 L200 178 L178 200 L200 222 L222 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M211 211 L211 189 L189 189 L189 211 L211 211 Z" stroke = "black" stroke-width = "6" fill = "none" /></svg>

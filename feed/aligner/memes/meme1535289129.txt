@@ -1,0 +1,31 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "http://localhost:8000/symbol/svg/svg1534896622.svg",
+    "boxes": [
+        {
+            "xoverw": 0.36006683375104426,
+            "yoverw": 0.7130325814536341,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.3767752715121136,
+            "yoverw": 0.2786131996658312,
+            "woverw": 0.21228070175438596,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.37050960735171257,
+            "yoverw": 0.4791144527986633,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/eight/svg/svg1535254732.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg" style="width: 100%;">    </div></div>

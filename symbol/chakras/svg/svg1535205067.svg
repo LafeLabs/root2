@@ -1,0 +1,24 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0324,0225,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M169,105 C169,80 200,100 200,50" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M200,50 C200,100 231,80 231,105" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M231,105 C246,85 259,119 288,79" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M288,79 C259,119 296,121 281,141" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M281,141 C305,133 295,169 343,154" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M343,154 C295,169 324,192 300,200" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M300,200 C324,208 295,231 343,246" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M343,246 C295,231 305,267 281,259" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M281,259 C296,279 259,281 288,321" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M288,321 C259,281 246,315 231,295" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M231,295 C231,320 200,300 200,350" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M200,350 C200,300 169,320 169,295" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M169,295 C154,315 141,281 112,321" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M112,321 C141,281 104,279 119,259" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M119,259 C95,267 105,231 57,246" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M57,246 C105,231 76,208 100,200" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M100,200 C76,192 105,169 57,154" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M57,154 C105,169 95,133 119,141" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M119,141 C104,121 141,119 112,79" fill = "none" stroke-width = "6" stroke = "yellow" /><path    d = "M112,79 C141,119 154,85 169,105" fill = "none" stroke-width = "6" stroke = "yellow" />    <circle cx="200" cy = "200" r = "100" stroke = "yellow" stroke-width = "6" fill = "none" />
+	<path d = "M200 300 L287 150 L113 150 L200 300 Z" stroke = "yellow" stroke-width = "6" fill = "none" /></svg>

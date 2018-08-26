@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0336,0336,0331,0333,0331,0333,0331,0333,0337,0337,0210,0331,0333,0333,0331,0331,0333,0337,0221,0337,0337,0200,0336,0336,0336,0336,0336,0336,0200,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M369 369 L369 194 L194 194 L194 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 281 L281 281 L281 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 325 L325 325 L325 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 347 L347 347 L347 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 358 L358 358 L358 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 19 L19 19 L19 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" />	<path d = "M369 369 L369 363 L363 363 L363 369 L369 369 Z" stroke = "blue" stroke-width = "6" fill = "none" /></svg>
