@@ -15,10 +15,11 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0220,0230,0230,",
+    "glyph": "0220,0230,0221,",
     "table": []
 }
 </json>
 -->
     <text x="138" y = "163" fill = "black" font-size = "25px" font-family = "arial">C</text>
-	<path d = "M150 138 L150 88 L150 75 L150 69 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M150 38 L150 -12 L150 -25 L150 -31 Z" stroke = "black" stroke-width = "4" fill = "none" /></svg>
+	<path d = "M150 138 L150 88 L150 75 L150 69 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="138" y = "63" fill = "black" font-size = "25px" font-family = "arial">N</text>
+</svg>
