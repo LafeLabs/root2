@@ -1,0 +1,36 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 684,
+    "y0": 380.5,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0352,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0342,0335,0341,",
+    "table": []
+}
+</json>
+-->
+    <line x1="200" y1="200" x2="200" y2="100" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="250" y2="113" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="287" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="300" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="287" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="250" y2="287" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="200" y2="300" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="150" y2="287" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="113" y2="250" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="100" y2="200" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="113" y2="150" style="stroke:black;stroke-width:6" />
+    <line x1="200" y1="200" x2="150" y2="113" style="stroke:black;stroke-width:6" />
+    <circle cx="200" cy = "200" r = "100" stroke = "black" stroke-width = "6" fill = "none" />
+</svg>
