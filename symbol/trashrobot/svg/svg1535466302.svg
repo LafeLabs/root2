@@ -1,0 +1,38 @@
+<svg width="600" height="500" viewbox = "0 0 600 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0332,0337,0332,0332,0245,0333,0333,0333,0331,0245,0330,0336,0332,0332,0332,0332,0331,0332,0101,0123,0103,0111,0111,040,0143,0157,0155,0155,0141,0156,0144,0163,0336,0336,0332,0337,0336,0332,0337,0336,0332,0337,0336,0332,0337,0336,0332,0337,0365,0337,0330,0333,0333,0333,0333,0333,0333,0330,0331,0331,0336,0333,0163,0171,0155,0142,0157,0154,0163,0365,0337,0337,0331,0332,0332,0331,0332,0331,0331,0333,0333,0336,0330,0332,0332,0331,0337,0333,0337,0200,0333,0336,0333,0337,0200,0336,0332,0337,0342,0336,0330,0335,0342,0335,0335,0342,0335,0331,0336,0332,0337,0337,0342,0336,0333,0337,0342,0336,0336,0333,0330,0334,0337,0337,0342,0336,0333,0337,0342,0330,0330,0335,0331,0336,0330,0336,0331,0337,0337,0342,0336,0336,0333,0337,0337,0342,0336,0336,0332,0332,0337,0337,0342,0336,0336,0330,0332,0335,0337,0337,0342,0336,0336,0332,0337,0337,0342,0336,0336,0332,0337,0337,0342,0334,0336,0330,0333,0336,0330,0333,0333,0336,0330,0335,0336,0331,0337,0337,0366,0334,0331,0331,0336,0331,0337,0336,0336,0330,0337,0337,0367,0336,0336,0306,0350,0335,0362,0203,0334,0334,0334,0334,0203,0334,0334,0334,0334,0203,0363,0335,0304,0335,0335,0337,0337,0330,0333,0333,0333,0333,0330,0333,0333,0336,0336,0330,0335,0337,0337,0336,0366,0334,0331,0331,0331,0331,0331,0336,0330,0337,0367,0306,0350,0335,0336,0362,0203,0334,0334,0334,0334,0203,0334,0334,0334,0334,0203,0363,0334,0334,0304,0334,0337,0330,0332,0332,0332,0331,0331,0332,0332,0332,0332,0332,0331,0332,0331,0332,0332,0332,0330,0331,0331,0331,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M50 250 L137 200 L237 200 L150 250 L50 250 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M50 250 L137 200 L237 200 L150 250 L50 250 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M50 225 L137 175 L237 175 L150 225 L50 225 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M50 225 L137 175 L237 175 L150 225 L50 225 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M50 200 L137 150 L237 150 L150 200 L50 200 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M50 200 L137 150 L237 150 L150 200 L50 200 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M50 175 L137 125 L237 125 L150 175 L50 175 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M50 175 L137 125 L237 125 L150 175 L50 175 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M350 250 L437 200 L537 200 L450 250 L350 250 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M350 250 L437 200 L537 200 L450 250 L350 250 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M350 225 L437 175 L537 175 L450 225 L350 225 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M350 225 L437 175 L537 175 L450 225 L350 225 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M350 200 L437 150 L537 150 L450 200 L350 200 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M350 200 L437 150 L537 150 L450 200 L350 200 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M350 175 L437 125 L537 125 L450 175 L350 175 Z" stroke = "white" stroke-width = "3" fill = "white" />	<path d = "M350 175 L437 125 L537 125 L450 175 L350 175 Z" stroke = "black" stroke-width = "3" fill = "none" />    <text x="38" y = "100" fill = "black" font-size = "25px" font-family = "arial">ASCII commands</text>
+    <text x="363" y = "100" fill = "black" font-size = "25px" font-family = "arial">symbols</text>
+	<path d = "M262 500 L262 300 L62 300 L62 500 L262 500 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M562 500 L562 300 L362 300 L362 500 L562 500 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="462" y1="500" x2="462" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="462" y1="400" x2="562" y2="400" style="stroke:black;stroke-width:3" />
+    <line x1="462" y1="400" x2="362" y2="400" style="stroke:black;stroke-width:3" />
+    <line x1="412" y1="500" x2="412" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="512" y1="500" x2="512" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="562" y1="450" x2="362" y2="450" style="stroke:black;stroke-width:3" />
+    <line x1="562" y1="350" x2="362" y2="350" style="stroke:black;stroke-width:3" />
+    <line x1="162" y1="500" x2="162" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="212" y1="500" x2="212" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="112" y1="500" x2="112" y2="300" style="stroke:black;stroke-width:3" />
+    <line x1="62" y1="450" x2="262" y2="450" style="stroke:black;stroke-width:3" />
+    <line x1="62" y1="400" x2="262" y2="400" style="stroke:black;stroke-width:3" />
+    <line x1="62" y1="350" x2="262" y2="350" style="stroke:black;stroke-width:3" />
+<path    d = "M250,175 C300,175 250,237 250,287" fill = "none" stroke-width = "3" stroke = "black" />	<path d = "M250 287 L256 277 L244 277 L250 287 Z" stroke = "black" stroke-width = "3" fill = "black" /><path    d = "M550,175 C575,175 550,263 550,288" fill = "none" stroke-width = "3" stroke = "black" />	<path d = "M550 288 L556 277 L544 277 L550 288 Z" stroke = "black" stroke-width = "3" fill = "black" /></svg>

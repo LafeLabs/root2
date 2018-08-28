@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0331,0336,0336,0333,0337,0337,0332,0243,0333,0333,0331,0336,0333,0336,0336,0333,0337,0337,0337,0200,0336,0336,0336,0332,0337,0337,0337,0330,0332,0336,0331,0332,0335,0336,0366,0335,0335,0331,0331,0333,0333,0337,0367,0336,0335,0335,0333,0333,0333,0331,0331,0331,0333,0331,0331,0331,0336,0330,0337,0362,0203,0203,0203,0203,0203,0364,0335,0335,0336,0306,0350,0335,0362,0203,0334,0334,0334,0334,0203,0334,0334,0334,0334,0203,0363,0334,0334,0304,0333,0330,0330,0330,0330,0330,0330,0330,0330,0334,0306,0350,0335,0362,0203,0334,0334,0334,0334,0203,0334,0334,0334,0334,0203,0363,0334,0334,0304,0333,0331,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M125 300 L25 300 L112 250 L212 250 L125 300 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 300 L25 300 L112 250 L212 250 L125 300 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 275 L25 275 L112 225 L212 225 L125 275 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 275 L25 275 L112 225 L212 225 L125 275 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 250 L25 250 L112 200 L212 200 L125 250 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 250 L25 250 L112 200 L212 200 L125 250 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 225 L25 225 L112 175 L212 175 L125 225 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 225 L25 225 L112 175 L212 175 L125 225 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 200 L25 200 L112 150 L212 150 L125 200 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 200 L25 200 L112 150 L212 150 L125 200 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 175 L25 175 L112 125 L212 125 L125 175 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 175 L25 175 L112 125 L212 125 L125 175 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 150 L25 150 L112 100 L212 100 L125 150 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 150 L25 150 L112 100 L212 100 L125 150 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M125 125 L25 125 L112 75 L212 75 L125 125 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M125 125 L25 125 L112 75 L212 75 L125 125 Z" stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M387 200 L388 100 L288 100 L287 200 L387 200 Z" stroke = "black" stroke-width = "2" fill = "none" /><path    d = "M225,150 C250,150 225,100 275,100" fill = "none" stroke-width = "2" stroke = "black" />	<path d = "M137 200 L162 200 L187 200 L212 200 L237 200 L262 200 " stroke = "black" stroke-width = "2" fill = "none" />	<path d = "M262 200 L252 194 L252 206 L262 200 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M275 100 L264 94 L264 106 L275 100 Z" stroke = "black" stroke-width = "2" fill = "black" /></svg>
