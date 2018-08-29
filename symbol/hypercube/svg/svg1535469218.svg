@@ -1,0 +1,29 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0331,0332,0332,0332,0337,0241,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M150 250 L150 150 L50 150 L50 250 L150 250 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M150 250 L211 215 L211 115 L111 115 L50 150 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="150" y1="150" x2="211" y2="115" style="stroke:black;stroke-width:4" />
+	<path d = "M450 250 L450 150 L350 150 L350 250 L450 250 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M450 250 L511 215 L511 115 L411 115 L350 150 " stroke = "black" stroke-width = "4" fill = "none" />    <line x1="450" y1="150" x2="511" y2="115" style="stroke:black;stroke-width:4" />
+    <text x="50" y = "75" fill = "black" font-size = "49.99999999999999px" font-family = "arial">Actions</text>
+    <text x="350" y = "75" fill = "black" font-size = "49.99999999999999px" font-family = "arial">Symbols</text>
+    <text x="50" y = "325" fill = "black" font-size = "49.99999999999999px" font-family = "arial">0xxx</text>
+    <text x="350" y = "325" fill = "black" font-size = "49.99999999999999px" font-family = "arial">01xxx</text>
+</svg>

@@ -1,0 +1,192 @@
+<a href = "pageeditor.php?path=code/">pageeditor.php?path=code/</a>
+<h1>Code for Trash Robot XY</h1>
+<pre>
+    
+float scaleFactor = 2;
+float unitTriangleOut = 150;
+float unitTriangleIn = 150;
+float unitSquareOut = 100;
+float unitSquareIn = 100;
+float unitNull = 100;
+
+float sideTriangleOut = unitTriangleOut;
+float sideTriangleIn= unitTriangleIn;
+float sideSquareOut = unitSquareOut;
+float sideSquareIn = unitSquareIn;
+float sideNull = unitNull;
+
+String zeroGlyph = String("QWER");
+String shapeQ = String("");
+String shapeW = String("");
+String shapeE = String("");
+String shapeR = String("");
+//String currentGlyph = String("asdfkhasdfhkasdfhkasdf");
+//String currentGlyph = String("sfsfsfsfsfsfsfsfsfsfsfsf");
+//String currentGlyph = String("hkhkhkasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf");
+String currentGlyph = String("kkkhhhadsfadsfadsf");
+
+void setup() {
+  // put your setup code here, to run once:
+
+ pinMode(13,OUTPUT);
+ pinMode(12,OUTPUT); 
+ pinMode(11,OUTPUT); 
+ pinMode(10,OUTPUT);
+ digitalWrite(13,LOW);
+ digitalWrite(12,LOW);
+ digitalWrite(11,LOW);
+ digitalWrite(10,LOW);
+
+  drawGlyph(currentGlyph);
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //do nothing.
+}
+
+void drawGlyph(String localGlyph){
+  for(int index = 0;index < localGlyph.length();index++){
+      doTheThing(localGlyph.charAt(index));
+  }
+}
+
+void doTheThing(char localCommand){
+  if(localCommand == 'q'){
+    float sideTriangleOut = unitTriangleOut;
+    float sideTriangleIn= unitTriangleIn;
+    float sideSquareOut = unitSquareOut;
+    float sideSquareIn = unitSquareIn;
+  }
+  if(localCommand == 'w'){
+    delay(sideNull);
+  }
+  if(localCommand == 'e'){
+    sideNull /= scaleFactor;
+  }
+  if(localCommand == 'r'){
+    sideNull *= scaleFactor;
+  }
+  if(localCommand == 'a'){
+    //turn on output to triangle out pin, should be pin 13
+    digitalWrite(12,HIGH);
+    delay(sideTriangleOut);
+    //turn off output to triangle out pin, should be pin 13
+    digitalWrite(12,LOW);
+
+  }
+  if(localCommand == 's'){
+    //turn on output to triangle in pin, should be pin 12
+    digitalWrite(13,HIGH);
+    delay(sideTriangleIn);
+    //turn off output to triangle in pin, should be pin 12
+    digitalWrite(13,LOW);    
+  }
+  if(localCommand == 'd'){
+    //turn on output to square out pin, should be pin 11
+    digitalWrite(10,HIGH);
+    delay(sideSquareOut);
+    //turn off output to square out pin, should be pin 11
+    digitalWrite(10,LOW);
+  }
+  if(localCommand == 'f'){
+    //turn on output to square in pin, should be pin 10
+    digitalWrite(11,HIGH);
+    delay(sideSquareIn);
+    //turn off output to square in pin, should be pin 10
+    digitalWrite(11,LOW);
+  }
+  if(localCommand == 'g'){
+    sideTriangleOut /= scaleFactor;
+    sideTriangleIn /= scaleFactor;
+  }
+  if(localCommand == 'h'){
+    sideTriangleOut *= scaleFactor;
+    sideTriangleIn *= scaleFactor;
+  }
+  if(localCommand == 'j'){
+    sideSquareOut /= scaleFactor;
+    sideSquareIn /= scaleFactor;
+  }
+  if(localCommand == 'k'){
+    sideSquareOut *= scaleFactor;    
+    sideSquareIn *= scaleFactor;    
+  }
+  if(localCommand == '0'){
+    drawGlyph(zeroGlyph);
+  }
+  if(localCommand == '1'){//4
+    doTheThing('0');
+    doTheThing('0');
+    doTheThing('0');
+    doTheThing('0');    
+  }
+  if(localCommand == '2'){//16
+    doTheThing('1');
+    doTheThing('1');
+    doTheThing('1');
+    doTheThing('1');    
+  }
+  if(localCommand == '3'){//64
+    doTheThing('2');
+    doTheThing('2');
+    doTheThing('2');
+    doTheThing('2');    
+  }
+  if(localCommand == '4'){//256
+    doTheThing('3');
+    doTheThing('3');
+    doTheThing('3');
+    doTheThing('3');    
+  }
+  if(localCommand == '5'){//1024
+    doTheThing('4');
+    doTheThing('4');
+    doTheThing('4');
+    doTheThing('4');    
+  }
+  if(localCommand == '6'){//4096
+    doTheThing('5');
+    doTheThing('5');
+    doTheThing('5');
+    doTheThing('5');    
+  }
+  if(localCommand == '7'){//16384
+    doTheThing('6');
+    doTheThing('6');
+    doTheThing('6');
+    doTheThing('6');    
+  }
+  if(localCommand == 'Q'){
+    drawGlyph(shapeQ);
+  }
+  if(localCommand == 'W'){
+    drawGlyph(shapeW);
+  }
+  if(localCommand == 'E'){
+    drawGlyph(shapeE);
+  }
+  if(localCommand == 'R'){
+    drawGlyph(shapeR);
+  }
+
+}
+
+</pre>
+<style>
+pre{
+    position:absolute;
+    top:5em;
+    left:1em;
+    right:1em;
+    bottom:1em;
+    padding:1em 1em 1em 1em;
+    border:solid;
+    border-color:blue;
+    border-radius:1em;
+    border-width:5px;
+    overflow:scroll;
+    margin-top:5em;
+}
+</style>

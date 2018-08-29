@@ -15,9 +15,9 @@
     "y0": 359,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "",
+    "glyph": "0362,0203,0335,0203,0335,0203,0335,0203,0363,",
     "table": []
 }
 </json>
 -->
-</svg>
+	<path d = "M300 300 L300 200 L400 200 L400 300 L300 300 Z" stroke = "black" stroke-width = "3" fill = "black" /></svg>

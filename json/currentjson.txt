@@ -7,10 +7,10 @@
     "svgwidth": 400,
     "svgheight": 400,
     "unit": 100,
-    "x0": 684,
-    "y0": 399,
+    "x0": 615.5,
+    "y0": 359,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0360,",
+    "glyph": "",
     "table": []
 }
