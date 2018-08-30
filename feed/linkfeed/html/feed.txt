@@ -1,0 +1,46 @@
+<p>
+    <a href = "feededitor.php?path=linkfeed/">edit</a>
+</p>
+
+<table id  = "inputtable">
+    <tr>
+        <td>URL:<input id = "urlinput"/></td>
+    </tr>
+    <tr>
+        <td>text:<input id = "textinput"/></td>
+    </tr>
+</table>
+<div id = "datadiv" style = "display:none"></div>
+<div id = "scrolldiv"></div>
+
+<style>
+    #inputtable{
+        position:absolute;
+        right:1em;
+        top:1em;
+        width:90%;
+    }
+    tr{
+        width:100%;
+            text-align:right;
+
+    }
+    td{
+        width:100%;
+        text-align:right;
+    }
+    td input{
+        width:80%;
+        font-size:1em;
+    }
+    #scrolldiv{
+        position:absolute;
+        top:5em;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        overflow:scroll;
+        padding:1em 1em 1em 1em;
+        border-top:solid;
+    }
+</style>

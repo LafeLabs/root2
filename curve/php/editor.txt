@@ -10,6 +10,7 @@
     <a href = "index.php">index.php</a>
     <a href = "svgfeed.php">svgfeed.php</a>
     <a href = "equationeditor.php">equationeditor.php</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "tree.php">tree.php</a>
 
 </div>
@@ -38,8 +39,12 @@
     <div class = "php file">php/tree.txt</div>
     <div class = "php file">php/newdir.txt</div>
 
+    <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/replicator.txt</div>
+
     <div class = "json file">json/plotdata.txt</div>
     <div class = "json file">json/currentjson.txt</div>
+    <div class = "json file">json/dna.txt</div>
 
 </div>
 

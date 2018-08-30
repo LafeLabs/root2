@@ -206,12 +206,14 @@
 		"path":"curve/json",
 		"files":[
 			"currentjson.txt",
+			"dna.txt",
 			"plotdata.txt"
 		]
 	},
 	{
 		"path":"curve/php",
 		"files":[
+			"dnagenerator.txt",
 			"editor.txt",
 			"equationeditor.txt",
 			"feedsaver.txt",
@@ -219,6 +221,7 @@
 			"filesaver.txt",
 			"index.txt",
 			"newdir.txt",
+			"replicator.txt",
 			"svgfeed.txt",
 			"text2php.txt",
 			"tree.txt"

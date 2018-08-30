@@ -1,11 +1,10 @@
 <table id = "linktable">
     <tr>
-        <td><a href = "index.php?path=boxfeed/">BOXFEED</a></td>
-        <td><a href = "feededitor.php?path=textfeed/">EDIT CODE</a></td>
+        <td><a href = "feededitor.php?path=urlfeed/">EDIT CODE</a></td>
     </tr>
 </table>
 
-<div id = "wordsinputbox">WORDS:<input id = "wordsinput"/></div>
+<div id = "wordsinputbox">URL:<input id = "wordsinput"/></div>
 <div id = "datadiv" style = "display:none"></div>
 <div id = "scrolldiv"></div>
 
@@ -13,7 +12,7 @@
 
 path = document.getElementById("pathdiv").innerHTML;
 
-htmldir = "textfeed/html/";
+htmldir = "urlfeed/html/";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -64,20 +63,6 @@ document.getElementById("wordsinput").onchange = function(){
 </script>
 <style>
 
-    .button{
-        cursor:pointer;
-        font-size:30px;
-        padding-left:1em;
-        padding-right:1em;
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-    .button:hover{
-        background-color:green;
-    }
-    .button:active{
-        background-color:yellow;
-    }
     #wordsinput{
         width:25em;
         font-size:30px;
