@@ -15,7 +15,7 @@
     "y0": 359,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0330,0336,0333,0332,0234,0333,0333,0333,0235,0330,0332,0336,0336,0330,0333,0337,060,0365,061,0330,0330,0365,062,0330,0330,0365,063,0330,0330,0365,064,0330,0330,0365,065,0330,0330,0365,066,0330,0330,0365,067,0330,0330,0365,0330,0330,0333,0333,060,0365,061,0333,0333,0365,062,0333,0333,0365,0333,0333,063,0365,064,0333,0333,0365,065,0333,0333,0365,066,0333,0333,0365,067,0333,0333,0365,0337,0337,0332,0332,0332,0332,0332,0336,0330,0333,0336,0330,0332,060,061,0171,0170,0365,0331,0331,0333,0331,0333,0171,0365,0330,0333,0333,0333,0330,0336,0331,0337,0170,0365,",
+    "glyph": "0330,0336,0333,0332,0234,0333,0333,0333,0235,0330,0332,0336,0336,0330,0333,0337,060,0365,",
     "table": []
 }
 </json>
@@ -85,22 +85,4 @@
 	<path d = "M475 525 L475 475 L425 475 L425 525 L475 525 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="437" y = "513" fill = "black" font-size = "25px" font-family = "arial">F</text>
 	<path d = "M525 525 L525 475 L475 475 L475 525 L525 525 Z" stroke = "black" stroke-width = "2" fill = "none" />    <text x="487" y = "513" fill = "black" font-size = "25px" font-family = "arial">G</text>
     <text x="87" y = "512" fill = "black" font-size = "25px" font-family = "arial">0</text>
-    <text x="87" y = "462" fill = "black" font-size = "25px" font-family = "arial">1</text>
-    <text x="87" y = "412" fill = "black" font-size = "25px" font-family = "arial">2</text>
-    <text x="88" y = "362" fill = "black" font-size = "25px" font-family = "arial">3</text>
-    <text x="88" y = "312" fill = "black" font-size = "25px" font-family = "arial">4</text>
-    <text x="88" y = "262" fill = "black" font-size = "25px" font-family = "arial">5</text>
-    <text x="88" y = "212" fill = "black" font-size = "25px" font-family = "arial">6</text>
-    <text x="88" y = "162" fill = "black" font-size = "25px" font-family = "arial">7</text>
-    <text x="138" y = "112" fill = "black" font-size = "25px" font-family = "arial">0</text>
-    <text x="188" y = "112" fill = "black" font-size = "25px" font-family = "arial">1</text>
-    <text x="238" y = "112" fill = "black" font-size = "25px" font-family = "arial">2</text>
-    <text x="288" y = "112" fill = "black" font-size = "25px" font-family = "arial">3</text>
-    <text x="338" y = "112" fill = "black" font-size = "25px" font-family = "arial">4</text>
-    <text x="388" y = "113" fill = "black" font-size = "25px" font-family = "arial">5</text>
-    <text x="438" y = "113" fill = "black" font-size = "25px" font-family = "arial">6</text>
-    <text x="488" y = "113" fill = "black" font-size = "25px" font-family = "arial">7</text>
-    <text x="13" y = "37" fill = "black" font-size = "25px" font-family = "arial">01yx</text>
-    <text x="63" y = "112" fill = "black" font-size = "25px" font-family = "arial">y</text>
-    <text x="138" y = "75" fill = "black" font-size = "25px" font-family = "arial">x</text>
 </svg>
