@@ -1,0 +1,23 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0333,0331,0337,0200,0314,0336,0200,0332,0200,0332,0200,0330,0200,0333,0200,0333,0200,0330,0200,0332,0200,0332,0200,0332,0330,0333,0333,0333,0331,0204,0331,0331,0332,0332,0204,0333,0333,0204,0330,0330,0330,0330,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M300 300 L300 100 L100 100 L100 300 L300 300 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M300 300 L300 233 L233 233 L233 300 L300 300 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M233 300 L233 233 L167 233 L167 300 L233 300 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M167 300 L167 233 L100 233 L100 300 L167 300 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M167 233 L167 167 L100 167 L100 233 L167 233 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M233 233 L233 167 L167 167 L167 233 L233 233 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M300 233 L300 167 L233 167 L233 233 L300 233 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M300 167 L300 100 L233 100 L233 167 L300 167 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M233 167 L233 100 L167 100 L167 167 L233 167 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M167 167 L167 100 L100 100 L100 167 L167 167 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M300 167 L300 100 L233 100 L233 167 L300 167 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M167 300 L167 233 L100 233 L100 300 L167 300 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M300 300 L300 233 L233 233 L233 300 L300 300 Z" stroke = "black" stroke-width = "6" fill = "black" /></svg>

@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewbox = "0 0 400 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 400,
+    "svgheight": 400,
+    "unit": 100,
+    "x0": 615.5,
+    "y0": 359,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0332,0332,0336,0333,0337,01334,01335,01330,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M150 200 L150 100 L50 100 L50 200 L150 200 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M82.32233047033634 132.32233047033628           A25 25 0 0 1 117.67766952966369 132.3223304703363" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M82.32233047033633 167.6776695296637           A25 25 0 0 1 82.32233047033634 132.32233047033628" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M117.67766952966372 167.67766952966366           A25 25 0 0 1 82.32233047033633 167.6776695296637" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M108 191 L118 168 L95 158 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M250 200 L250 100 L150 100 L150 200 L250 200 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M217.67766952966372 167.67766952966375           A25 25 0 0 1 182.3223304703363 167.67766952966366" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M182.3223304703363 167.67766952966366           A25 25 0 0 1 182.32233047033645 132.32233047033625" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M182.32233047033645 132.32233047033625           A25 25 0 0 1 217.67766952966383 132.32233047033642" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M195 142 L218 132 L208 109 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M350 200 L350 100 L250 100 L250 200 L350 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M313 175 L288 175 L288 150 L275 150 L288 138 L300 125 L313 138 L325 150 L313 150 L312 175 Z" stroke = "black" stroke-width = "6" fill = "none" /></svg>
