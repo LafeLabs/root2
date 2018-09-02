@@ -1,0 +1,17 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "http://localhost:8000/symbol/svg/svg1534892706.svg",
+    "boxes": [
+        {
+            "xoverw": 0.3607242339832869,
+            "yoverw": 0.3584029712163417,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img src="http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg" style="width: 100%;">    </div></div>

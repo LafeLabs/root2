@@ -1,0 +1,12 @@
+<div class="meme"><div class="jsondata">{
+    "url": "https://i.imgur.com/F1tAEiF.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.5,
+            "yoverw": 0.5,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}</div><div class="box"><img src="http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg" style="width: 100%;"></div></div>
