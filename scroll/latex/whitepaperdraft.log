@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.11)  30 AUG 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.11)  1 SEP 2018 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,7 +55,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-No file whitepaperdraft.aux.
+(./whitepaperdraft.aux)
 \openout1 = `whitepaperdraft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -70,6 +70,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
@@ -134,36 +135,233 @@ e
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Runaway argument?
-{ 
-! Paragraph ended before \@sect was complete.
-<to be read again> 
-                   \par 
-l.134 }
-       
+Overfull \hbox (12.59445pt too wide) in paragraph at lines 99--100
+\OT1/cmr/m/n/10.95 the form of base 8 ad-dresses sep-a-rated by com-mas, e.g. "
+0300,0341,0333,0341,".
+ []
+
+[4]
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 131--131
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535741756.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.134 \end{figure}
+                  
 ? 
-! Too many }'s.
-\@xdblarg #1#2->#1[{#2}
-                       ]{#2}
-l.134 }
-       
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535742695.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.141 \end{figure}
+                  
 ? 
-[4] [5] (./whitepaperdraft.aux) ) 
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 145--145
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535742132.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.148 \end{figure}
+                  
+? 
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 153--153
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535741616.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.156 \end{figure}
+                  
+? 
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 160--160
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535741550.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.163 \end{figure}
+                  
+? 
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 167--167
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535741532.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.170 \end{figure}
+                  
+? 
+
+Overfull \hbox (39.52347pt too wide) in paragraph at lines 175--175
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/hypercube/sv
+g/svg1535743110.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.178 \end{figure}
+                  
+? 
+
+Overfull \hbox (52.96767pt too wide) in paragraph at lines 182--182
+[]\OT1/cmr/m/n/10.95 <img src = "http://quantumart.org/root/symbol/circuitstabl
+et/svg/svg1535740976.svg 
+ []
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.185 \end{figure}
+                  
+? 
+[5] [6]
+! Output loop---100 consecutive dead cycles.
+\clearpage ...rite \m@ne {}\vbox {}\penalty -\@Mi 
+                                                  
+l.307 \end{document}
+                    
+? 
+[7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] (./whitepaperdraft.aux) ) 
 Here is how much of TeX's memory you used:
- 1460 strings out of 494953
- 20934 string characters out of 6180977
- 76701 words of memory out of 5000000
- 4767 multiletter control sequences out of 15000+600000
- 4545 words of font info for 17 fonts, out of 8000000 for 9000
+ 1465 strings out of 494953
+ 21004 string characters out of 6180977
+ 77701 words of memory out of 5000000
+ 4769 multiletter control sequences out of 15000+600000
+ 4891 words of font info for 18 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,5n,23p,1106b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb>
-Output written on whitepaperdraft.pdf (5 pages, 47716 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on whitepaperdraft.pdf (7 pages, 61782 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

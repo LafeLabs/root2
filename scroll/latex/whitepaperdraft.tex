@@ -80,9 +80,110 @@ Geometric nature of Quantum Information Science and the problems it addresses
 
 
 
+Rather than trying to formalize the math of this idea, I will dive in and describe the specifics of the Geometron Hypercube used in all the work documented here.  This consists of two cubes, each with 8x8x8 = 512 cells.  Each cell has an address, which consists of three coordinates for the cell and one for which cube the cell is in.  Thus the first cell of the first cube is 0, the highest cell in that cube is 0777, and in the second cube it's 0 to 01777.  I use a leading zero here to denote that these numbers are base 8.  Using base 8 in JavaScript is easy, as JavaScript recognizes the leading zero, as do most c-like languages.   One of the two cubes represents actions, and the other represents symbols for the actions in the first cube.  The contents of each cell are arrays of addresses of cells.  
 
 
-Basic concept of a purely geometric virtual machine that is both software and hardware independent.    
+
+
+    The choices made here are in some sense arbitrary: 8 could just as well be 4 or 16 or even some random prime number.  But the point of this approach to language design is to choose numbers and structures which are well suited to easily being interacted with by the human mind.  A 8x8x8 cube can be divided into "tablets", each of which is 8X in size.  
+
+
+
+
+    The action cube consists of actions or sequences of actions which do something on the screen of a computer using discrete geometry.  They all use a set of global geometric variables which are manipulated during the drawing of a glyph in much the same way that registers are used in a traditional microprocessor.  These global variables include position of a cursor, angle of the cursor, a length scale, a factor for increasing or decreasing the length scale, a symmetry on which to carry out rotations, and a few other useful parameters.   
+
+
+
+
+
+    Glyphs consist of sequences of actions.  They are expressed as strings in the form of base 8 addresses separated by commas, e.g. "0300,0341,0333,0341,".  Some addresses in the action cube consist of glyphs, which in turn refernce other glyphs or actions.  Thus many levels of recursion are possible and used routinely.  This is a huge part of the power of this system over existing graphical systems like Adobe Illustrator.  Adding glyphs to the shape table and using those glyphs is not like just copying and pasting shapes in Illustrator.  It is in fact more like building up cell hierarchy in a electronic layout CAD program. 
+    
+
+
+
+    For each action in the action cube, be it a discrete JavaScript action or a glyph made of of other actions of glyphs, there is always a corresponding symbol glyph in the symbol cube, in the address space 01000-01777.  These symbols are \textit{
+always} glyphs made up of a sequence of actions(rather than an action in JavaScript).  
+
+
+
+
+    Both the action and symbol cube have a full 64 + 32 = 96 cells for the printable ASCII characters from space to tilde.  The standard printable ASCII characters go from space at 040 octal(0x20 hex, 32 decimal) to tilde at 0176(0x7E hex, 126 decimal), with 0177 being backspace which we leave as a "do nothing" operation in the Geometron hypercube. The symbols at 01040 through 01176 are glyphs which constitute a font, stored in a file called font.txt.  The symbols in a font can use a full shape table of up to 64 specialized geometron action sequences, creating new fonts very quickly and with total flexibility even with no coding skills.  This is particularly useful for creating new fonts for specialized purposes such as programming easily into a robot or lithography tool. As with Chinese characters, the stroke order maters, each symbol is spelled with a specific order of actions, and the order matters.   
+
+
+
+
+    The Geometron Action Cube is divided up into layers, called tablets, each of which is a 8x8 array, much like a chess board.  Those tablets are then broken up into rows of 8 actions, which we attempt to group in a rational way.   
+
+
+
+
+    The bottom tablet in address space from 0 to 077 consists of "root magick" actions from 06 through 037 and the first part of the ASCII from 040 to 077.  Root magick consists of actions which are not purely geometric in nature, which interact with the Geometron software.  These are more specific to the 
+
+
+
+
+
+    hypercube, tablets, scales, symmetries, actions, javascript vs symbol, comparison to Logo, role of ASCII, 
+
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535741756.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535742695.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535742132.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535741616.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535741550.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535741532.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/hypercube/svg/svg1535743110.svg}
+
+\caption{Figure x. }
+\end{figure}
+
+
+\begin{figure}
+<img src = "http://quantumart.org/root/symbol/circuitstablet/svg/svg1535740976.svg}
+
+\caption{Figure x. }
+\end{figure}
+
 
 
 
@@ -128,14 +229,11 @@ Mechanics of the GVM in the browser: javascript, organization of code, canvas an
 
 
 
-\section{
 
-    Detailed description of GVM Structure
-}
 
 
 \section{
-Workflow and Applications}
+4. Workflow and Applications}
 
 
 

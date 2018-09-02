@@ -1,5 +1,5 @@
 <div class="meme"><div class="jsondata">{
-    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
     "boxes": [
         {
             "xoverw": 0.5,

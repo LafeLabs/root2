@@ -6,7 +6,7 @@
     "imgangle": 0,
     "svgwidth": 400,
     "svgheight": 400,
-    "unit": 100,
+    "unit": 90.9090909090909,
     "x0": 615.5,
     "y0": 359,
     "x0rel": 0,

@@ -1,5 +1,5 @@
 <div class="meme"><div class="jsondata">{
-    "url": "https://i.imgur.com/wEzuCDq.jpg",
+    "url": "http://localhost:8000/symbol/svg/svg1534896622.svg",
     "boxes": [
         {
             "xoverw": 0.5,
@@ -9,4 +9,4 @@
             "angle": 0
         }
     ]
-}</div><div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Aries.svg" style="width: 100%;"></div></div>
+}</div><div class="box"><img src="http://localhost:8000/symbol/hebrew/svg/svg1535206246.svg" style="width: 100%;"></div></div>

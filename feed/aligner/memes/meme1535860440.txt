@@ -2,18 +2,18 @@
 <div class = "meme">
     <div class = "jsondata">
 {
-    "url": "https://i.imgur.com/yQIuyO2.jpg",
+    "url": "https://i.imgur.com/wEzuCDq.jpg",
     "boxes": [
         {
-            "xoverw": 0.7652464494569757,
-            "yoverw": 0.8822055137844612,
+            "xoverw": 0.5046425255338904,
+            "yoverw": 0.7785515320334262,
             "woverw": 0.25,
             "fontoverw": 0.15,
-            "angle": 32.044245066615886
+            "angle": 0
         },
         {
-            "xoverw": 0.48955722639933164,
-            "yoverw": 0.8968253968253969,
+            "xoverw": 0.23769730733519034,
+            "yoverw": 0.8783658310120706,
             "woverw": 0.25,
             "fontoverw": 0.15,
             "angle": 0

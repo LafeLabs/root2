@@ -99,8 +99,8 @@ memedir = "combiner/memes/";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("localmemedata").innerHTML = this.responseText;
-        document.getElementById("memedata").innerHTML += this.responseText;
+        //document.getElementById("localmemedata").innerHTML = this.responseText;
+        document.getElementById("memedata").innerHTML = this.responseText + document.getElementById("memedata").innerHTML;
         combinermemesinit();
     }
 };
@@ -108,7 +108,10 @@ httpc.open("GET", "loadmemefeed.php?memedir=" + memedir, true);
 httpc.send();
 
 function combinermemesinit(){
-    
+    memes = document.getElementById("memedata").getElementsByClassName("meme");
+    memeIndex = 0;
+    staticboxes = document.getElementById("memecontainer").getElementsByClassName("box");
+    initmeme();
 }
 
 document.getElementById("memecontainer").style.width = imageWidth.toString() + "px";
@@ -117,11 +120,6 @@ if(document.getElementById("memedata").innerHTML.length < 5){
     document.getElementById("memedata").innerHTML = document.getElementById("memetemplate").innerHTML;
 }
 
-memes = document.getElementById("memedata").getElementsByClassName("meme");
-memeIndex = 0;
-staticboxes = document.getElementById("memecontainer").getElementsByClassName("box");
-
-initmeme();
 
 
 document.getElementById("mainImage").onload = function(){
@@ -147,7 +145,7 @@ document.getElementById("prevmeme").onclick = function(){
 document.getElementById("newmeme").onclick = function(){
     document.getElementById("memedata").innerHTML += "\n" + document.getElementById("memetemplate").innerHTML + "\n";
     memes = document.getElementById("memedata").getElementsByClassName("meme");
-    memeIndex = memes.length - 1;
+    memeIndex = 0;
     initmeme();
 }
 
