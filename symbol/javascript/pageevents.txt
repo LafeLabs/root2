@@ -50,12 +50,19 @@ document.getElementById("savepng").onclick = function(){
     y0 -= 0.5*(innerHeight - svgheight);
     document.getElementById("invisibleCanvas").width = svgwidth;
     document.getElementById("invisibleCanvas").height = svgheight;
+    document.getElementById("invisibleCanvas").display = "block";
     ctx = document.getElementById("invisibleCanvas").getContext("2d");
+
     doTheThing(0300);
     drawGlyph(cleanGlyph);
+    var pngdata = document.getElementById("invisibleCanvas").toDataURL();
+    document.getElementById("invisibleCanvas").display = "none";
+    document.getElementById("textIO").value = pngdata;
 
-    document.getElementById("textIO").value = document.getElementById("invisibleCanvas").toDataURL();
-
+    document.getElementById("pngimage").style.display = "block";
+    document.getElementById("pngimage").style.left = (0.5*(innerWidth - svgwidth)).toString() + "px";
+    document.getElementById("pngimage").style.top = (0.5*(innerHeight - svgheight)).toString() + "px";
+    document.getElementById("pngimage").src  = pngdata;
     x0 = tempx0;
     y0 = tempy0;
     redraw();
@@ -183,9 +190,11 @@ controls[0].onchange = function(){
 }
 
 controls[1].onkeydown = function(e) {
+        if(document.getElementById("pngimage").style.display == "block"){
+            document.getElementById("pngimage").style.display = "none";
+        }
         charCode = e.keyCode || e.which;
         arrowkey = false;
-        console.log(e);
         if(e.key == "ArrowUp"){
             arrowkey = true;
         }
