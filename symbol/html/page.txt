@@ -80,6 +80,7 @@
 
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "savepng">EXPORT PNG</td></tr>
 <tr><td class = "button" id = "savespelling">SPELL MODE</td></tr>
 <tr><td class = "button" id = "exportjson">EXPORT JSON</td></tr>
 <tr><td class = "button" id = "importjson">IMPORT JSON</td></tr>

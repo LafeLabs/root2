@@ -41,6 +41,26 @@ document.getElementById("glyphspellinput").onchange = function(){
     redraw();
 }
 
+document.getElementById("savepng").onclick = function(){
+    svgwidth = currentJSON.svgwidth;
+    svgheight = currentJSON.svgheight;
+    tempx0 = x0;
+    tempy0 = y0;
+    x0 -= 0.5*(innerWidth - svgwidth);
+    y0 -= 0.5*(innerHeight - svgheight);
+    document.getElementById("invisibleCanvas").width = svgwidth;
+    document.getElementById("invisibleCanvas").height = svgheight;
+    ctx = document.getElementById("invisibleCanvas").getContext("2d");
+    doTheThing(0300);
+    drawGlyph(cleanGlyph);
+
+    document.getElementById("textIO").value = document.getElementById("invisibleCanvas").toDataURL();
+
+    x0 = tempx0;
+    y0 = tempy0;
+    redraw();
+}
+
 document.getElementById("savesvg").onclick = function(){
     svgwidth = currentJSON.svgwidth;
     svgheight = currentJSON.svgheight;
