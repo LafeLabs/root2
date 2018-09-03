@@ -1,3 +1,10 @@
+#pngimage{
+    position:absolute;
+    z-index:3;
+    background-color:white;
+    top:1em;
+
+}
 #valuedisplaytable{
     left:16em;
     top:1em;
@@ -86,6 +93,12 @@ table input{
     right:1em;
     top:1em;
 }
+#pngbutton{
+    position:absolute;
+    right:1em;
+    top:3em;
+}
+
 input{
     font-family:courier;
     font-size:16px;

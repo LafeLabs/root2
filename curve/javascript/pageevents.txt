@@ -197,6 +197,7 @@ mc.on("swipeleft swiperight swipedown swipeup pinchin pinchout press", function(
 });
 
 
+
  document.getElementById("publish").onclick = function(){
     data = encodeURIComponent(currentSVG);
     var httpc = new XMLHttpRequest();
@@ -210,7 +211,16 @@ mc.on("swipeleft swiperight swipedown swipeup pinchin pinchout press", function(
         httpc.send("data="+data);//send text to feedsaver.php
     }
  }
- 
+
+document.getElementById("pngbutton").onclick = function(){
+    var pngdata = document.getElementById("mainCanvas").toDataURL();
+    document.getElementById("textIO").value = pngdata;
+    document.getElementById("pngimage").style.display = "block";
+    document.getElementById("pngimage").style.width = (document.getElementById("mainCanvas").width).toString() + "px";
+    document.getElementById("pngimage").style.height = (document.getElementById("mainCanvas").height).toString() + "px";
+    document.getElementById("pngimage").style.left = (0.5*innerWidth - 0.5*document.getElementById("mainCanvas").width).toString() + "px";
+    document.getElementById("pngimage").src  = pngdata;
+} 
  
 
 document.getElementById("imgurlinput").onchange = function(){
@@ -219,7 +229,9 @@ document.getElementById("imgurlinput").onchange = function(){
 
 
 document.getElementById("actioninput").onkeypress = function(a){
-    
+    if(document.getElementById("pngimage").style.display == "block"){
+        document.getElementById("pngimage").style.display = "none";
+    }
     if(a.key == "r"){
         if(paramIndex < plotinputs.length){
             plotparams[paraminputs[paramIndex].id.substring(7)] *= -1;

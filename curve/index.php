@@ -121,6 +121,8 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <a id = "svgfeedlink" href = "svgfeed.php">svgfeed.php</a>
 
 <canvas id="mainCanvas"></canvas>
+<img id  = "pngimage" style = "display:none"/>
+
 <img id = "mainImage"/>
 
 <div id = "actionbox">Action:<input id = "actioninput"/></div>
@@ -203,7 +205,7 @@ if(!isset($_GET['path']) && !isset($_GET['url'])){
 ?>
 </div>
     <div class = "button" id = "publish">PUBLISH</div>
-
+    <div class = "button" id = "pngbutton">PNG</div>
 </div>
 <script>
 </script>
