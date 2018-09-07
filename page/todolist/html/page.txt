@@ -1,0 +1,36 @@
+<a href = "pageeditor.php?path=todolist/">pageeditor.php?path=todolist/</a>
+<ul>
+    <li>
+        convert json to meme format for export from symbol
+    </li>
+    <li>
+        also export to meme format from curve
+    </li>
+    <li>
+        simplified work flow from meme creation with symbols on background image to boxes of latex to published meme
+    </li>
+    <li>
+        convert all the figures for white paper into png, fix the code, compile to pdf to see how it looks
+    </li>
+    <li>
+        Add references to machine learning and QC based design of glyphs to white paper
+    </li>
+    <li>
+        Add vibrating tool head to chip rock and the like to xydc robot
+    </li>
+    <li>
+        Add mu and omega vibrating EC probe tool head to xystepper robot
+    </li>
+    <li>
+        Order simplified dual h bridge boards from pcbway in china
+    </li>
+    <li>
+        create a full instruction scroll for assembly of full trash robot set with two robots, each xy, one with steppers from two drives one with drawer motors from two drives, each with a vibrating head, one with a electrochemical probe with audio and imaging output and one with a chipping head to carve stone.  Book, cards, fully portable, work flow boards, markers, shapes, tools, and build factory.
+    </li>
+    <li>
+        Construct quantum noise dot org to make sense
+    </li>
+    <li>
+        
+    </li>
+</ul>

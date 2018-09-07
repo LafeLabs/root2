@@ -85,6 +85,8 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 
             echo "\n<p style = \"position:relative;margin:auto;margin-top:3em;border:solid;width:".$svgwidth."px;height:".$svgheight."px;\">\n    <a href = \"index.php?url=";
             echo $svgpath2.$value;
+            echo "&path=";
+            echo $path;
             echo "\">\n        <img src = \"";        
             echo $imgurl;
             echo "\" style = \"width:";
