@@ -68,6 +68,5 @@
 			"symbols010xx.txt",
 			"symbols013xx.txt"
 		]
-	},
-
+	}
 ]

@@ -31,7 +31,6 @@ $finalstring .= ",\n";
 $finalstring .= getfiles("javascript");
 $finalstring .= ",\n";
 $finalstring .= getfiles("bytecode");
-$finalstring .= ",\n";
 
 $finalstring .= "\n]";
 
