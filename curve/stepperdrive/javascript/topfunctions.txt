@@ -1,7 +1,4 @@
 
-
-
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = Math.sin(funcparams.phi + (Math.PI*2*X/funcparams.T));
@@ -164,4 +161,3 @@ function plotfunction(){
     /*finish plot one function*/
 
 }
-

@@ -5,25 +5,30 @@
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
 
-    foreach($dna as $dirs){
-        mkdir($dirs);
-        mkdir($dirs."/svg");
-        mkdir($dirs."/bytecode");
-        mkdir($dirs."/json");
-        $data = file_get_contents($baseurl."/".$dirs."/bytecode/shapetable.txt");
-        $file = fopen($dirs."/bytecode/shapetable.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-        $data = file_get_contents($baseurl."/".$dirs."/json/currentjson.txt");
-        $file = fopen($dirs."/json/currentjson.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-        $data = file_get_contents($baseurl."/".$dirs."/json/stylejson.txt");
-        $file = fopen($dirs."/json/stylejson.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
+    //Seven Sources
+    mkdir("html");
+    mkdir("css");
+    mkdir("javascript");
+    mkdir("bytecode");
+    mkdir("php");
+    mkdir("json");
+    mkdir("svg");
 
+    foreach($dna as $dirs){
+        mkdir($dirs->path);
+        $files = $dirs->files;
+        foreach($files as $filename){
+            $data = file_get_contents($baseurl.$dirs->path."/".$filename);
+            $file = fopen($dirs->path."/".$filename,"w");// create new file with this name
+            fwrite($file,$data); //write data to file
+            fclose($file);  //close file
+            if(substr($dirs->path,-3) == "php" && $filename != "php/replicator.txt"){
+                $file = fopen(substr($dirs->path,0,-3).explode(".",$filename)[0].".php","w");// create new file with this name
+                fwrite($file,$data); //write data to file
+                fclose($file);  //close file                
+            }
+        }    
     }
 ?>
 
-<a href = "index.php?tree.php" style = "font-size:5em;">TREE</a>
+<a href = "index.php" style = "font-size:5em;">index.php</a>

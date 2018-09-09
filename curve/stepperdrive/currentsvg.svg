@@ -5,9 +5,6 @@
 
 
 
-
-
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = Math.sin(funcparams.phi + (Math.PI*2*X/funcparams.T));
@@ -171,8 +168,6 @@ function plotfunction(){
 
 }
 
-
-
 </topfunctions>
 -->
 
@@ -212,7 +207,6 @@ function plotfunction(){
 
 
 
-
 <h2>Sin</h2>
 <p style="color:blue">
 
@@ -239,7 +233,6 @@ $$
 <p>
     X and Y, and $X_0$ and $Y_0$ in physical units of the System. x and y and x0 and y0 in pixels.  G is in pixels per Y unit and g is in X units per pixel. 
 </p>
-
 
 
 
