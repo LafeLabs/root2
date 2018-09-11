@@ -1,0 +1,26 @@
+[
+	{
+		"path":"php",
+		"files":[
+			"dnagenerator.txt",
+			"editor.txt",
+			"fileloader.txt",
+			"filesaver.txt",
+			"index.txt",
+			"loadpage.txt",
+			"makejsonindex.txt",
+			"makepagesindex.txt",
+			"newdir.txt",
+			"pageeditor.txt",
+			"replicator.txt",
+			"text2php.txt",
+			"tree.txt"
+		]
+	},
+{
+    "path":"html",
+    "files":
+    ["page.txt"
+    ]
+}
+]

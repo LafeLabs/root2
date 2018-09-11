@@ -27,6 +27,7 @@
 	{
 		"path":"page/php",
 		"files":[
+			"dnagenerator.txt",
 			"editor.txt",
 			"fileloader.txt",
 			"filesaver.txt",
@@ -36,6 +37,7 @@
 			"makepagesindex.txt",
 			"newdir.txt",
 			"pageeditor.txt",
+			"replicator.txt",
 			"text2php.txt",
 			"tree.txt"
 		]

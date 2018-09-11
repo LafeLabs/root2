@@ -14,7 +14,7 @@ function YofX(){
 function plotfunction(){
 
 /*plot one function:*/
-    currentStroke = "blue";
+    currentStroke = "red";
     currentLineWidth = 1;
     ctx.strokeStyle = currentStroke;
     ctx.lineWidth = currentLineWidth;
@@ -36,7 +36,7 @@ function plotfunction(){
     currentSVG += "L" + "0" + " " + "400" + " ";
     ctx.lineTo(0,plotparams.y0);
     currentSVG += "L" + "0" + " " + plotparams.y0.toString() + " ";
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "red";
     ctx.fill();		
     ctx.closePath();
     ctx.stroke();		
