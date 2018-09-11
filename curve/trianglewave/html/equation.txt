@@ -1,14 +1,12 @@
 
 
-
-
-
-<h2>Sin</h2>
+<h2>Triangle Wave</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-square wave
+    Y = \left|(X\mod{(100)} - 50\right| - 25;
+
 $$
 </p>
 <p></p>

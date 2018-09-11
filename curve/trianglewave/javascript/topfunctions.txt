@@ -6,7 +6,7 @@ function YofX(){
 //foobar foobar
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
 
-    Y = Math.abs(X%100);
+    Y = Math.abs(X%100 - 50) - 25;
 
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }

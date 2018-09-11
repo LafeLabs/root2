@@ -1,17 +1,15 @@
-
-
-
-
-
-<h2>Sin</h2>
+<p>
+    <a style = "color:blue;" href = "http://www.mhtl.uwaterloo.ca/old/courses/me3532/js/bessel.html">http://www.mhtl.uwaterloo.ca/old/courses/me3532/js/bessel.html</a>
+</p>
+<h2>Bessel Function</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-square wave
+Y = J_n(X)
 $$
 </p>
-<p></p>
+
 
 $$
 X = g(x - x_0) - X_0
