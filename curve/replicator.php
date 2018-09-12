@@ -5,34 +5,29 @@
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
 
+    //Seven Sources
+    mkdir("html");
+    mkdir("css");
+    mkdir("javascript");
+    mkdir("php");
+    mkdir("json");
+    mkdir("svg");
+
     foreach($dna as $dirs){
-        mkdir($dirs);
-        mkdir($dirs."/svg");
-        mkdir($dirs."/javascript");
-        mkdir($dirs."/html");
-        mkdir($dirs."/json");
-
-        $data = file_get_contents($baseurl."/".$dirs."/javascript/topfunctions.txt");
-        $file = fopen($dirs."/javascript/topfunctions.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-
-        $data = file_get_contents($baseurl."/".$dirs."/json/currentjson.txt");
-        $file = fopen($dirs."/json/currentjson.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-
-        $data = file_get_contents($baseurl."/".$dirs."/json/plotdata.txt");
-        $file = fopen($dirs."/json/plotdata.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-
-        $data = file_get_contents($baseurl."/".$dirs."/html/equation.txt");
-        $file = fopen($dirs."/html/equation.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
-
+        mkdir($dirs->path);
+        $files = $dirs->files;
+        foreach($files as $filename){
+            $data = file_get_contents($baseurl.$dirs->path."/".$filename);
+            $file = fopen($dirs->path."/".$filename,"w");// create new file with this name
+            fwrite($file,$data); //write data to file
+            fclose($file);  //close file
+            if(substr($dirs->path,-3) == "php" && $filename != "php/replicator.txt"){
+                $file = fopen(substr($dirs->path,0,-3).explode(".",$filename)[0].".php","w");// create new file with this name
+                fwrite($file,$data); //write data to file
+                fclose($file);  //close file                
+            }
+        }    
     }
 ?>
 
-<a href = "tree.php" style = "font-size:5em;">TREE</a>
+<a href = "index.php" style = "font-size:5em;">index.php</a>

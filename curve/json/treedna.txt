@@ -1,0 +1,3 @@
+[
+"besselJ","cosh","coth","ellipse","fermi","filledfermi","gaussian","goldenspiral","hyperbola","lorentzian","parabola","pulse","quantumnoise","shotnoise","sin","sincos","sinh","squarewave","stepperdrive","tan","tanh","trianglewave","xcothx"
+]

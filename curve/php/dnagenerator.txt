@@ -1,16 +1,35 @@
 <?php
 
-$finalstring = "[\n";
-
-$basefiles = scandir(getcwd());
-
-foreach($basefiles as $value){
-    if($value != "javascript" && $value != "css" && $value != "bytecode" && $value != "html" && $value != "svg" && $value != "memes" && $value != "json" && $value != "php" && $value != "." && $value != ".." && is_dir($value)){
-                $finalstring .= "\"".$value."\",";
+function getfiles($localpath){
+    $outstring = "";
+    $files = scandir(getcwd()."/".$localpath);
+    $outstring .= "\t{\n\t\t\"path\":\"".$localpath."\",\n\t\t\"files\":[\n";
+    
+    foreach($files as $value){
+        if($value != "." && $value != ".."){
+            if(substr($value,-4) == ".txt"){
+                $outstring .= "\t\t\t\"".$value."\",\n";
+            }
+        }
     }
+    $outstring = substr($outstring,0,-2);
+    $outstring .= "\n\t\t]\n\t}";
+    return $outstring;
 }
 
-$finalstring = rtrim($finalstring, ",");
+
+$finalstring = "[\n";
+
+$finalstring .= getfiles("php");
+$finalstring .= ",\n";
+$finalstring .= getfiles("html");
+$finalstring .= ",\n";
+$finalstring .= getfiles("json");
+$finalstring .= ",\n";
+$finalstring .= getfiles("css");
+$finalstring .= ",\n";
+$finalstring .= getfiles("javascript");
+
 $finalstring .= "\n]";
 
 echo $finalstring;
