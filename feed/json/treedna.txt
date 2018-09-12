@@ -1,0 +1,3 @@
+[
+"aligner","basefeed","boxfeed","combiner","curvefeed","feed","imagefeed","latlons","linkfeed","mapx0y0","mapx1y1","markers","mathfeed","memefeed","symbolfeed","textdestroyer","textfeed","urlfeed"
+]

@@ -1,22 +1,33 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/root2/master/feed/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/root2/master/feed/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
 
+    //Seven Sources
+    mkdir("html");
+    mkdir("php");
+    mkdir("memes");
+    mkdir("json");
+    mkdir("svg");
+    mkdir("feed");
+
     foreach($dna as $dirs){
-        mkdir($dirs);
-        mkdir($dirs."/html");
-        mkdir($dirs."/svg");
-        mkdir($dirs."/feeds");
-        mkdir($dirs."/json");
-        mkdir($dirs."/memes");
-        $data = file_get_contents($baseurl."/".$dirs."/html/feed.txt");
-        $file = fopen($dirs."/html/feed.txt","w");// create new file with this name
-        fwrite($file,$data); //write data to file
-        fclose($file);  //close file
+        mkdir($dirs->path);
+        $files = $dirs->files;
+        foreach($files as $filename){
+            $data = file_get_contents($baseurl.$dirs->path."/".$filename);
+            $file = fopen($dirs->path."/".$filename,"w");// create new file with this name
+            fwrite($file,$data); //write data to file
+            fclose($file);  //close file
+            if(substr($dirs->path,-3) == "php" && $filename != "php/replicator.txt"){
+                $file = fopen(substr($dirs->path,0,-3).explode(".",$filename)[0].".php","w");// create new file with this name
+                fwrite($file,$data); //write data to file
+                fclose($file);  //close file                
+            }
+        }    
     }
 ?>
 
-<a href = "index.php?tree.php" style = "font-size:5em;">TREE</a>
+<a href = "index.php" style = "font-size:5em;">index.php</a>
