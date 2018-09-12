@@ -1,0 +1,27 @@
+[
+	{
+		"path":"php",
+		"files":[
+			"dnagenerator.txt",
+			"editor.txt",
+			"feedsaver.txt",
+			"figurelist.txt",
+			"fileloader.txt",
+			"filesaver.txt",
+			"index.txt",
+			"jupyter.txt",
+			"newdir.txt",
+			"scrolleditor.txt",
+			"scrolllist.txt",
+			"texeditor.txt",
+			"text2php.txt",
+			"tree.txt"
+		]
+	},
+	{
+		"path":"html",
+		"files":[
+			"scroll.txt"
+		]
+	}
+]

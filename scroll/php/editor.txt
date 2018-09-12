@@ -12,6 +12,7 @@
     <a href = "texeditor.php">texeditor.php</a>
     <a href = "jupyter.php">jupyter.php</a>
     <a href = "scrolllist.php">scrolllist.php</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
 
     <a href = "tree.php">tree.php</a>
 
@@ -38,7 +39,10 @@
     <div class = "php file">php/jupyter.txt</div>
     <div class = "php file">php/newdir.txt</div>
     <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/replicator.txt</div>
 
+    <div class = "json file">json/dna.txt</div>
 
 </div>
 

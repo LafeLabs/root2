@@ -1,14 +1,9 @@
-
-
-
-
-
-<h2>Sin</h2>
+<h2>Sine</h2>
 <p style="color:blue">
 
 </p><p class="bigeq">
 $$
-square wave
+Y = \sin{X}
 $$
 </p>
 <p></p>
