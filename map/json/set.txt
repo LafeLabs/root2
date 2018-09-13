@@ -1,0 +1,12 @@
+[
+    {
+        "url":"json/set.txt",
+        "latlon0":"38.88947, -77.03526",
+        "x":0.0,
+        "y":0.0,
+        "widthfeet":1000,  
+        "fontfeet":100,
+        "unitfeet":555,
+        "angle":0
+    }
+]

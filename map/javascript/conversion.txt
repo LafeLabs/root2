@@ -1,0 +1,26 @@
+latlon0 = "38.88947, -77.03526";
+feetperdegree = 364567;
+unitfeet = 555;
+lat0 = parseFloat(latlon0.split(",")[0]);
+lon0 = parseFloat(latlon0.split(",")[1]);
+
+function latlon2xy(latlonlocal){
+    var lat = parseFloat(latlonlocal.split(",")[0]);
+    var lon = parseFloat(latlonlocal.split(",")[1]);
+    var deltalat = lat - lat0;
+    var deltalon = lon - lon0;
+    var xlocal = deltalon*feetperdegree*Math.cos(lat0*Math.PI/180)/unitfeet;
+    var ylocal = deltalat*feetperdegree/unitfeet;
+    var xy = xlocal.toString() + "," + ylocal.toString();
+    return xy;
+}
+function xy2latlon(xylocal){
+    var xlocal = parseFloat(xylocal.split(",")[0]);
+    var ylocal = parseFloat(xylocal.split(",")[1]);
+    var deltalat = ylocal*unitfeet/feetperdegree;
+    var deltalon = (1/Math.cos(lat0*Math.PI/180))*xlocal*unitfeet/feetperdegree;
+    var latlocal = lat0 + deltalat;
+    var lonlocal = lon0 + deltalon;
+    var latlonlocal = latlocal.toString() + "," + lonlocal.toString();
+    return latlonlocal;
+}

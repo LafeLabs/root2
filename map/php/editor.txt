@@ -28,11 +28,32 @@ EGO DEATH:
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
+    <div class = "html file">html/page.txt</div>
+    <div class = "html file">html/head.txt</div>
+    <div class = "css file">css/style.txt</div>
+
+    <div class = "javascript file">javascript/init.txt</div>
+    <div class = "javascript file">javascript/redraw.txt</div>
+    <div class = "javascript file">javascript/conversion.txt</div>
+    <div class = "javascript file">javascript/pageevents.txt</div>
+
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/tree.txt</div>
+    <div class = "php file">php/newdir.txt</div>
+    <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/treednagenerator.txt</div>
+    <div class = "php file">php/repliactor.txt</div>
+    <div class = "php file">php/treereplicator.txt</div>
+    <div class = "php file">php/locate.txt</div>
+    
+    <div class = "json file">json/view.txt</div>
+    <div class = "json file">json/set.txt</div>
+    <div class = "json file">json/dna.txt</div>
+
 </div>
 
 <script>

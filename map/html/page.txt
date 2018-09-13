@@ -1,0 +1,6 @@
+<p>
+    <a href = "editor.php">editor</a>
+</p>
+<div id = "mainpage">
+    
+</div>
