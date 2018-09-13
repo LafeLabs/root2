@@ -3,7 +3,7 @@ viewdata = JSON.parse(document.getElementById("viewdata").innerHTML);
 x0 = 0.5*innerWidth;
 y0 = 0.5*innerHeight;
 
-feetperpixel = viewdata.unitfeet/viewdata.unitpx;
+feetperpixel = viewdata.feetperpixel;
 
 setdata = JSON.parse(document.getElementById("setdata").innerHTML);
 
@@ -14,9 +14,14 @@ for(var index = 0;index < divdata.length;index++){
     newdiv.innerHTML = divdata[index].innerHTML;
     document.getElementById("mainpage").appendChild(newdiv);
     newdiv.className = "mapelement";
+
+    r = finddistance(viewdata.latlon,setdata[index].latlon);
+    theta = findangle(viewdata.latlon,setdata[index].latlon);
+    x = r*Math.cos(theta - 0.5*Math.PI);
+    y = r*Math.sin(theta - 0.5*Math.PI + viewdata.angle*Math.PI/180);
     newdiv.style.width = (setdata[index].widthfeet/feetperpixel).toString() + "px";
     newdiv.style.fontSize = (setdata[index].fontfeet/feetperpixel).toString() + "px";
-    newdiv.style.left = (x0 + setdata[index].x*viewdata.unitpx).toString() + "px";
-    newdiv.style.top = (y0 - setdata[index].y*viewdata.unitpx).toString() + "px";
-    
+    newdiv.style.left = (x0 + x/feetperpixel).toString() + "px";
+    newdiv.style.top = (y0 + y/feetperpixel).toString() + "px";
+    newdiv.style.transform = "rotate(" + (viewdata.angle + setdata[index].angle).toString() + "deg)";
 }

@@ -24,3 +24,25 @@ function xy2latlon(xylocal){
     var latlonlocal = latlocal.toString() + "," + lonlocal.toString();
     return latlonlocal;
 }
+function finddistance(latlon1,latlon2){
+    var lat1 = parseFloat(latlon1.split(",")[0]);
+    var lon1 = parseFloat(latlon1.split(",")[1]);
+    var lat2 = parseFloat(latlon2.split(",")[0]);
+    var lon2 = parseFloat(latlon2.split(",")[1]);
+    var deltay = (lat2 - lat1)*feetperdegree;
+    var deltax = (lon2 - lon1)*feetperdegree*Math.cos(Math.PI*lat1/180);
+    var deltar = Math.sqrt(deltax*deltax + deltay*deltay);
+    return deltar;
+}
+function findangle(latlon1,latlon2){
+    var lat1 = parseFloat(latlon1.split(",")[0]);
+    var lon1 = parseFloat(latlon1.split(",")[1]);
+    var lat2 = parseFloat(latlon2.split(",")[0]);
+    var lon2 = parseFloat(latlon2.split(",")[1]);
+    var deltay = (lat2 - lat1)*feetperdegree;
+    var deltax = (lon2 - lon1)*feetperdegree*Math.cos(Math.PI*lat1/180);
+    var angle = Math.atan2(deltax,deltay);
+    return angle;
+}
+
+
