@@ -32,7 +32,7 @@ function finddistance(latlon1,latlon2){
     var deltay = (lat2 - lat1)*feetperdegree;
     var deltax = (lon2 - lon1)*feetperdegree*Math.cos(Math.PI*lat1/180);
     var deltar = Math.sqrt(deltax*deltax + deltay*deltay);
-    return deltar;
+    return deltar;//distance in feet between points
 }
 function findangle(latlon1,latlon2){
     var lat1 = parseFloat(latlon1.split(",")[0]);
@@ -42,7 +42,7 @@ function findangle(latlon1,latlon2){
     var deltay = (lat2 - lat1)*feetperdegree;
     var deltax = (lon2 - lon1)*feetperdegree*Math.cos(Math.PI*lat1/180);
     var angle = Math.atan2(deltax,deltay);
-    return angle;
+    return angle;//angle in radians from North, so zero if latlon 2 due north of latlon1 in clockwise direction
 }
 
 

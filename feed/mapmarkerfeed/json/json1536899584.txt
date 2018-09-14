@@ -1,0 +1,7 @@
+{
+    "imgurl": "https://i.imgur.com/2TiqtKO.jpg",
+    "marker0": "crystal and 23rd",
+    "marker1": "crystal and 12th",
+    "latlon0": "38.853315, -77.049540",
+    "latlon1": "38.862352, -77.048726"
+}

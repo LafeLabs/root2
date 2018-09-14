@@ -1,0 +1,21 @@
+[
+    {
+        "imgurl": "https://i.imgur.com/UV6tmWR.png",
+        "marker0": "hains point",
+        "latlon0": "38.856778, -77.021952",
+        "marker1": "lincoln memorial",
+        "latlon1": "38.889273, -77.050012"
+    },
+    {
+        "imgurl": "https://i.imgur.com/Aabwa5e.jpg"
+    },
+    {
+        "imgurl": "https://i.imgur.com/Aabwa5e.jpg"
+    },
+    {
+        "imgurl": "https://i.imgur.com/2TiqtKO.jpg"
+    },
+    {
+        "imgurl": "https://i.imgur.com/g0nVLdt.jpg"
+    }
+]

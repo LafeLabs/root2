@@ -10,209 +10,209 @@
     "imgangle": 0,
     "svgwidth": 700,
     "svgheight": 500,
-    "unit": 75.13148009015777,
-    "x0": 615.5,
-    "y0": 409,
+    "unit": 68.30134553650706,
+    "x0": 684,
+    "y0": 444.45454545454544,
     "x0rel": 0,
-    "y0rel": 50,
+    "y0rel": 45.45454545454544,
     "glyph": "0333,0333,0321,0333,0333,0331,0331,0331,0336,0333,0330,0333,0337,0362,0203,0203,0203,0203,0203,0203,0203,0334,0203,0203,0203,0203,0203,0203,0203,0203,0203,0203,0334,0203,0203,0203,0203,0203,0203,0203,0203,0334,0203,0203,0203,0203,0203,0203,0203,0203,0203,0203,0334,0203,0363,0300,0332,0330,0332,0332,0332,0332,0336,0332,0332,0330,0211,0333,0333,0333,0224,0330,0330,0330,0330,0330,0330,0330,0332,0330,0332,0332,0336,0333,0337,0225,",
     "table": []
 }
 </json>
 -->
-	<path d = "M726 488 L726 413 L726 338 L726 262 L726 187 L726 112 L726 37 L726 -38 L651 -38 L575 -38 L500 -38 L425 -38 L350 -38 L275 -38 L200 -38 L125 -38 L49 -38 L-26 -38 L-26 37 L-26 112 L-26 187 L-26 262 L-26 338 L-26 413 L-26 488 L-26 563 L49 563 L125 563 L200 563 L275 563 L350 563 L425 563 L500 563 L575 563 L651 563 L726 563 L726 488 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M71 187 L71 144 L28 144 L28 187 L71 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="50" cy = "166" r = "21.489909948072285" stroke = "black" stroke-width = "3" fill = "none" />
-    <line x1="50" y1="166" x2="50" y2="144" style="stroke:black;stroke-width:3" />
-    <line x1="50" y1="166" x2="71" y2="166" style="stroke:black;stroke-width:3" />
-    <line x1="50" y1="166" x2="50" y2="187" style="stroke:black;stroke-width:3" />
-    <line x1="50" y1="166" x2="28" y2="166" style="stroke:black;stroke-width:3" />
-    <circle cx="42" cy = "158" r = "5.372477487018071" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="57" cy = "158" r = "5.372477487018071" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="57" cy = "173" r = "5.372477487018071" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="42" cy = "173" r = "5.372477487018071" stroke = "black" stroke-width = "3" fill = "none" />
-	<path d = "M114 187 L114 144 L71 144 L71 187 L114 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="93" y1="166" x2="93" y2="144" style="stroke:black;stroke-width:3" />
-    <line x1="93" y1="166" x2="113" y2="159" style="stroke:black;stroke-width:3" />
-    <line x1="93" y1="166" x2="105" y2="183" style="stroke:black;stroke-width:3" />
-    <line x1="93" y1="166" x2="80" y2="183" style="stroke:black;stroke-width:3" />
-    <line x1="93" y1="166" x2="72" y2="159" style="stroke:black;stroke-width:3" />
-    <circle cx="93" cy = "166" r = "21.489909948072285" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="99" cy = "157" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="103" cy = "169" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="93" cy = "177" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="82" cy = "169" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="86" cy = "157" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-	<path d = "M157 187 L157 144 L114 144 L114 187 L157 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="136" y1="166" x2="136" y2="144" style="stroke:black;stroke-width:3" />
-    <line x1="136" y1="166" x2="154" y2="155" style="stroke:black;stroke-width:3" />
-    <line x1="136" y1="166" x2="154" y2="177" style="stroke:black;stroke-width:3" />
-    <line x1="136" y1="166" x2="136" y2="187" style="stroke:black;stroke-width:3" />
-    <line x1="136" y1="166" x2="117" y2="177" style="stroke:black;stroke-width:3" />
-    <circle cx="136" cy = "166" r = "21.489909948072285" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="130" cy = "157" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="141" cy = "157" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="146" cy = "166" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="141" cy = "175" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="130" cy = "175" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-    <line x1="136" y1="166" x2="117" y2="155" style="stroke:black;stroke-width:3" />
-    <circle cx="125" cy = "166" r = "2.6862387435090356" stroke = "black" stroke-width = "3" fill = "none" />
-	<path d = "M200 187 L200 144 L157 144 L157 187 L200 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M194 151 L179 166 L194 181 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="179" y1="166" x2="184" y2="166" style="stroke:black;stroke-width:3" />
-    <line x1="189" y1="166" x2="195" y2="166" style="stroke:black;stroke-width:3" />
-	<path d = "M243 187 L243 144 L200 144 L200 187 L243 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M237 181 L222 166 L225 162 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="229" y1="158" x2="233" y2="154" style="stroke:black;stroke-width:3" />
-    <line x1="237" y1="151" x2="241" y2="147" style="stroke:black;stroke-width:3" />
-    <line x1="222" y1="166" x2="243" y2="166" style="stroke:black;stroke-width:3" />
-	<path d = "M286 187 L286 144 L243 144 L243 187 L286 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="265" y1="166" x2="280" y2="151" style="stroke:black;stroke-width:3" />
-    <line x1="265" y1="166" x2="270" y2="164" style="stroke:black;stroke-width:3" />
-    <line x1="275" y1="163" x2="280" y2="162" style="stroke:black;stroke-width:3" />
-    <line x1="265" y1="166" x2="270" y2="167" style="stroke:black;stroke-width:3" />
-    <line x1="275" y1="169" x2="280" y2="170" style="stroke:black;stroke-width:3" />
-    <line x1="265" y1="166" x2="280" y2="181" style="stroke:black;stroke-width:3" />
-	<path d = "M329 187 L329 144 L286 144 L286 187 L329 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="308" y1="166" x2="328" y2="160" style="stroke:black;stroke-width:3" />
-    <line x1="308" y1="166" x2="328" y2="171" style="stroke:black;stroke-width:3" />
-    <line x1="308" y1="166" x2="311" y2="170" style="stroke:black;stroke-width:3" />
-    <line x1="315" y1="173" x2="319" y2="177" style="stroke:black;stroke-width:3" />
-    <line x1="308" y1="166" x2="311" y2="162" style="stroke:black;stroke-width:3" />
-    <line x1="315" y1="158" x2="319" y2="154" style="stroke:black;stroke-width:3" />
-	<path d = "M372 187 L372 144 L329 144 L329 187 L372 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="350" y1="187" x2="372" y2="166" style="stroke:black;stroke-width:3" />
-    <line x1="372" y1="166" x2="350" y2="144" style="stroke:black;stroke-width:3" />
-    <line x1="350" y1="144" x2="329" y2="166" style="stroke:black;stroke-width:3" />
-    <line x1="329" y1="166" x2="350" y2="187" style="stroke:black;stroke-width:3" />
-	<path d = "M415 187 L415 144 L372 144 L372 187 L415 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M415 187 L393 121 L372 187 L415 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="415" y1="187" x2="380" y2="162" style="stroke:black;stroke-width:3" />
-    <line x1="380" y1="162" x2="402" y2="146" style="stroke:black;stroke-width:3" />
-    <line x1="402" y1="146" x2="388" y2="137" style="stroke:black;stroke-width:3" />
-	<path d = "M458 187 L458 144 L415 144 L415 187 L458 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M458 187 L436 150 L415 187 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="436" y1="187" x2="436" y2="150" style="stroke:black;stroke-width:3" />
-    <line x1="436" y1="187" x2="453" y2="178" style="stroke:black;stroke-width:3" />
-	<path d = "M501 187 L501 144 L458 144 L458 187 L501 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M490 177 L490 166 L479 166 L469 166 L469 177 L479 177 L490 177 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="479" y1="177" x2="479" y2="166" style="stroke:black;stroke-width:3" />
-	<path d = "M544 187 L544 144 L501 144 L501 187 L544 187 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M515 173 L515 159 L501 159 L501 173 L515 173 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M530 173 L530 159 L515 159 L515 173 L530 173 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M544 173 L544 159 L530 159 L530 173 L544 173 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M587 187 L587 144 L544 144 L544 187 L587 187 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="555" cy = "177" r = "5.372477487018072" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="555" cy = "155" r = "5.372477487018072" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="565" cy = "166" r = "5.372477487018072" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="576" cy = "155" r = "5.372477487018072" stroke = "black" stroke-width = "3" fill = "none" />
-    <circle cx="576" cy = "177" r = "5.372477487018072" stroke = "black" stroke-width = "3" fill = "none" />
-    <text x="39" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">`</text>
-    <text x="82" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">1</text>
-    <text x="125" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">2</text>
-    <text x="168" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">3</text>
-    <text x="211" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">4</text>
-    <text x="254" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">5</text>
-    <text x="297" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">6</text>
-    <text x="340" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">7</text>
-    <text x="383" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">8</text>
-    <text x="426" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">9</text>
-    <text x="469" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">0</text>
-    <text x="512" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">-</text>
-    <text x="555" y = "220" fill = "black" font-size = "21.489909948072288px" font-family = "arial">=</text>
-	<path d = "M136 273 L136 230 L93 230 L93 273 L136 273 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="103" cy = "263" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M103 263 L103 241 L125 241 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M117 233 L125 241 L117 249 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="136" y1="273" x2="143" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="146" y1="273" x2="154" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="157" y1="273" x2="165" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="168" y1="273" x2="175" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M179 273 L179 230 L136 230 L136 273 L179 273 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="146" y1="252" x2="168" y2="252" style="stroke:black;stroke-width:3" />
-    <line x1="168" y1="252" x2="164" y2="256" style="stroke:black;stroke-width:3" />
-    <line x1="168" y1="252" x2="164" y2="248" style="stroke:black;stroke-width:3" />
-    <line x1="179" y1="273" x2="186" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="189" y1="273" x2="197" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="200" y1="273" x2="208" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="211" y1="273" x2="218" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M222 273 L222 230 L179 230 L179 273 L222 273 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M189 241 L211 241 L211 263 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M203 255 L211 263 L218 255 " stroke = "black" stroke-width = "3" fill = "none" /><circle cx="211" cy = "263" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M265 273 L265 230 L222 230 L222 273 L265 273 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="232" y1="263" x2="254" y2="263" style="stroke:black;stroke-width:3" />
-<circle cx="232" cy = "263" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-<path    d = "M232,263 C254,263 232,241 254,241" fill = "none" stroke-width = "3" stroke = "black" />    <line x1="222" y1="273" x2="229" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="232" y1="273" x2="240" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="243" y1="273" x2="251" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="254" y1="273" x2="261" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M308 273 L308 230 L265 230 L265 273 L308 273 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="275" y1="263" x2="297" y2="263" style="stroke:black;stroke-width:3" />
-<circle cx="275" cy = "263" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-<path    d = "M275,263 C297,263 275,241 297,241" fill = "none" stroke-width = "3" stroke = "black" />	<path d = "M350 273 L350 230 L308 230 L308 273 L350 273 Z" stroke = "black" stroke-width = "3" fill = "none" /><path    d = "M318,263 C340,263 318,241 340,241" fill = "none" stroke-width = "3" stroke = "black" /><circle cx="340" cy = "241" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-    <line x1="340" y1="241" x2="318" y2="241" style="stroke:black;stroke-width:3" />
-	<path d = "M393 273 L393 230 L350 230 L350 273 L393 273 Z" stroke = "black" stroke-width = "3" fill = "none" /><path    d = "M361,263 C383,263 361,241 383,241" fill = "none" stroke-width = "3" stroke = "black" /><circle cx="383" cy = "241" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-    <line x1="383" y1="241" x2="361" y2="241" style="stroke:black;stroke-width:3" />
-    <line x1="350" y1="273" x2="358" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="361" y1="273" x2="369" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="372" y1="273" x2="380" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="383" y1="273" x2="390" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="393" y1="273" x2="401" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="404" y1="273" x2="412" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="415" y1="273" x2="423" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="426" y1="273" x2="433" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M436 273 L436 230 L393 230 L393 273 L436 273 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M393.47904826471745 273.26241965703514           A42.979819896144576 42.979819896144576 0 0 1 436.4588681608627 230.28259976089146" fill = "none" stroke = "black" stroke-width = "3" />
-    <line x1="436" y1="273" x2="444" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="447" y1="273" x2="455" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="458" y1="273" x2="466" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="469" y1="273" x2="476" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M479 273 L479 230 L436 230 L436 273 L479 273 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M436.4588681608632 230.28259976089055           A42.979819896144576 42.979819896144576 0 0 1 479.4386880570062 273.2624196570365" fill = "none" stroke = "black" stroke-width = "3" />
-	<path d = "M522 273 L522 230 L479 230 L479 273 L522 273 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="501" cy = "252" r = "10.744954974036144" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M565 273 L565 230 L522 230 L522 273 L565 273 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M527 246 L536 261 L544 246 L552 261 L560 246 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="565" y1="273" x2="573" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="576" y1="273" x2="584" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="587" y1="273" x2="594" y2="266" style="stroke:black;stroke-width:3" />
-    <line x1="598" y1="273" x2="605" y2="266" style="stroke:black;stroke-width:3" />
-	<path d = "M608 273 L608 230 L565 230 L565 273 L608 273 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M598 263 L598 241 L576 241 L576 263 L598 263 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M651 273 L651 230 L608 230 L608 273 L651 273 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="619" y1="252" x2="641" y2="252" style="stroke:black;stroke-width:3" />
-    <line x1="641" y1="252" x2="637" y2="256" style="stroke:black;stroke-width:3" />
-    <line x1="641" y1="252" x2="637" y2="248" style="stroke:black;stroke-width:3" />
-    <text x="103" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">q</text>
-    <text x="146" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">w</text>
-    <text x="189" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">e</text>
-    <text x="232" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">r</text>
-    <text x="275" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">t</text>
-    <text x="318" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">y</text>
-    <text x="361" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">u</text>
-    <text x="404" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">i</text>
-    <text x="447" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">o</text>
-    <text x="490" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">p</text>
-    <text x="533" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">[</text>
-    <text x="576" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">]</text>
-    <text x="619" y = "305" fill = "black" font-size = "21.489909948072288px" font-family = "arial">\</text>
-	<path d = "M157 359 L157 316 L114 316 L114 359 L157 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M141 348 L130 348 L130 338 L125 338 L130 332 L136 327 L141 332 L146 338 L141 338 L141 348 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M200 359 L200 316 L157 316 L157 359 L200 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M173 327 L184 327 L184 338 L189 338 L184 343 L179 348 L173 343 L168 338 L173 338 L173 327 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M243 359 L243 316 L200 316 L200 359 L243 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M232 332 L232 343 L222 343 L222 348 L216 343 L211 338 L216 332 L222 327 L222 332 L232 332 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M286 359 L286 316 L243 316 L243 359 L286 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M254 343 L254 332 L265 332 L265 327 L270 332 L275 338 L270 343 L265 348 L265 343 L254 343 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M329 359 L329 316 L286 316 L286 359 L329 359 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M299.92157794673267 330.1343189755193           A10.744954974036151 10.744954974036151 0 0 1 315.1172389981028 330.1343189755206" fill = "none" stroke = "black" stroke-width = "3" />
-  <path d="M299.92157794673125 345.3299800268894           A10.744954974036151 10.744954974036151 0 0 1 299.92157794673267 330.1343189755193" fill = "none" stroke = "black" stroke-width = "3" />
-  <path d="M315.1172389981014 345.32998002689095           A10.744954974036151 10.744954974036151 0 0 1 299.92157794673125 345.3299800268894" fill = "none" stroke = "black" stroke-width = "3" />
-	<path d = "M311 355 L315 345 L305 341 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M372 359 L372 316 L329 316 L329 359 L372 359 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M358.09705889424583 345.32998002689436           A10.744954974036151 10.744954974036151 0 0 1 342.90139784287567 345.3299800268928" fill = "none" stroke = "black" stroke-width = "3" />
-  <path d="M342.90139784287567 345.3299800268928           A10.744954974036151 10.744954974036151 0 0 1 342.9013978428771 330.1343189755227" fill = "none" stroke = "black" stroke-width = "3" />
-  <path d="M342.9013978428771 330.1343189755227           A10.744954974036151 10.744954974036151 0 0 1 358.0970588942472 330.134318975524" fill = "none" stroke = "black" stroke-width = "3" />
-	<path d = "M348 334 L358 330 L354 320 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M415 359 L415 316 L372 316 L372 359 L415 359 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="404" y1="338" x2="383" y2="338" style="stroke:black;stroke-width:3" />
-	<path d = "M458 359 L458 316 L415 316 L415 359 L458 359 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="436" y1="338" x2="436" y2="327" style="stroke:black;stroke-width:3" />
-    <line x1="436" y1="338" x2="426" y2="338" style="stroke:black;stroke-width:3" />
-    <line x1="436" y1="338" x2="436" y2="348" style="stroke:black;stroke-width:3" />
-    <line x1="436" y1="338" x2="447" y2="338" style="stroke:black;stroke-width:3" />
-	<path d = "M501 359 L501 316 L458 316 L458 359 L501 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M469 338 L469 327 L479 338 L469 348 L469 338 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M479 338 L490 327 L490 338 L490 348 L479 338 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M544 359 L544 316 L501 316 L501 359 L544 359 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M512 338 L512 348 L501 338 L512 327 L512 338 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M544 338 L533 348 L533 338 L533 327 L544 338 " stroke = "black" stroke-width = "3" fill = "none" />    <text x="125" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">a</text>
-    <text x="168" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">s</text>
-    <text x="211" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">d</text>
-    <text x="254" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">f</text>
-    <text x="297" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">g</text>
-    <text x="340" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">h</text>
-    <text x="383" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">j</text>
-    <text x="426" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">k</text>
-    <text x="469" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">l</text>
-    <text x="512" y = "391" fill = "black" font-size = "21.489909948072302px" font-family = "arial">;</text>
-	<path d = "M179 445 L179 402 L136 402 L136 445 L179 445 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="157" cy = "424" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M222 445 L222 402 L179 402 L179 445 L222 445 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="200" cy = "424" r = "21.489909948072302" stroke = "black" stroke-width = "3" fill = "none" />
-<circle cx="200" cy = "424" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M265 445 L265 402 L222 402 L222 445 L265 445 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="243" y1="424" x2="232" y2="424" style="stroke:black;stroke-width:3" />
-<circle cx="232" cy = "424" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-    <line x1="243" y1="424" x2="254" y2="424" style="stroke:black;stroke-width:3" />
-<circle cx="254" cy = "424" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M308 445 L308 402 L265 402 L265 445 L308 445 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M270.8338374729703 408.49612824212034           A21.489909948072302 21.489909948072302 0 0 1 301.22515957571056 408.4961282421256" fill = "none" stroke = "black" stroke-width = "3" />
-    <line x1="286" y1="424" x2="301" y2="408" style="stroke:black;stroke-width:3" />
-    <line x1="286" y1="424" x2="271" y2="408" style="stroke:black;stroke-width:3" />
-<circle cx="286" cy = "424" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-	<path d = "M350 445 L350 402 L308 402 L308 445 L350 445 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M340 434 L340 413 L318 413 L318 434 L340 434 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M393 445 L393 402 L350 402 L350 445 L393 445 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M372 424 L361 424 L372 413 L383 424 L372 424 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M436 445 L436 402 L393 402 L393 445 L436 445 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M415 424 L426 424 L415 434 L404 424 L415 424 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M479 445 L479 402 L436 402 L436 445 L479 445 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M458 424 L458 434 L447 424 L458 413 L458 424 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M522 445 L522 402 L479 402 L479 445 L522 445 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M501 424 L501 413 L512 424 L501 434 L501 424 " stroke = "black" stroke-width = "3" fill = "none" />    <text x="146" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">z</text>
-    <text x="189" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">x</text>
-    <text x="232" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">c</text>
-    <text x="275" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">v</text>
-    <text x="318" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">b</text>
-    <text x="361" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">n</text>
-    <text x="404" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">m</text>
-    <text x="447" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">,</text>
-    <text x="501" y = "477" fill = "black" font-size = "21.489909948072302px" font-family = "arial">.</text>
-	<path d = "M71 101 L71 58 L28 58 L28 101 L71 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M60 91 L60 69 L39 69 L39 91 L60 91 Z" stroke = "black" stroke-width = "3" fill = "black" />	<path d = "M114 101 L114 58 L71 58 L71 101 L114 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M103 91 L103 69 L82 69 L82 91 L103 91 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M157 101 L157 58 L114 58 L114 101 L157 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M146 91 L146 69 L125 69 L125 91 L146 91 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M200 101 L200 58 L157 58 L157 101 L200 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M189 91 L189 69 L168 69 L168 91 L189 91 Z" stroke = "orange" stroke-width = "6" fill = "orange" />	<path d = "M243 101 L243 58 L200 58 L200 101 L243 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M232 91 L232 69 L211 69 L211 91 L232 91 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M286 101 L286 58 L243 58 L243 101 L286 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M275 91 L275 69 L254 69 L254 91 L275 91 Z" stroke = "green" stroke-width = "6" fill = "green" />	<path d = "M329 101 L329 58 L286 58 L286 101 L329 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M318 91 L318 69 L297 69 L297 91 L318 91 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M372 101 L372 58 L329 58 L329 101 L372 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M361 91 L361 69 L340 69 L340 91 L361 91 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M415 101 L415 58 L372 58 L372 101 L415 101 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="393" cy = "80" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
-    <line x1="401" y1="72" x2="409" y2="65" style="stroke:black;stroke-width:3" />
-    <line x1="378" y1="95" x2="386" y2="87" style="stroke:black;stroke-width:3" />
-    <line x1="378" y1="65" x2="386" y2="72" style="stroke:black;stroke-width:3" />
-    <line x1="401" y1="87" x2="409" y2="95" style="stroke:black;stroke-width:3" />
-	<path d = "M458 101 L458 58 L415 58 L415 101 L458 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M501 101 L501 58 L458 58 L458 101 L501 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M544 101 L544 58 L501 58 L501 101 L544 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M533 91 L533 69 L512 69 L512 91 L533 91 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M533 91 L533 66 L509 66 L509 91 L533 91 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="517" y1="80" x2="528" y2="80" style="stroke:black;stroke-width:3" />
-	<path d = "M587 101 L587 58 L544 58 L544 101 L587 101 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M576 91 L576 69 L555 69 L555 91 L576 91 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M576 91 L576 66 L552 66 L552 91 L576 91 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="560" y1="80" x2="571" y2="80" style="stroke:black;stroke-width:3" />
-    <line x1="565" y1="80" x2="565" y2="74" style="stroke:black;stroke-width:3" />
-    <line x1="565" y1="80" x2="565" y2="85" style="stroke:black;stroke-width:3" />
-    <text x="39" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">~</text>
-    <text x="82" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">!</text>
-    <text x="125" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">@</text>
-    <text x="168" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">#</text>
-    <text x="211" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">$</text>
-    <text x="254" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">%</text>
-    <text x="297" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">^</text>
-    <text x="340" y = "134" fill = "black" font-size = "21.489909948072302px" font-family = "arial">
+	<path d = "M692 466 L692 398 L692 330 L692 261 L692 193 L692 125 L692 56 L692 -12 L623 -12 L555 -12 L487 -12 L418 -12 L350 -12 L282 -12 L213 -12 L145 -12 L77 -12 L8 -12 L8 56 L8 125 L8 193 L8 261 L8 330 L8 398 L8 466 L8 535 L77 535 L145 535 L213 535 L282 535 L350 535 L418 535 L487 535 L555 535 L623 535 L692 535 L692 466 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M96 193 L96 154 L57 154 L57 193 L96 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="77" cy = "173" r = "19.536281770974803" stroke = "black" stroke-width = "3" fill = "none" />
+    <line x1="77" y1="173" x2="77" y2="154" style="stroke:black;stroke-width:3" />
+    <line x1="77" y1="173" x2="96" y2="173" style="stroke:black;stroke-width:3" />
+    <line x1="77" y1="173" x2="77" y2="193" style="stroke:black;stroke-width:3" />
+    <line x1="77" y1="173" x2="57" y2="173" style="stroke:black;stroke-width:3" />
+    <circle cx="70" cy = "167" r = "4.884070442743701" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="84" cy = "167" r = "4.884070442743701" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="84" cy = "180" r = "4.884070442743701" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="70" cy = "180" r = "4.884070442743701" stroke = "black" stroke-width = "3" fill = "none" />
+	<path d = "M136 193 L136 154 L96 154 L96 193 L136 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="116" y1="173" x2="116" y2="154" style="stroke:black;stroke-width:3" />
+    <line x1="116" y1="173" x2="135" y2="167" style="stroke:black;stroke-width:3" />
+    <line x1="116" y1="173" x2="128" y2="189" style="stroke:black;stroke-width:3" />
+    <line x1="116" y1="173" x2="105" y2="189" style="stroke:black;stroke-width:3" />
+    <line x1="116" y1="173" x2="97" y2="167" style="stroke:black;stroke-width:3" />
+    <circle cx="116" cy = "173" r = "19.536281770974803" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="122" cy = "166" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="125" cy = "176" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="116" cy = "183" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="107" cy = "176" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="110" cy = "166" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+	<path d = "M175 193 L175 154 L136 154 L136 193 L175 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="155" y1="173" x2="155" y2="154" style="stroke:black;stroke-width:3" />
+    <line x1="155" y1="173" x2="172" y2="164" style="stroke:black;stroke-width:3" />
+    <line x1="155" y1="173" x2="172" y2="183" style="stroke:black;stroke-width:3" />
+    <line x1="155" y1="173" x2="155" y2="193" style="stroke:black;stroke-width:3" />
+    <line x1="155" y1="173" x2="138" y2="183" style="stroke:black;stroke-width:3" />
+    <circle cx="155" cy = "173" r = "19.536281770974803" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="150" cy = "165" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="160" cy = "165" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="165" cy = "173" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="160" cy = "182" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="150" cy = "182" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+    <line x1="155" y1="173" x2="138" y2="164" style="stroke:black;stroke-width:3" />
+    <circle cx="145" cy = "173" r = "2.4420352213718504" stroke = "black" stroke-width = "3" fill = "none" />
+	<path d = "M214 193 L214 154 L175 154 L175 193 L214 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M208 160 L194 173 L208 187 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="194" y1="173" x2="199" y2="173" style="stroke:black;stroke-width:3" />
+    <line x1="204" y1="173" x2="209" y2="173" style="stroke:black;stroke-width:3" />
+	<path d = "M253 193 L253 154 L214 154 L214 193 L253 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M247 187 L233 173 L237 170 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="240" y1="167" x2="244" y2="163" style="stroke:black;stroke-width:3" />
+    <line x1="247" y1="160" x2="251" y2="156" style="stroke:black;stroke-width:3" />
+    <line x1="233" y1="173" x2="253" y2="173" style="stroke:black;stroke-width:3" />
+	<path d = "M292 193 L292 154 L253 154 L253 193 L292 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="272" y1="173" x2="286" y2="160" style="stroke:black;stroke-width:3" />
+    <line x1="272" y1="173" x2="277" y2="172" style="stroke:black;stroke-width:3" />
+    <line x1="282" y1="171" x2="286" y2="170" style="stroke:black;stroke-width:3" />
+    <line x1="272" y1="173" x2="277" y2="175" style="stroke:black;stroke-width:3" />
+    <line x1="282" y1="176" x2="286" y2="177" style="stroke:black;stroke-width:3" />
+    <line x1="272" y1="173" x2="286" y2="187" style="stroke:black;stroke-width:3" />
+	<path d = "M331 193 L331 154 L292 154 L292 193 L331 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="311" y1="173" x2="330" y2="168" style="stroke:black;stroke-width:3" />
+    <line x1="311" y1="173" x2="330" y2="179" style="stroke:black;stroke-width:3" />
+    <line x1="311" y1="173" x2="315" y2="177" style="stroke:black;stroke-width:3" />
+    <line x1="318" y1="180" x2="322" y2="184" style="stroke:black;stroke-width:3" />
+    <line x1="311" y1="173" x2="315" y2="170" style="stroke:black;stroke-width:3" />
+    <line x1="318" y1="167" x2="322" y2="163" style="stroke:black;stroke-width:3" />
+	<path d = "M370 193 L370 154 L331 154 L331 193 L370 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="350" y1="193" x2="370" y2="173" style="stroke:black;stroke-width:3" />
+    <line x1="370" y1="173" x2="350" y2="154" style="stroke:black;stroke-width:3" />
+    <line x1="350" y1="154" x2="331" y2="173" style="stroke:black;stroke-width:3" />
+    <line x1="331" y1="173" x2="350" y2="193" style="stroke:black;stroke-width:3" />
+	<path d = "M409 193 L409 154 L370 154 L370 193 L409 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M409 193 L390 133 L370 193 L409 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="409" y1="193" x2="377" y2="170" style="stroke:black;stroke-width:3" />
+    <line x1="377" y1="170" x2="397" y2="156" style="stroke:black;stroke-width:3" />
+    <line x1="397" y1="156" x2="385" y2="147" style="stroke:black;stroke-width:3" />
+	<path d = "M448 193 L448 154 L409 154 L409 193 L448 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M448 193 L429 159 L409 193 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="429" y1="193" x2="429" y2="159" style="stroke:black;stroke-width:3" />
+    <line x1="429" y1="193" x2="443" y2="185" style="stroke:black;stroke-width:3" />
+	<path d = "M487 193 L487 154 L448 154 L448 193 L487 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M477 183 L477 173 L468 173 L458 173 L458 183 L468 183 L477 183 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="468" y1="183" x2="468" y2="173" style="stroke:black;stroke-width:3" />
+	<path d = "M526 193 L526 154 L487 154 L487 193 L526 193 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M500 180 L500 167 L487 167 L487 180 L500 180 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M513 180 L513 167 L500 167 L500 180 L513 180 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M526 180 L526 167 L513 167 L513 180 L526 180 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M565 193 L565 154 L526 154 L526 193 L565 193 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="536" cy = "183" r = "4.8840704427437" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="536" cy = "164" r = "4.8840704427437" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="546" cy = "173" r = "4.8840704427437" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="556" cy = "164" r = "4.8840704427437" stroke = "black" stroke-width = "3" fill = "none" />
+    <circle cx="556" cy = "183" r = "4.8840704427437" stroke = "black" stroke-width = "3" fill = "none" />
+    <text x="67" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">`</text>
+    <text x="106" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">1</text>
+    <text x="145" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">2</text>
+    <text x="184" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">3</text>
+    <text x="223" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">4</text>
+    <text x="263" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">5</text>
+    <text x="302" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">6</text>
+    <text x="341" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">7</text>
+    <text x="380" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">8</text>
+    <text x="419" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">9</text>
+    <text x="458" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">0</text>
+    <text x="497" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">-</text>
+    <text x="536" y = "222" fill = "black" font-size = "19.5362817709748px" font-family = "arial">=</text>
+	<path d = "M155 271 L155 232 L116 232 L116 271 L155 271 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="126" cy = "261" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M126 261 L126 242 L145 242 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M138 235 L145 242 L138 249 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="155" y1="271" x2="162" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="165" y1="271" x2="172" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="175" y1="271" x2="182" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="184" y1="271" x2="191" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M194 271 L194 232 L155 232 L155 271 L194 271 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="165" y1="252" x2="184" y2="252" style="stroke:black;stroke-width:3" />
+    <line x1="184" y1="252" x2="181" y2="255" style="stroke:black;stroke-width:3" />
+    <line x1="184" y1="252" x2="181" y2="248" style="stroke:black;stroke-width:3" />
+    <line x1="194" y1="271" x2="201" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="204" y1="271" x2="211" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="214" y1="271" x2="221" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="223" y1="271" x2="230" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M233 271 L233 232 L194 232 L194 271 L233 271 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M204 242 L223 242 L223 261 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M217 254 L223 261 L230 254 " stroke = "black" stroke-width = "3" fill = "none" /><circle cx="223" cy = "261" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M272 271 L272 232 L233 232 L233 271 L272 271 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="243" y1="261" x2="263" y2="261" style="stroke:black;stroke-width:3" />
+<circle cx="243" cy = "261" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+<path    d = "M243,261 C263,261 243,242 263,242" fill = "none" stroke-width = "3" stroke = "black" />    <line x1="233" y1="271" x2="240" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="243" y1="271" x2="250" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="253" y1="271" x2="260" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="263" y1="271" x2="269" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M311 271 L311 232 L272 232 L272 271 L311 271 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="282" y1="261" x2="302" y2="261" style="stroke:black;stroke-width:3" />
+<circle cx="282" cy = "261" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+<path    d = "M282,261 C302,261 282,242 302,242" fill = "none" stroke-width = "3" stroke = "black" />	<path d = "M350 271 L350 232 L311 232 L311 271 L350 271 Z" stroke = "black" stroke-width = "3" fill = "none" /><path    d = "M321,261 C341,261 321,242 341,242" fill = "none" stroke-width = "3" stroke = "black" /><circle cx="341" cy = "242" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+    <line x1="341" y1="242" x2="321" y2="242" style="stroke:black;stroke-width:3" />
+	<path d = "M390 271 L390 232 L350 232 L350 271 L390 271 Z" stroke = "black" stroke-width = "3" fill = "none" /><path    d = "M360,261 C380,261 360,242 380,242" fill = "none" stroke-width = "3" stroke = "black" /><circle cx="380" cy = "242" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+    <line x1="380" y1="242" x2="360" y2="242" style="stroke:black;stroke-width:3" />
+    <line x1="350" y1="271" x2="357" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="360" y1="271" x2="367" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="370" y1="271" x2="377" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="380" y1="271" x2="387" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="390" y1="271" x2="396" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="399" y1="271" x2="406" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="409" y1="271" x2="416" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="419" y1="271" x2="426" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M429 271 L429 232 L390 232 L390 271 L429 271 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M389.52640751338 271.1476542336682           A39.0725635419496 39.0725635419496 0 0 1 428.5989710553302 232.07509069171942" fill = "none" stroke = "black" stroke-width = "3" />
+    <line x1="429" y1="271" x2="436" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="438" y1="271" x2="445" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="448" y1="271" x2="455" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="458" y1="271" x2="465" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M468 271 L468 232 L429 232 L429 271 L468 271 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M428.5989710553307 232.07509069171869           A39.0725635419496 39.0725635419496 0 0 1 467.6715345972788 271.1476542336695" fill = "none" stroke = "black" stroke-width = "3" />
+	<path d = "M507 271 L507 232 L468 232 L468 271 L507 271 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="487" cy = "252" r = "9.7681408854874" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M546 271 L546 232 L507 232 L507 271 L546 271 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M511 247 L519 260 L526 247 L534 260 L541 247 " stroke = "black" stroke-width = "3" fill = "none" />    <line x1="546" y1="271" x2="553" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="556" y1="271" x2="562" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="565" y1="271" x2="572" y2="264" style="stroke:black;stroke-width:3" />
+    <line x1="575" y1="271" x2="582" y2="264" style="stroke:black;stroke-width:3" />
+	<path d = "M585 271 L585 232 L546 232 L546 271 L585 271 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M575 261 L575 242 L556 242 L556 261 L575 261 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M624 271 L624 232 L585 232 L585 271 L624 271 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="595" y1="252" x2="614" y2="252" style="stroke:black;stroke-width:3" />
+    <line x1="614" y1="252" x2="611" y2="255" style="stroke:black;stroke-width:3" />
+    <line x1="614" y1="252" x2="611" y2="248" style="stroke:black;stroke-width:3" />
+    <text x="126" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">q</text>
+    <text x="165" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">w</text>
+    <text x="204" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">e</text>
+    <text x="243" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">r</text>
+    <text x="282" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">t</text>
+    <text x="321" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">y</text>
+    <text x="360" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">u</text>
+    <text x="399" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">i</text>
+    <text x="438" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">o</text>
+    <text x="477" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">p</text>
+    <text x="517" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">[</text>
+    <text x="556" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">]</text>
+    <text x="595" y = "300" fill = "black" font-size = "19.5362817709748px" font-family = "arial">\</text>
+	<path d = "M175 349 L175 310 L136 310 L136 349 L175 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M160 340 L150 340 L150 330 L145 330 L150 325 L155 320 L160 325 L165 330 L160 330 L160 340 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M214 349 L214 310 L175 310 L175 349 L214 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M189 320 L199 320 L199 330 L204 330 L199 335 L194 340 L189 335 L184 330 L189 330 L189 320 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M253 349 L253 310 L214 310 L214 349 L253 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M243 325 L243 335 L233 335 L233 340 L228 335 L223 330 L228 325 L233 320 L233 325 L243 325 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M292 349 L292 310 L253 310 L253 349 L292 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M263 335 L263 325 L272 325 L272 320 L277 325 L282 330 L277 335 L272 340 L272 335 L263 335 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M331 349 L331 310 L292 310 L292 349 L331 349 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M304.4741617697575 322.8493808868371           A9.768140885487407 9.768140885487407 0 0 1 318.28839908918485 322.8493808868383" fill = "none" stroke = "black" stroke-width = "3" />
+  <path d="M304.47416176975617 336.66361820626446           A9.768140885487407 9.768140885487407 0 0 1 304.4741617697575 322.8493808868371" fill = "none" stroke = "black" stroke-width = "3" />
+  <path d="M318.2883990891836 336.6636182062658           A9.768140885487407 9.768140885487407 0 0 1 304.47416176975617 336.66361820626446" fill = "none" stroke = "black" stroke-width = "3" />
+	<path d = "M315 346 L318 337 L309 333 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M370 349 L370 310 L331 310 L331 349 L370 349 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M357.3609626311331 336.66361820626884           A9.768140885487407 9.768140885487407 0 0 1 343.5467253117057 336.6636182062675" fill = "none" stroke = "black" stroke-width = "3" />
+  <path d="M343.5467253117057 336.6636182062675           A9.768140885487407 9.768140885487407 0 0 1 343.54672531170695 322.8493808868401" fill = "none" stroke = "black" stroke-width = "3" />
+  <path d="M343.54672531170695 322.8493808868401           A9.768140885487407 9.768140885487407 0 0 1 357.3609626311343 322.8493808868413" fill = "none" stroke = "black" stroke-width = "3" />
+	<path d = "M348 327 L357 323 L354 314 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M409 349 L409 310 L370 310 L370 349 L409 349 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="399" y1="330" x2="380" y2="330" style="stroke:black;stroke-width:3" />
+	<path d = "M448 349 L448 310 L409 310 L409 349 L448 349 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="429" y1="330" x2="429" y2="320" style="stroke:black;stroke-width:3" />
+    <line x1="429" y1="330" x2="419" y2="330" style="stroke:black;stroke-width:3" />
+    <line x1="429" y1="330" x2="429" y2="340" style="stroke:black;stroke-width:3" />
+    <line x1="429" y1="330" x2="438" y2="330" style="stroke:black;stroke-width:3" />
+	<path d = "M487 349 L487 310 L448 310 L448 349 L487 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M458 330 L458 320 L468 330 L458 340 L458 330 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M468 330 L477 320 L477 330 L477 340 L468 330 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M526 349 L526 310 L487 310 L487 349 L526 349 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M497 330 L497 340 L487 330 L497 320 L497 330 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M526 330 L517 340 L517 330 L517 320 L526 330 " stroke = "black" stroke-width = "3" fill = "none" />    <text x="145" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">a</text>
+    <text x="184" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">s</text>
+    <text x="223" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">d</text>
+    <text x="263" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">f</text>
+    <text x="302" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">g</text>
+    <text x="341" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">h</text>
+    <text x="380" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">j</text>
+    <text x="419" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">k</text>
+    <text x="458" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">l</text>
+    <text x="497" y = "379" fill = "black" font-size = "19.536281770974814px" font-family = "arial">;</text>
+	<path d = "M194 427 L194 388 L155 388 L155 427 L194 427 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="175" cy = "408" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M233 427 L233 388 L194 388 L194 427 L233 427 Z" stroke = "black" stroke-width = "3" fill = "none" />    <circle cx="214" cy = "408" r = "19.536281770974814" stroke = "black" stroke-width = "3" fill = "none" />
+<circle cx="214" cy = "408" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M272 427 L272 388 L233 388 L233 427 L272 427 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="253" y1="408" x2="243" y2="408" style="stroke:black;stroke-width:3" />
+<circle cx="243" cy = "408" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+    <line x1="253" y1="408" x2="263" y2="408" style="stroke:black;stroke-width:3" />
+<circle cx="263" cy = "408" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M311 427 L311 388 L272 388 L272 427 L311 427 Z" stroke = "black" stroke-width = "3" fill = "none" />  <path d="M278.03076133906416 394.08738931101936           A19.536281770974814 19.536281770974814 0 0 1 305.6592359779189 394.0873893110242" fill = "none" stroke = "black" stroke-width = "3" />
+    <line x1="292" y1="408" x2="306" y2="394" style="stroke:black;stroke-width:3" />
+    <line x1="292" y1="408" x2="278" y2="394" style="stroke:black;stroke-width:3" />
+<circle cx="292" cy = "408" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+	<path d = "M350 427 L350 388 L311 388 L311 427 L350 427 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M341 418 L341 398 L321 398 L321 418 L341 418 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M390 427 L390 388 L350 388 L350 427 L390 427 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M370 408 L360 408 L370 398 L380 408 L370 408 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M429 427 L429 388 L390 388 L390 427 L429 427 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M409 408 L419 408 L409 418 L399 408 L409 408 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M468 427 L468 388 L429 388 L429 427 L468 427 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M448 408 L448 418 L438 408 L448 398 L448 408 " stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M507 427 L507 388 L468 388 L468 427 L507 427 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M487 408 L487 398 L497 408 L487 418 L487 408 " stroke = "black" stroke-width = "3" fill = "none" />    <text x="165" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">z</text>
+    <text x="204" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">x</text>
+    <text x="243" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">c</text>
+    <text x="282" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">v</text>
+    <text x="321" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">b</text>
+    <text x="360" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">n</text>
+    <text x="399" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">m</text>
+    <text x="438" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">,</text>
+    <text x="487" y = "457" fill = "black" font-size = "19.536281770974814px" font-family = "arial">.</text>
+	<path d = "M96 115 L96 76 L57 76 L57 115 L96 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M87 105 L87 86 L67 86 L67 105 L87 105 Z" stroke = "black" stroke-width = "3" fill = "black" />	<path d = "M136 115 L136 76 L96 76 L96 115 L136 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M126 105 L126 86 L106 86 L106 105 L126 105 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M175 115 L175 76 L136 76 L136 115 L175 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M165 105 L165 86 L145 86 L145 105 L165 105 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M214 115 L214 76 L175 76 L175 115 L214 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M204 105 L204 86 L184 86 L184 105 L204 105 Z" stroke = "orange" stroke-width = "6" fill = "orange" />	<path d = "M253 115 L253 76 L214 76 L214 115 L253 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M243 105 L243 86 L223 86 L223 105 L243 105 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M292 115 L292 76 L253 76 L253 115 L292 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M282 105 L282 86 L263 86 L263 105 L282 105 Z" stroke = "green" stroke-width = "6" fill = "green" />	<path d = "M331 115 L331 76 L292 76 L292 115 L331 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M321 105 L321 86 L302 86 L302 105 L321 105 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M370 115 L370 76 L331 76 L331 115 L370 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M360 105 L360 86 L341 86 L341 105 L360 105 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M409 115 L409 76 L370 76 L370 115 L409 115 Z" stroke = "black" stroke-width = "3" fill = "none" /><circle cx="390" cy = "95" r = "3" stroke = "black" stroke-width = "3" fill = "black" />
+    <line x1="396" y1="88" x2="403" y2="82" style="stroke:black;stroke-width:3" />
+    <line x1="376" y1="109" x2="383" y2="102" style="stroke:black;stroke-width:3" />
+    <line x1="376" y1="82" x2="383" y2="88" style="stroke:black;stroke-width:3" />
+    <line x1="396" y1="102" x2="403" y2="109" style="stroke:black;stroke-width:3" />
+	<path d = "M448 115 L448 76 L409 76 L409 115 L448 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M487 115 L487 76 L448 76 L448 115 L487 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M526 115 L526 76 L487 76 L487 115 L526 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M517 105 L517 86 L497 86 L497 105 L517 105 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M517 105 L517 83 L494 83 L494 105 L517 105 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="502" y1="95" x2="512" y2="95" style="stroke:black;stroke-width:3" />
+	<path d = "M565 115 L565 76 L526 76 L526 115 L565 115 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M556 105 L556 86 L536 86 L536 105 L556 105 Z" stroke = "black" stroke-width = "3" fill = "none" />	<path d = "M556 105 L556 83 L533 83 L533 105 L556 105 Z" stroke = "black" stroke-width = "3" fill = "none" />    <line x1="541" y1="95" x2="551" y2="95" style="stroke:black;stroke-width:3" />
+    <line x1="546" y1="95" x2="546" y2="90" style="stroke:black;stroke-width:3" />
+    <line x1="546" y1="95" x2="546" y2="100" style="stroke:black;stroke-width:3" />
+    <text x="67" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">~</text>
+    <text x="106" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">!</text>
+    <text x="145" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">@</text>
+    <text x="184" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">#</text>
+    <text x="223" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">$</text>
+    <text x="263" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">%</text>
+    <text x="302" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">^</text>
+    <text x="341" y = "144" fill = "black" font-size = "19.53628177097481px" font-family = "arial">

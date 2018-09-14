@@ -1,0 +1,7 @@
+{
+    "imgurl": "https://i.imgur.com/g0nVLdt.jpg",
+    "marker0": "capitol dome",
+    "marker1": "columbus circle fountain",
+    "latlon0": "38.889790, -77.009055",
+    "latlon1": "38.896423, -77.00663"
+}

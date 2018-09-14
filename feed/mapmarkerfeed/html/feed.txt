@@ -1,0 +1,180 @@
+<table id = "linktable">
+    <tr>
+        <td>
+            <a href = "index.php?path=mapimagefeed/">MAPIMAGEFEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "index.php?path=mapalignfeed/">MAPALIGNFEED</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href = "feededitor.php?path=mapmarkerfeed/">EDIT CODE</a>
+        </td>
+    </tr>
+
+</table>
+<div id = "imagedatadiv" style = "display:none;"></div>
+<table id = "markertable">
+    <tr>
+        <td class = "button" id = "backbutton">PREV</td><td class = "button" id = "publishbutton">PUBLISH</td><td  class = "button" id = "nextbutton">NEXT</td><td></td>
+    </tr>
+    <tr>
+        <td>Marker 0:</td><td><input/></td><td>Latlon 0:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>Marker 1:</td><td><input/></td><td>Latlon 1:</td><td><input/></td>
+    </tr>
+</table>
+
+<div id = "scrolldiv">
+<img id = "mainImage" style = "width:100%"/>
+</div>
+
+<div id = "localmemedatadiv" style = "display:none"></div>
+<script>
+path = document.getElementById("pathdiv").innerHTML;
+
+markerinputs = document.getElementById("markertable").getElementsByTagName("INPUT");
+currentFile = "mapimagefeed/html/index.html";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        document.getElementById("imagedatadiv").innerHTML += filedata;
+        init();
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+httpc.send();
+
+
+function init(){
+    imageIndex = 0;
+    images = document.getElementById("imagedatadiv").getElementsByTagName("IMG");
+    currentjson = [];
+    for(var index = 0;index < images.length;index++){
+        var localjson = {};
+        localjson.imgurl = images[index].src;
+        currentjson.push(localjson);
+    }
+    document.getElementById("mainImage").src = images[imageIndex].src;
+}
+
+function redraw(){
+    currentFile = "mapmarkerfeed/json/currentjson.txt";
+    data = encodeURIComponent(JSON.stringify(currentjson,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+}
+
+markerinputs[0].onchange = function(){
+    currentjson[imageIndex].marker0 = this.value;
+    redraw();
+}
+markerinputs[1].onchange = function(){
+    currentjson[imageIndex].latlon0 = this.value;
+    redraw();
+}
+markerinputs[2].onchange = function(){
+    currentjson[imageIndex].marker1 = this.value;
+    redraw();
+}
+markerinputs[3].onchange = function(){
+    currentjson[imageIndex].latlon1 = this.value;
+    redraw();
+}
+
+document.getElementById("backbutton").onclick = function(){
+    imageIndex--;
+    if(imageIndex < 0){
+        imageIndex = images.length - 1;
+    }
+    document.getElementById("mainImage").src = images[imageIndex].src;
+}
+document.getElementById("nextbutton").onclick = function(){
+    imageIndex++;
+    if(imageIndex > images.length - 1){
+        imageIndex = 0;
+    }
+    document.getElementById("mainImage").src = images[imageIndex].src;
+}
+
+document.getElementById("publishbutton").onclick = function(){
+    timestamp = Math.round((new Date().getTime())/1000);
+    if(markerinputs[0].value != "" && markerinputs[1].value != "" && markerinputs[2].value != "" && markerinputs[3].value != ""){
+        data = encodeURIComponent(JSON.stringify(currentjson[imageIndex],null,"    "));        
+    }
+    else{
+        alert("need more data still!");
+    }
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
+    var httpc = new XMLHttpRequest();
+    var url = "makejsonindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();
+}
+
+</script>
+<style>
+    #scrolldiv{
+        position:absolute;
+        top:6em;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        overflow:scroll;
+        padding:1em 1em 1em 1em;
+        border-top:solid;
+    }
+p{
+    text-align:right;
+}
+#linktable{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#inputtable{
+    position:absolute;
+    top:1em;
+    left:1em;
+    z-index:2;
+}
+input{
+    width:20em;
+    font-size:22px;
+}
+
+a{
+    z-index:3;
+}
+img{
+   width:50%;
+   display:block;
+   margin:auto;
+}
+
+.button{
+    cursor:pointer;
+    text-align:center;
+    border:solid;
+    border-radius:10px;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>

@@ -1,0 +1,7 @@
+{
+    "imgurl": "https://i.imgur.com/Aabwa5e.jpg",
+    "marker0": "south point of pentagon",
+    "latlon0": "38.868886, -77.055537",
+    "marker1": "merchant marine memorial",
+    "latlon1": "38.876220, -77.047210"
+}

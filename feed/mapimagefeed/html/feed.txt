@@ -1,0 +1,83 @@
+<table id = "linktable">
+    <tr>
+        <td><a href = "feededitor.php?path=mapimagefeed/">EDIT CODE</a></td>
+    </tr>
+    <tr>
+        <td><a href = "index.php?path=mapmarkerfeed/">MARKERS</a></td>
+    </tr>
+</table>
+
+<div id = "urlinputbox">IMAGE URL:<input id = "urlinput"/></div>
+
+<div id = "scrolldiv">
+    <img id = "mainImage"/>
+</div>
+<script>
+
+path = document.getElementById("pathdiv").innerHTML;
+
+
+currentFile = "mapimagefeed/html/index.html";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        document.getElementById("scrolldiv").innerHTML += filedata;
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+httpc.send();
+
+
+document.getElementById("urlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    timestamp = Math.round((new Date().getTime())/1000);
+    htmldata = encodeURIComponent("<img src = \"" + this.value + "\" style = \"width:100%\"/>");
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + htmldata + "&filename=" + path + "html/html" + timestamp + ".txt");//send text to filesaver.php
+    
+    var httpc = new XMLHttpRequest();
+    var url = "makehtmlindex.php?path=" + path;        
+    httpc.open("GET", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();//send text to filesaver.php
+}
+
+
+</script>
+<style>
+    img{
+        display:block;
+        width:80%;
+        margin:auto;
+        margin-top:1em;
+        margin-bottom:1em;
+    }
+    #urlinput{
+        width:25em;
+        font-size:30px;
+    }
+    #urlinputbox{
+        position:absolute;
+        top:3em;
+        left:1em;
+    }
+    #linktable{
+        position:absolute;
+        right:10px;
+        top:10px;
+    }
+    #scrolldiv{
+        position:absolute;
+        top:6em;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        overflow:scroll;
+        padding:1em 1em 1em 1em;
+        border-top:solid;
+    }
+</style>

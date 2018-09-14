@@ -15,7 +15,10 @@ $listtext = "";
 foreach(array_reverse($files) as $value){
     if($value != "." && $value != ".." && substr($value,0,4) == "html"){
         $listtext .= $value.",";
-        $outtext .= "\n<p><a href = \"".$value."\"/>".$value."</a></p>\n";
+        //$outtext .= "\n<p><a href = \"".$value."\"/>".$value."</a></p>\n";
+        $outtext .= "\n";
+        $outtext .= file_get_contents($path."html/".$value);
+        $outtext .= "\n";
     }
 }
 
