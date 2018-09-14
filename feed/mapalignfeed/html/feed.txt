@@ -54,7 +54,7 @@ function init(){
 
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.strokeStyle= "black";
-ctx.lineWidth = 4;    	
+ctx.lineWidth = 4;
 ctx.fillStyle = "black";
 
 if(innerWidth < innerHeight){
@@ -165,7 +165,7 @@ document.getElementById("publishbutton").onclick = function(){
     anglecorner = Math.atan2(-x,y);
 
     latcorner = lat0 + rx2corner*Math.cos(anglecorner)/feetperdegree;
-    loncorner = lon0 + Math.cos(lat0*Math.PI/180)*rx2corner*Math.sin(anglecorner)/feetperdegree;
+    loncorner = lon0 + (1/Math.cos(lat0*Math.PI/180))*rx2corner*Math.sin(anglecorner)/feetperdegree;
     
     savejson = {};
     savejson.widthfeet  = widthfeet;
