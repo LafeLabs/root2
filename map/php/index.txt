@@ -18,6 +18,11 @@
 <div style = "display:none" id = "setdata"><?php
     echo file_get_contents("json/set.txt");
 ?></div>
+<div style = "display:none" id = "mapdata"><?php 
+
+    echo file_get_contents("json/map.txt");
+
+?></div>
 <div style = "display:none" id  = "contentdata"><?php
 
 $setdata = json_decode(file_get_contents("json/set.txt"));

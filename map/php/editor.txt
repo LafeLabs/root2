@@ -52,6 +52,7 @@ EGO DEATH:
     
     <div class = "json file">json/view.txt</div>
     <div class = "json file">json/set.txt</div>
+    <div class = "json file">json/map.txt</div>
     <div class = "json file">json/dna.txt</div>
 
 </div>

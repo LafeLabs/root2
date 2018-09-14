@@ -10,3 +10,7 @@
     position:absolute;
     border:solid;
 }
+#mainMap{
+    position:absolute;
+    z-index:-2;
+}

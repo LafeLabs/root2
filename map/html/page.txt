@@ -3,4 +3,5 @@
 </p>
 <div id = "mainpage">
     
+    <img id = "mainMap"/>
 </div>
