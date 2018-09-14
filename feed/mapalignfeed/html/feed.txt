@@ -191,9 +191,9 @@ document.getElementById("publishbutton").onclick = function(){
 }
 
 document.getElementById("fwdbutton").onclick = function(){
-    mapIndex++;
-    if(mapIndex >= feedJSON.length){
-        mapIndex = 0;
+    imageIndex++;
+    if(imageIndex >= feedJSON.length){
+        imageIndex = 0;
     }
 
     document.getElementById("mainImage").src =  feedJSON[imageIndex].imgurl;
@@ -201,9 +201,9 @@ document.getElementById("fwdbutton").onclick = function(){
     markers[1].innerHTML = feedJSON[imageIndex].marker1;
 }
 document.getElementById("backbutton").onclick = function(){
-    mapIndex--;
-    if(mapIndex < 0){
-        mapIndex = feedJSON.length - 1;
+    imageIndex--;
+    if(imageIndex < 0){
+        imageIndex = feedJSON.length - 1;
     }
     document.getElementById("mainImage").src =  feedJSON[imageIndex].imgurl;
     markers[0].innerHTML = feedJSON[imageIndex].marker0;
