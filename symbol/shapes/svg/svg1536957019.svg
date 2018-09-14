@@ -1,0 +1,24 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0333,0331,0333,0331,0337,0337,0332,0220,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M250 450 L250 250 L50 250 L50 450 L250 450 Z" stroke = "purple" stroke-width = "1" fill = "purple" />	<path d = "M450 250 L450 50 L250 50 L250 250 L450 250 Z" stroke = "purple" stroke-width = "1" fill = "purple" />	<path d = "M450 450 L450 250 L250 250 L250 450 L450 450 Z" stroke = "blue" stroke-width = "1" fill = "blue" />    <text x="250" y = "250" fill = "blue" font-size = "200px" font-family = "arial"></text>
+	<path d = "M250 250 L250 50 L50 50 L50 250 L250 250 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M450 450 L450 50 L50 50 L50 450 L450 450 Z" stroke = "black" stroke-width = "6" fill = "none" /></svg>

@@ -1,0 +1,23 @@
+<svg width="550" height="350" viewbox = "0 0 550 350"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 550,
+    "svgheight": 350,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0331,0337,0331,0332,0332,0337,0211,0211,0230,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M75 325 L75 63 L188 129 L75 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M75 325 L188 325 L188 129 L75 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M188 325 L188 129 L273 178 L188 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M188 325 L273 325 L273 178 L188 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M273 325 L273 178 L337 215 L273 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M273 325 L337 325 L337 215 L273 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M337 325 L337 215 L385 242 L337 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M337 325 L385 325 L385 242 L337 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M385 325 L385 242 L421 263 L385 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M385 325 L421 325 L421 263 L385 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M421 325 L421 263 L448 278 L421 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M421 325 L448 325 L448 278 L421 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M448 325 L448 278 L468 290 L448 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M448 325 L468 325 L468 290 L448 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M468 325 L468 290 L483 299 L468 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M468 325 L483 325 L483 299 L468 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M483 325 L483 299 L494 305 L483 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M483 325 L494 325 L494 305 L483 325 Z" stroke = "red" stroke-width = "1" fill = "red" />	<path d = "M494 325 L494 305 L528 325 L494 325 Z" stroke = "blue" stroke-width = "1" fill = "blue" />	<path d = "M75 325 L75 63 L528 325 L75 325 Z" stroke = "black" stroke-width = "6" fill = "none" /></svg>
