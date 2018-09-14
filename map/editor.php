@@ -23,6 +23,7 @@ EGO DEATH:
 <body>
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "index.php">index.php</a>
 </div>
 <div id = "namediv"></div>
