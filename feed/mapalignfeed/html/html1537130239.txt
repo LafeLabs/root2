@@ -1,0 +1,3 @@
+<a href = "localhost:8000/feed/mapalignfeed/json/json1537130239.txt">
+    <img src = "https://i.imgur.com/UV6tmWR.png" style = "width:100%"/>
+</a>

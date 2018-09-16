@@ -188,27 +188,18 @@ document.getElementById("publishbutton").onclick = function(){
     httpc.send();//send text to filesaver.php
     
     globalurlbase = "localhost:8000/";
-    htmldata = "<a href = \"" + globalurlbase + "feed/mapalignfeed/json/json" + timestamp + ".txt\">\n";
-    htmldata += "    <img src = \"" + savejson.imgurl + "\" style = \"width:100%\"/>\n</a>";
-    htmldata = encodeURIComponent(htmldata);
+    htmldatadata = "<a href = \"" +  + "\">\n";
+    htmldatadata = encodeURIComponent(htmldata);
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data=" + htmldata + "&filename=" + path + "html/html" + timestamp + ".txt");//send text to filesaver.php
+    httpc.send("data=" + data + "&filename=" + path + "json/json" + timestamp + ".txt");//send text to filesaver.php
     var httpc = new XMLHttpRequest();
-    var url = "makehtmlindex.php?path=" + path;        
+    var url = "makejsonindex.php?path=" + path;        
     httpc.open("GET", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send();//send text to filesaver.php
-    
-    setdatum = {};
-    setdatum.widthfeet = savejson.widthfeet;
-    setdatum.angle = savejson.angle;
-    setdatum.latlon = savejson.latlon;
-    setdatum.fontfeet = savejson.fontfeet;
-    setdatum.url = "../feed/mapalignfeed/html/html" + timestamp + ".txt";
-    
     
 }
 
