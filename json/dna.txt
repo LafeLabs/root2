@@ -72,7 +72,9 @@
 			"replicator.txt",
 			"symboltree.txt",
 			"text2php.txt",
-			"tree.txt"
+			"tree.txt",
+			"treednagenerator.txt",
+			"treereplicator.txt"
 		]
 	},
 	{
@@ -84,6 +86,7 @@
 	{
 		"path":"scroll/php",
 		"files":[
+			"dnagenerator.txt",
 			"editor.txt",
 			"feedsaver.txt",
 			"figurelist.txt",
@@ -92,6 +95,7 @@
 			"index.txt",
 			"jupyter.txt",
 			"newdir.txt",
+			"replicator.txt",
 			"scrolleditor.txt",
 			"scrolllist.txt",
 			"texeditor.txt",
@@ -212,7 +216,8 @@
 		"files":[
 			"currentjson.txt",
 			"dna.txt",
-			"plotdata.txt"
+			"plotdata.txt",
+			"treedna.txt"
 		]
 	},
 	{
@@ -229,17 +234,23 @@
 			"replicator.txt",
 			"svgfeed.txt",
 			"text2php.txt",
-			"tree.txt"
+			"tree.txt",
+			"treednagenerator.txt",
+			"treereplicator.txt"
 		]
 	},
 	{
 		"path":"map/php",
 		"files":[
+			"dnagenerator.txt",
 			"editor.txt",
 			"fileloader.txt",
 			"filesaver.txt",
 			"index.txt",
-			"text2php.txt"
+			"newdir.txt",
+			"replicator.txt",
+			"text2php.txt",
+			"tree.txt"
 		]
 	}
 ]
