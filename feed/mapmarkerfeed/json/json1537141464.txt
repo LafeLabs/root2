@@ -1,0 +1,7 @@
+{
+    "imgurl": "https://i.imgur.com/URmGRIA.jpg",
+    "marker0": "independence and 7th",
+    "marker1": "L st and 7th",
+    "latlon0": "38.887594, -77.021924",
+    "latlon1": "38.904172, -77.021937"
+}

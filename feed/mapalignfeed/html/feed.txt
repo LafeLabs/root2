@@ -210,6 +210,26 @@ document.getElementById("publishbutton").onclick = function(){
     setdatum.url = "../feed/mapalignfeed/html/html" + timestamp + ".txt";
     
     
+    currentFile = "../map/json/set.txt";
+    var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            setjson = JSON.parse(this.responseText);
+            setjson.push(setdatum);
+            
+            jsonsetsavedata = encodeURIComponent(JSON.stringify(setjson,null,"    "));
+            var httpc3 = new XMLHttpRequest();
+            var url = "filesaver.php";        
+            httpc3.open("POST", url, true);
+            httpc3.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+            httpc3.send("data=" + jsonsetsavedata + "&filename=../map/json/set.txt");//send text to filesaver.php
+            
+        }
+    };
+    httpc2.open("GET", "fileloader.php?filename=" + currentFile, true);
+    httpc2.send();
+
+    
 }
 
 document.getElementById("fwdbutton").onclick = function(){
