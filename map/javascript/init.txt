@@ -26,10 +26,17 @@ mainMap.style.transform = "rotate(" + (viewdata.angle + mapdata.angle).toString(
 
 for(var index = 0;index < divdata.length;index++){
     var newdiv = document.createElement("DIV");
-    newdiv.innerHTML = divdata[index].innerHTML;
+    if(setdata[index].url != undefined){
+        newdiv.innerHTML = divdata[index].innerHTML;
+    }
+    if(setdata[index].imgurl != undefined){
+        var newimg = document.createElement("IMG");
+        newimg.style.width = "100%";
+        newimg.src = setdata[index].imgurl;
+        newdiv.appendChild(newimg);
+    }
     document.getElementById("mainpage").appendChild(newdiv);
     newdiv.className = "mapelement";
-
     r = finddistance(viewdata.latlon,setdata[index].latlon);
     theta = findangle(viewdata.latlon,setdata[index].latlon);
     x = r*Math.cos(theta - 0.5*Math.PI);
