@@ -252,5 +252,36 @@
 			"text2php.txt",
 			"tree.txt"
 		]
+	},
+	{
+		"path":"map/html",
+		"files":[
+			"head.txt",
+			"page.txt"
+		]
+	},
+	{
+		"path":"map/css",
+		"files":[
+			"style.txt"
+		]
+	},
+	{
+		"path":"map/javascript",
+		"files":[
+			"conversion.txt",
+			"init.txt",
+			"pageevents.txt",
+			"redraw.txt"
+		]
+	},
+	{
+		"path":"map/json",
+		"files":[
+			"dna.txt",
+			"map.txt",
+			"set.txt",
+			"view.txt"
+		]
 	}
 ]

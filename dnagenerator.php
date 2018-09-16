@@ -70,6 +70,15 @@ $finalstring .= getfiles("curve/php");
 $finalstring .= ",\n";
 
 $finalstring .= getfiles("map/php");
+$finalstring .= ",\n";
+$finalstring .= getfiles("map/html");
+$finalstring .= ",\n";
+$finalstring .= getfiles("map/css");
+$finalstring .= ",\n";
+$finalstring .= getfiles("map/javascript");
+$finalstring .= ",\n";
+$finalstring .= getfiles("map/json");
+
 
 $finalstring .= "\n]";
 
