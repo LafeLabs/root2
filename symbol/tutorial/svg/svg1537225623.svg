@@ -1,0 +1,38 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0223,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M440 410 L440 210 L240 210 L240 410 L440 410 Z" stroke = "black" stroke-width = "6" fill = "none" /><circle cx="340" cy = "310" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+	<path d = "M640 410 L640 210 L440 210 L440 410 L640 410 Z" stroke = "black" stroke-width = "6" fill = "none" />    <circle cx="540" cy = "310" r = "100" stroke = "black" stroke-width = "6" fill = "none" />
+<circle cx="540" cy = "310" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+	<path d = "M840 410 L840 210 L640 210 L640 410 L840 410 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="740" y1="310" x2="690" y2="310" style="stroke:black;stroke-width:6" />
+<circle cx="690" cy = "310" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+    <line x1="740" y1="310" x2="790" y2="310" style="stroke:black;stroke-width:6" />
+<circle cx="790" cy = "310" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+	<path d = "M1040 410 L1040 210 L840 210 L840 410 L1040 410 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M869.289321881344 239.28932188134695           A100 100 0 0 1 1010.7106781186536 239.2893218813458" fill = "none" stroke = "black" stroke-width = "6" />
+    <line x1="940" y1="310" x2="1011" y2="239" style="stroke:black;stroke-width:6" />
+    <line x1="940" y1="310" x2="869" y2="239" style="stroke:black;stroke-width:6" />
+<circle cx="940" cy = "310" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+    <text x="290" y = "510" fill = "black" font-size = "100px" font-family = "arial">z</text>
+    <text x="490" y = "510" fill = "black" font-size = "100px" font-family = "arial">x</text>
+    <text x="690" y = "510" fill = "black" font-size = "100px" font-family = "arial">c</text>
+    <text x="890" y = "510" fill = "black" font-size = "100px" font-family = "arial">v</text>
+</svg>

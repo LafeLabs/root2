@@ -1,0 +1,29 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 90.9090909090909,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0232,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M640 269 L640 87 L458 87 L458 269 L640 269 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="504" y1="224" x2="595" y2="224" style="stroke:black;stroke-width:6" />
+<circle cx="504" cy = "224" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+<path    d = "M504,224 C595,224 504,133 595,133" fill = "none" stroke-width = "6" stroke = "black" />	<path d = "M822 269 L822 87 L640 87 L640 269 L822 269 Z" stroke = "black" stroke-width = "6" fill = "none" /><path    d = "M685,224 C776,224 685,133 776,133" fill = "none" stroke-width = "6" stroke = "black" /><circle cx="776" cy = "133" r = "6" stroke = "black" stroke-width = "6" fill = "black" />
+    <line x1="776" y1="133" x2="685" y2="133" style="stroke:black;stroke-width:6" />
+    <text x="504" y = "360" fill = "black" font-size = "90.9090909090909px" font-family = "arial">t</text>
+    <text x="685" y = "360" fill = "black" font-size = "90.9090909090909px" font-family = "arial">y</text>
+<path    d = "M322,633 C322,474 640,633 640,474" fill = "none" stroke-width = "6" stroke = "black" /><path    d = "M640,474 C640,633 957,474 957,633" fill = "none" stroke-width = "6" stroke = "black" /></svg>

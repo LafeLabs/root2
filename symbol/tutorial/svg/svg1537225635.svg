@@ -1,0 +1,31 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 75.13148009015777,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0224,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M490 210 L490 59 L339 59 L339 210 L490 210 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M452 172 L452 97 L377 97 L377 172 L452 172 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M640 210 L640 59 L490 59 L490 210 L640 210 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M602 172 L602 97 L527 97 L527 172 L602 172 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M790 210 L790 59 L640 59 L640 210 L790 210 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M753 172 L753 97 L678 97 L678 172 L753 172 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M941 210 L941 59 L790 59 L790 210 L941 210 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M903 172 L903 97 L828 97 L828 172 L903 172 Z" stroke = "orange" stroke-width = "6" fill = "orange" />    <text x="377" y = "285" fill = "black" font-size = "75.13148009015777px" font-family = "arial">~</text>
+    <text x="527" y = "285" fill = "black" font-size = "75.13148009015777px" font-family = "arial">!</text>
+    <text x="678" y = "285" fill = "black" font-size = "75.13148009015777px" font-family = "arial">@</text>
+    <text x="828" y = "285" fill = "black" font-size = "75.13148009015777px" font-family = "arial">#</text>
+	<path d = "M490 585 L490 435 L339 435 L339 585 L490 585 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M452 548 L452 473 L377 473 L377 548 L452 548 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M640 585 L640 435 L490 435 L490 585 L640 585 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M602 548 L602 473 L527 473 L527 548 L602 548 Z" stroke = "green" stroke-width = "6" fill = "green" />	<path d = "M790 585 L790 435 L640 435 L640 585 L790 585 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M753 548 L753 473 L678 473 L678 548 L753 548 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M941 585 L941 435 L790 435 L790 585 L941 585 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M903 548 L903 473 L828 473 L828 548 L903 548 Z" stroke = "purple" stroke-width = "6" fill = "purple" />    <text x="377" y = "661" fill = "black" font-size = "75.13148009015777px" font-family = "arial">$</text>
+    <text x="527" y = "661" fill = "black" font-size = "75.13148009015777px" font-family = "arial">%</text>
+    <text x="678" y = "661" fill = "black" font-size = "75.13148009015777px" font-family = "arial">^</text>
+    <text x="828" y = "661" fill = "black" font-size = "75.13148009015777px" font-family = "arial">&amp;</text>
+</svg>

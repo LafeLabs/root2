@@ -1,0 +1,23 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 90.9090909090909,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0231,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M549 269 L549 87 L367 87 L367 269 L549 269 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M549 269 L549 87 L367 87 L367 269 L549 269 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M731 269 L913 269 L822 112 L731 269 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M731 269 L913 269 L822 112 L731 269 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M367 633 L549 633 L605 460 L458 353 L311 460 L367 633 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M367 633 L549 633 L605 460 L458 353 L311 460 L367 633 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M731 633 L843 633 L899 535 L843 438 L731 438 L675 535 L731 633 Z" stroke = "purple" stroke-width = "6" fill = "purple" />	<path d = "M731 633 L843 633 L899 535 L843 438 L731 438 L675 535 L731 633 Z" stroke = "black" stroke-width = "6" fill = "none" /></svg>

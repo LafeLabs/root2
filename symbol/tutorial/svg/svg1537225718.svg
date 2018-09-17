@@ -1,0 +1,53 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 82.64462809917354,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0234,",
+    "table": []
+}
+</json>
+-->
+    <text x="351" y = "443" fill = "black" font-size = "41.32231404958677px" font-family = "arial">PRINT:</text>
+    <circle cx="578" cy = "463" r = "20.661157024793386" stroke = "black" stroke-width = "6" fill = "none" />
+    <line x1="599" y1="463" x2="599" y2="443" style="stroke:black;stroke-width:6" />
+    <line x1="599" y1="484" x2="599" y2="463" style="stroke:black;stroke-width:6" />
+    <line x1="609" y1="484" x2="609" y2="401" style="stroke:black;stroke-width:6" />
+    <circle cx="630" cy = "463" r = "20.661157024793386" stroke = "black" stroke-width = "6" fill = "none" />
+  <path d="M666.7126698101956 448.69614088457547           A20.661157024793386 20.661157024793386 0 0 1 695.9319582889786 448.69614088457547" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M666.7126698101956 477.9154293633584           A20.661157024793386 20.661157024793386 0 0 1 666.7126698101956 448.69614088457547" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M695.9319582889786 477.9154293633584           A20.661157024793386 20.661157024793386 0 0 1 666.7126698101956 477.9154293633584" fill = "none" stroke = "black" stroke-width = "6" />
+    <line x1="754" y1="484" x2="754" y2="401" style="stroke:black;stroke-width:6" />
+    <circle cx="733" cy = "463" r = "20.661157024793386" stroke = "black" stroke-width = "6" fill = "none" />
+  <path d="M774.2975206611575 463.3057851239669           A20.661157024793386 20.661157024793386 0 0 1 815.6198347107443 463.3057851239669" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M794.9586776859509 483.9669421487603           A20.661157024793386 20.661157024793386 0 0 1 774.2975206611575 463.3057851239669" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M809.5683219253424 477.9154293633584           A20.661157024793386 20.661157024793386 0 0 1 780.3490334465594 477.9154293633584" fill = "none" stroke = "black" stroke-width = "6" />
+    <line x1="795" y1="463" x2="774" y2="463" style="stroke:black;stroke-width:6" />
+    <line x1="795" y1="463" x2="816" y2="463" style="stroke:black;stroke-width:6" />
+    <line x1="847" y1="484" x2="847" y2="443" style="stroke:black;stroke-width:6" />
+    <line x1="847" y1="443" x2="847" y2="432" style="stroke:black;stroke-width:6" />
+  <path d="M846.6115702479344 432.31404958677683           A10.330578512396693 10.330578512396693 0 0 1 867.2727272727277 432.31404958677683" fill = "none" stroke = "black" stroke-width = "6" />
+    <line x1="847" y1="453" x2="857" y2="453" style="stroke:black;stroke-width:6" />
+    <line x1="847" y1="453" x2="836" y2="453" style="stroke:black;stroke-width:6" />
+    <circle cx="898" cy = "463" r = "20.661157024793386" stroke = "black" stroke-width = "6" fill = "none" />
+    <line x1="919" y1="463" x2="919" y2="443" style="stroke:black;stroke-width:6" />
+    <line x1="919" y1="484" x2="919" y2="463" style="stroke:black;stroke-width:6" />
+    <line x1="919" y1="505" x2="919" y2="484" style="stroke:black;stroke-width:6" />
+    <line x1="919" y1="525" x2="919" y2="505" style="stroke:black;stroke-width:6" />
+  <path d="M918.9256198347113 525.2892561983471           A20.661157024793386 20.661157024793386 0 0 1 877.6033057851245 525.2892561983471" fill = "none" stroke = "black" stroke-width = "6" />
+    <text x="351" y = "567" fill = "black" font-size = "41.32231404958677px" font-family = "arial">STACK:</text>
+    <text x="557" y = "608" fill = "black" font-size = "41.32231404958677px" font-family = "arial">abcdefg</text>
+	<path d = "M723 277 L723 112 L557 112 L557 277 L723 277 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M577 174 L608 229 L640 174 L672 229 L703 174 " stroke = "black" stroke-width = "6" fill = "none" />    <text x="599" y = "360" fill = "black" font-size = "82.64462809917354px" font-family = "arial">[</text>
+</svg>

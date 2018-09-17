@@ -1,0 +1,38 @@
+<svg width="1280" height="720" viewbox = "0 0 1280 720"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 1280,
+    "svgheight": 720,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0337,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M440 410 L440 210 L240 210 L240 410 L440 410 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M304.64466094067274 274.64466094067257           A50 50 0 0 1 375.35533905932743 274.6446609406726" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M304.6446609406727 345.3553390593274           A50 50 0 0 1 304.64466094067274 274.64466094067257" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M375.3553390593275 345.3553390593273           A50 50 0 0 1 304.6446609406727 345.3553390593274" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M356 392 L375 345 L329 326 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M640 410 L640 210 L440 210 L440 410 L640 410 Z" stroke = "black" stroke-width = "6" fill = "none" />  <path d="M575.3553390593275 345.3553390593275           A50 50 0 0 1 504.64466094067274 345.3553390593273" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M504.64466094067274 345.3553390593273           A50 50 0 0 1 504.644660940673 274.6446609406725" fill = "none" stroke = "black" stroke-width = "6" />
+  <path d="M504.644660940673 274.6446609406725           A50 50 0 0 1 575.3553390593278 274.64466094067285" fill = "none" stroke = "black" stroke-width = "6" />
+	<path d = "M529 294 L575 275 L556 228 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M840 410 L840 210 L640 210 L640 410 L840 410 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="790" y1="310" x2="690" y2="310" style="stroke:black;stroke-width:6" />
+	<path d = "M1040 410 L1040 210 L840 210 L840 410 L1040 410 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="940" y1="310" x2="940" y2="260" style="stroke:black;stroke-width:6" />
+    <line x1="940" y1="310" x2="890" y2="310" style="stroke:black;stroke-width:6" />
+    <line x1="940" y1="310" x2="940" y2="360" style="stroke:black;stroke-width:6" />
+    <line x1="940" y1="310" x2="990" y2="310" style="stroke:black;stroke-width:6" />
+    <text x="290" y = "510" fill = "black" font-size = "100px" font-family = "arial">g</text>
+    <text x="490" y = "510" fill = "black" font-size = "100px" font-family = "arial">h</text>
+    <text x="690" y = "510" fill = "black" font-size = "100px" font-family = "arial">j</text>
+    <text x="890" y = "510" fill = "black" font-size = "100px" font-family = "arial">k</text>
+</svg>
