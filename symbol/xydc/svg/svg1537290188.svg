@@ -1,0 +1,27 @@
+<svg width="500" height="600" viewbox = "0 0 500 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0332,0332,0336,0310,0337,0313,01101,01123,01104,01106,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M68 247 L138 247 L81 289 L103 221 L125 289 L68 247 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="85" y = "335" fill = "black" font-size = "35.35533905932738px" font-family = "arial">A</text>
+	<path d = "M209 229 L240 229 L224 256 L209 282 L194 256 L178 229 L209 229 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M240 265 L209 212 L178 265 L240 265 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="191" y = "335" fill = "black" font-size = "35.35533905932738px" font-family = "arial">S</text>
+	<path d = "M338 282 L338 236 L292 236 L292 282 L338 282 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M315 292 L348 259 L315 226 L282 259 L315 292 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="306" y = "335" fill = "black" font-size = "35.35533905932738px" font-family = "arial">D</text>
+	<path d = "M421 229 L452 229 L437 256 L421 282 L406 256 L391 229 L421 229 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M433 233 L456 253 L427 264 L399 274 L404 244 L409 214 L433 233 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M439 244 L444 274 L415 264 L386 253 L410 233 L433 214 L439 244 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="404" y = "335" fill = "black" font-size = "35.35533905932738px" font-family = "arial">F</text>
+</svg>
