@@ -1,0 +1,43 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0330,0332,0332,0332,01141,01163,01144,01146,0331,0331,0331,0332,0332,0332,0332,0332,0332,01147,01150,01152,01153,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M25 200 L125 200 L75 113 L25 200 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M25 200 L125 200 L75 113 L25 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M88 100 L63 100 L63 75 L63 63 L50 63 L63 50 L75 38 L88 50 L100 63 L88 63 L88 75 L88 100 Z" stroke = "black" stroke-width = "6" fill = "black" />    <text x="63" y = "250" fill = "black" font-size = "50px" font-family = "arial">a</text>
+	<path d = "M175 200 L275 200 L225 113 L175 200 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M175 200 L275 200 L225 113 L175 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M213 38 L238 38 L238 63 L238 75 L250 75 L238 88 L225 100 L213 88 L200 75 L213 75 L213 63 L213 38 Z" stroke = "black" stroke-width = "6" fill = "black" />    <text x="213" y = "250" fill = "black" font-size = "50px" font-family = "arial">s</text>
+	<path d = "M425 200 L425 100 L325 100 L325 200 L425 200 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M425 200 L375 150 L325 200 L425 200 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M425 200 L425 100 L325 100 L325 200 L425 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M325 200 L375 150 L425 200 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M388 100 L363 100 L363 75 L363 63 L350 63 L363 50 L375 38 L388 50 L400 63 L388 63 L388 75 L388 100 Z" stroke = "black" stroke-width = "6" fill = "black" />    <text x="362" y = "250" fill = "black" font-size = "49.999999999999986px" font-family = "arial">d</text>
+	<path d = "M575 200 L575 100 L475 100 L475 200 L575 200 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M575 200 L525 150 L475 200 L575 200 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M575 200 L575 100 L475 100 L475 200 L575 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M475 200 L525 150 L575 200 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M516 50 L534 50 L534 68 L534 77 L543 77 L534 85 L525 94 L516 85 L507 77 L516 77 L516 68 L516 50 Z" stroke = "black" stroke-width = "6" fill = "black" />    <text x="512" y = "250" fill = "black" font-size = "49.999999999999986px" font-family = "arial">f</text>
+	<path d = "M25 500 L125 500 L75 413 L25 500 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M25 500 L125 500 L75 413 L25 500 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M100 500 L100 450 L50 450 L50 500 L100 500 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M100 500 L100 450 L50 450 L50 500 L100 500 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="75" y1="475" x2="87" y2="475" style="stroke:black;stroke-width:6" />
+    <line x1="75" y1="475" x2="62" y2="475" style="stroke:black;stroke-width:6" />
+    <text x="62" y = "550" fill = "black" font-size = "49.999999999999986px" font-family = "arial">g</text>
+	<path d = "M175 500 L275 500 L225 413 L175 500 Z" stroke = "red" stroke-width = "6" fill = "red" />	<path d = "M175 500 L275 500 L225 413 L175 500 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M250 500 L250 450 L200 450 L200 500 L250 500 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M250 500 L250 450 L200 450 L200 500 L250 500 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="225" y1="475" x2="225" y2="462" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="475" x2="237" y2="475" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="475" x2="225" y2="487" style="stroke:black;stroke-width:6" />
+    <line x1="225" y1="475" x2="212" y2="475" style="stroke:black;stroke-width:6" />
+    <text x="212" y = "550" fill = "black" font-size = "49.999999999999986px" font-family = "arial">h</text>
+	<path d = "M425 500 L425 400 L325 400 L325 500 L425 500 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M425 500 L375 450 L325 500 L425 500 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M425 500 L425 400 L325 400 L325 500 L425 500 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M325 500 L375 450 L425 500 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M400 475 L400 425 L350 425 L350 475 L400 475 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M400 475 L400 425 L350 425 L350 475 L400 475 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="375" y1="450" x2="387" y2="450" style="stroke:black;stroke-width:6" />
+    <line x1="375" y1="450" x2="362" y2="450" style="stroke:black;stroke-width:6" />
+    <text x="362" y = "550" fill = "black" font-size = "49.999999999999986px" font-family = "arial">j</text>
+	<path d = "M575 500 L575 400 L475 400 L475 500 L575 500 Z" stroke = "blue" stroke-width = "6" fill = "blue" />	<path d = "M575 500 L525 450 L475 500 L575 500 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M575 500 L575 400 L475 400 L475 500 L575 500 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M475 500 L525 450 L575 500 " stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M550 475 L550 425 L500 425 L500 475 L550 475 Z" stroke = "white" stroke-width = "6" fill = "white" />	<path d = "M550 475 L550 425 L500 425 L500 475 L550 475 Z" stroke = "black" stroke-width = "6" fill = "none" />    <line x1="525" y1="450" x2="525" y2="438" style="stroke:black;stroke-width:6" />
+    <line x1="525" y1="450" x2="537" y2="450" style="stroke:black;stroke-width:6" />
+    <line x1="525" y1="450" x2="525" y2="463" style="stroke:black;stroke-width:6" />
+    <line x1="525" y1="450" x2="512" y2="450" style="stroke:black;stroke-width:6" />
+    <text x="512" y = "550" fill = "black" font-size = "49.999999999999986px" font-family = "arial">k</text>
+</svg>

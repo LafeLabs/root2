@@ -1,0 +1,57 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 600,
+    "svgheight": 600,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0332,0330,0332,0332,0336,0333,0330,01172,0331,0331,0332,01170,0331,0331,0332,01143,0333,0331,0332,0332,0331,01166,0330,0333,0333,0333,0330,0333,0330,0333,0330,0330,0330,0333,0254,0331,0331,0332,0332,0336,0333,0337,0255,0331,0331,0332,0336,0332,0337,0256,0331,0331,0332,0253,01072,0330,0330,0332,01072,0330,0330,0336,0330,0332,0337,01072,0330,0330,0332,01072,0332,0332,0332,0332,0332,0332,0332,0336,0331,0332,0337,01072,0331,0331,0332,01072,0331,0331,0332,01072,0331,0331,0336,0332,0337,01072,0330,0333,0333,0330,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="75" cy = "150" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <text x="63" y = "125" fill = "black" font-size = "25px" font-family = "arial">z</text>
+    <circle cx="63" cy = "225" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="88" cy = "225" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <text x="75" y = "200" fill = "black" font-size = "25px" font-family = "arial">x</text>
+    <circle cx="63" cy = "338" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="88" cy = "338" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="75" cy = "316" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <text x="62" y = "300" fill = "black" font-size = "25px" font-family = "arial">c</text>
+    <circle cx="63" cy = "438" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="88" cy = "438" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="88" cy = "413" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <circle cx="63" cy = "413" r = "6.25" stroke = "black" stroke-width = "6" fill = "black" />
+    <text x="62" y = "400" fill = "black" font-size = "25px" font-family = "arial">v</text>
+	<path d = "M413 113 L463 112 L422 142 L438 94 L453 142 L413 113 Z" stroke = "black" stroke-width = "6" fill = "none" />    <text x="425" y = "175" fill = "black" font-size = "25px" font-family = "arial">A</text>
+	<path d = "M438 200 L459 200 L448 219 L438 238 L427 219 L416 200 L438 200 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M459 225 L437 188 L416 225 L459 225 Z" stroke = "black" stroke-width = "6" fill = "none" />    <text x="425" y = "275" fill = "black" font-size = "25px" font-family = "arial">S</text>
+	<path d = "M438 325 L438 300 L413 300 L413 325 L438 325 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M425 330 L443 313 L425 295 L407 313 L425 330 Z" stroke = "black" stroke-width = "6" fill = "none" />    <text x="413" y = "375" fill = "black" font-size = "25px" font-family = "arial">D</text>
+	<path d = "M438 400 L459 400 L448 419 L438 438 L427 419 L416 400 L438 400 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M446 403 L462 417 L442 424 L421 432 L425 410 L429 389 L446 403 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M450 410 L454 432 L433 424 L413 417 L429 403 L446 389 L450 410 Z" stroke = "black" stroke-width = "6" fill = "none" />    <text x="425" y = "475" fill = "black" font-size = "25px" font-family = "arial">F</text>
+    <circle cx="500" cy = "425" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="500" cy = "447" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="488" cy = "325" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="488" cy = "347" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="500" cy = "200" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="500" cy = "222" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="487" cy = "100" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="487" cy = "122" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="150" cy = "125" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="150" cy = "147" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="137" cy = "225" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="137" cy = "247" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="125" cy = "325" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="125" cy = "347" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="138" cy = "425" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+    <circle cx="138" cy = "447" r = "3.125" stroke = "black" stroke-width = "6" fill = "none" />
+</svg>
