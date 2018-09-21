@@ -1,11 +1,15 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
 {
     "imgurl": "",
     "imgw": 4.743971328437736,
     "imgleft": -2.2873205904167726,
     "imgtop": -3.171985664218851,
     "imgangle": 0,
-    "svgwidth": 1280,
-    "svgheight": 720,
+    "svgwidth": 500,
+    "svgheight": 500,
     "unit": 100,
     "x0": 684,
     "y0": 399,
@@ -14,3 +18,6 @@
     "glyph": "",
     "table": []
 }
+</json>
+-->
+</svg>
