@@ -701,35 +701,7 @@
     "line7":1
 }</div>
 
-<p>
-    <a href = "feededitor.php?path=xydc_code/">feededitor.php?path=xydc_code/</a>
-</p>
-<table>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-    <tr>
-        <td><canvas></canvas></td><td><canvas></canvas></td>
-    </tr>
-</table>
+
 <script>
 
 function drawGlyph(localString){
@@ -1406,6 +1378,43 @@ function doTheThing(localCommand){
     
 }
 
+</script>
+
+<p>
+    <a href = "feededitor.php?path=xydc_code/" id = "editlink">feededitor.php?path=xydc_code/</a>
+</p>
+<table>
+    <tr>
+        <input id = "actioncontrol"/>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td><canvas></canvas></td><td><canvas></canvas></td>
+    </tr>
+</table>
+
+
+<script>
 init();
 function init(){
     doTheThing(06);//import embedded hypercube in this .html doc
@@ -1439,52 +1448,127 @@ function init(){
     dot3 = "D";
     dot4 = "F";
     
+    glyphArray = [];
+
+    glyphArray.push(star5);
+    glyphArray.push(star6);
+    glyphArray.push(star8);
+    glyphArray.push(star9);
+    glyphArray.push(dot1);
+    glyphArray.push(dot2);
+    glyphArray.push(dot3);
+    glyphArray.push(dot4);
+    glyphIndex = 0;
+
+    currentGlyph = string2byteCode(glyphArray[glyphIndex]) + "0207,";
+
+    
+    arrowkey = false;   
+    
 }
 
 
 redraw();
 
 function redraw(){
-    ctx = canvases[1].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(star5));
-    ctx = canvases[3].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(star6));
-    ctx = canvases[5].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(star8));
-    ctx = canvases[7].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(star9));
-    
-    ctx = canvases[9].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(dot1));
-    ctx = canvases[11].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(dot2));
-    ctx = canvases[13].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(dot3));
-    ctx = canvases[15].getContext("2d");
-    ctx.strokeRect(0,0,500,60);
-    doTheThing(0300);
-    spellGlyph(string2byteCode(dot4));
+    for(var index = 0;index < glyphArray.length;index++){
+        ctx = canvases[index*2  + 1].getContext("2d");
+        ctx.clearRect(0,0,500,60);
+        doTheThing(0300);
+        spellGlyph(string2byteCode(glyphArray[index]));
+    }
 
+    ctx = canvases[2*glyphIndex + 1].getContext("2d");
+    ctx.clearRect(0,0,500,60);
+    doTheThing(0300);
+    spellGlyph(currentGlyph);
+    
+    glyphArray[glyphIndex] = byteCode2string(currentGlyph);
+    
+    
 }
+
+document.getElementById("actioncontrol").select();
+
+document.getElementById("actioncontrol").onkeydown = function(e){
+    charCode = e.keyCode || e.which;    
+    arrowkey = false;
+    if(charCode == 010){
+        doTheThing(010);
+        redraw();
+        arrowkey = true;
+    }
+    if(charCode == 045){//left arrow
+        doTheThing(020);
+        redraw();
+        arrowkey = true;
+    }
+    if(charCode == 047){//right arrow
+        doTheThing(021);
+        redraw();
+        arrowkey = true;
+    }
+    if(charCode == 046){//up arrow
+        glyphIndex--;
+        if(glyphIndex < 0){
+            glyphIndex = glyphArray.length - 1;
+        }
+        currentGlyph = string2byteCode(glyphArray[glyphIndex]) + "0207,";
+        redraw();
+        arrowkey = true;
+    }
+    if(charCode == 050){//down arrow
+        glyphIndex++;
+        if(glyphIndex > glyphArray.length - 1){
+            glyphIndex = 0;
+        }
+        currentGlyph = string2byteCode(glyphArray[glyphIndex]) + "0207,";
+        redraw();
+        arrowkey = true;
+    }
+}
+
+document.getElementById("actioncontrol").onkeypress = function(a){
+    charCode = a.keyCode || a.which;
+    if(charCode != 010  && charCode != 047  && !arrowkey){
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+            if(glyphSplit[index] == "0207"){
+                currentGlyph += "0" + (charCode).toString(8) + ",0207,";
+            }
+        }
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+        }
+        redraw();
+        this.value = "";
+    }
+    
+}
+
 </script>
 
 
 <style>
     canvas{
         border:solid;
+    }
+    #editlink{
+        position:absolute;
+        right:0px;
+        top:5px;
+    }
+    #actioncontrol{
+        font-size:1em;
+        border:solid;
+        width:1em;
     }
 </style>
