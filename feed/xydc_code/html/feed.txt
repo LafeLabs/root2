@@ -1506,7 +1506,6 @@ void doTheThing(char localCommand){
   if(isLoop(localCommand) && !loopMode){
     loopMode = true;
   }
-     
   if(localCommand == 'q'){//reset to "unit" value of "side", all in miliseconds
     sideTriangleOut = unitTriangleOut;
     sideTriangleIn= unitTriangleIn;
@@ -1655,7 +1654,7 @@ bool isLoop(char localCommand){
        }
 }
 </pre>
-
+<textarea id = "textbox" spellcheck="false"></textarea>
 <script>
 init();
 function init(){
@@ -1727,21 +1726,22 @@ function redraw(){
     
     glyphArray[glyphIndex] = byteCode2string(currentGlyph);
     
-    codecode =  "String shapeA = String(\"" + glyphArray[0] + "\")\n";
-    codecode += "String shapeS = String(\"" + glyphArray[1] + "\")\n";
-    codecode += "String shapeD = String(\"" + glyphArray[2] + "\")\n";
-    codecode += "String shapeF = String(\"" + glyphArray[3] + "\")\n";
+    codecode =  "String shapeA = String(\"" + glyphArray[0] + "\");\n";
+    codecode += "String shapeS = String(\"" + glyphArray[1] + "\");\n";
+    codecode += "String shapeD = String(\"" + glyphArray[2] + "\");\n";
+    codecode += "String shapeF = String(\"" + glyphArray[3] + "\");\n";
 
-    codecode += "String shapez = String(\"" + glyphArray[4] + "\")\n";
-    codecode += "String shapex = String(\"" + glyphArray[5] + "\")\n";
-    codecode += "String shapec = String(\"" + glyphArray[6] + "\")\n";
-    codecode += "String shapev = String(\"" + glyphArray[7] + "\")\n";
+    codecode += "String shapez = String(\"" + glyphArray[4] + "\");\n";
+    codecode += "String shapex = String(\"" + glyphArray[5] + "\");\n";
+    codecode += "String shapec = String(\"" + glyphArray[6] + "\");\n";
+    codecode += "String shapev = String(\"" + glyphArray[7] + "\");\n";
 
     oldcode = document.getElementById("codebox").innerHTML;
     bottomcode = oldcode.split("//shapecode")[1];
     
     document.getElementById("codebox").innerHTML = codecode + "\n//shapecode" + bottomcode;
     
+    document.getElementById("textbox").value = codecode + "\n//shapecode" + bottomcode;
 }
 
 document.getElementById("actioncontrol").select();
@@ -1828,6 +1828,19 @@ document.getElementById("actioncontrol").onkeypress = function(a){
         width:1em;
     }
     #codebox{
+        position:absolute;
+        top:3em;
+        right:0px;
+        height:40em;
+        width:30em;
+        font-family:courier;
+        color:#0000ff;
+        background-color:#cfcfcf;
+        font-size:18px;
+        overflow:scroll;
+        display:none;
+    }
+    #textbox{
         position:absolute;
         top:3em;
         right:0px;
