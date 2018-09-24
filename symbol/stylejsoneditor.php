@@ -18,132 +18,201 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     
     <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div id = "pathdiv" style= "display:none"><?php
+<a href = "index.php">SYMBOL EDITOR</a>
 
-    if(isset($_GET['path'])){
-        echo $_GET['path'];
-    }
-
-?></div>
-<div style = "display:none" id = "datadiv"><?php
-
-    if(isset($_GET['path'])){
-        echo file_get_contents($_GET['path']."/json/stylejson.txt");
-    }
-    else{
-        echo file_get_contents("json/stylejson.txt");
-    }
-
-?></div>    
-<div id = "linkscroll">
-
-    <a href = "tree.php">tree.php</a>
-    <a href = "editor.php">editor.php</a>
-    <a href = "index.php" id = "indexlink">index.php</a>
-
-</div>
-<div id = "namediv">stylejson.txt</div>
-<div id="maineditor" contenteditable="true" spellcheck="false"></div>
-
-
+<table id = "maintable">
+    <tr>
+        <td>layer</td>
+        <td>linewidth</td>
+        <td>line color</td>
+        <td></td>
+        <td>fill color</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><input></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+        <td><input></td>
+        <td><canvas></canvas></td>
+    </tr>
+</table>
+<textarea id = "textIO"></textarea>
 <script>
 
-editor = ace.edit("maineditor");
-editor.setTheme("ace/theme/cobalt");
-editor.getSession().setMode("ace/mode/json");
-editor.getSession().setUseWrapMode(true);
-editor.$blockScrolling = Infinity;
+currentFile = "json/stylejson.txt";
 
-path = document.getElementById("pathdiv").innerHTML;
-
-if(path.length>1){
-    currentFile = path + "json/stylejson.txt";
-    document.getElementById("indexlink").href = "index.php?path=" + path;
-}
-else{
-    currentFile = "json/stylejson.txt";
-}
+canvaswidth = 100;
+canvasheight = 20;
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
-        editor.setValue(filedata);
+        document.getElementById("textIO").value = filedata;
+        stylejson = JSON.parse(filedata);
+        init();
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
 httpc.send();
 
-editor.getSession().setMode("ace/mode/json");
-document.getElementById("namediv").style.color = "orange";
-document.getElementById("namediv").style.borderColor = "orange";
-            
-            
+inputs = document.getElementById("maintable").getElementsByTagName("input");
 
-document.getElementById("maineditor").onkeyup = function(){
-    data = encodeURIComponent(editor.getSession().getValue());
+function init(){
+    
+    for(var index = 0;index < 8;index++){
+        inputs[3*index].value = stylejson["line" + index.toString()];
+        inputs[3*index + 1].value = stylejson["color" + index.toString()];
+        inputs[3*index + 2].value = stylejson["fill" + index.toString()];
+    }
+
+    canvases = document.getElementById("maintable").getElementsByTagName("canvas");
+    for(var index = 0;index < canvases.length;index++){
+        canvases[index].width = canvaswidth;
+        canvases[index].height = canvasheight;
+    }
+    
+    redraw();
+}
+
+function redraw(){
+    
+    for(var index = 0;index < 8;index++){
+        ctx = canvases[2*index].getContext("2d");
+        ctx.clearRect(0,0,canvaswidth,canvasheight);
+        ctx.strokeStyle = stylejson["color" + index.toString()];
+        ctx.lineWidth = stylejson["line" + index.toString()];
+        ctx.beginPath();
+        ctx.moveTo(0,0.5*canvasheight);
+        ctx.lineTo(canvaswidth,0.5*canvasheight);
+        ctx.stroke();		
+        ctx.closePath();
+        
+        ctx = canvases[2*index + 1].getContext("2d");
+        ctx.fillStyle = stylejson["fill" + index.toString()];
+        ctx.fillRect(0,0,canvaswidth,canvasheight);
+    
+    }
+    document.getElementById("textIO").value = JSON.stringify(stylejson,null,"    ");
+    
+    data = encodeURIComponent(JSON.stringify(stylejson,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+}
+
+for(var index = 0;index < 8;index++){
+    inputs[3*index].id = "i" + (3*index).toString();
+    inputs[3*index  + 1].id = "i" + (3*index + 1).toString();
+    inputs[3*index  + 2].id = "i" + (3*index + 2).toString();
+
+    inputs[3*index].onchange = function(){
+        var inputIndex = parseInt(this.id.substring(1));
+        stylejson["line" + (inputIndex/3).toString()] = this.value;
+        redraw();
+    }
+    inputs[3*index + 1].onchange = function(){
+        var inputIndex = parseInt(this.id.substring(1));
+        stylejson["color" + ((inputIndex - 1)/3).toString()] = this.value;
+        redraw();
+    }
+    inputs[3*index + 2].onchange = function(){
+        var inputIndex = parseInt(this.id.substring(1));
+        stylejson["fill" + ((inputIndex - 2)/3).toString()] = this.value;
+        redraw();
+    }
 }
 
 </script>
 <style>
-#namediv{
-    position:absolute;
-    top:5px;
-    left:20%;
+body,input{
+    font-size:30px;
+    font-family:helvetica;
+}
+textarea{
+    width:100%;
     font-family:courier;
-    padding:0.5em 0.5em 0.5em 0.5em;
+    font-size:20px;
+    height:20em;
+    background-color:black;
+    color:#00ff00;
+}
+canvas{
     border:solid;
-    background-color:#101010;
-
 }
-a{
-    color:white;
-    display:block;
-    margin-bottom:0.5em;
-    margin-left:0.5em;
-}
-body{
-    background-color:#404040;
-}
-.html{
-    color:#0000ff;
-}
-
-
-#linkscroll{
-    position:absolute;
-    overflow:scroll;
-    top:5em;
-    bottom:50%;
-    right:0px;
-    left:75%;
+td{
+    text-align:center;
     border:solid;
-    border-radius:5px;
-    border-width:3px;
-    background-color:#101010;
-    font-family:courier;
-    font-size:18px;
-    
 }
-#maineditor{
-    position:absolute;
-    left:0%;
-    top:5em;
-    bottom:1em;
-    right:30%;
+table{
+    border-collapse:collapse;
+    width:100%;
 }
-
-
-
 </style>
+
 
 </body>
 </html>
