@@ -1,0 +1,38 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "https://i.imgur.com/F1tAEiF.jpg",
+    "boxes": [
+        {
+            "xoverw": 0.18671679197994984,
+            "yoverw": -0.0012531328320802837,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.487468671679198,
+            "yoverw": 0.5793650793650794,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.4289891395154553,
+            "yoverw": 0.8759398496240602,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": -178.75662198925923
+        },
+        {
+            "xoverw": 0.1846282372598162,
+            "yoverw": 0.8425229741019216,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box"><img src="http://localhost:8000/symbol/arrows/svg/svg1537592539.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/arrows/svg/svg1537592526.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/arrows/svg/svg1537592519.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/arrows/svg/svg1537592513.svg" style="width: 100%;">    </div></div>

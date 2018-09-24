@@ -1,0 +1,24 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 500,
+    "svgheight": 500,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0232,0336,0330,0330,0330,0336,0230,0333,0333,0333,0337,0331,0331,0333,0220,0333,0333,0331,0331,0331,0331,0332,0332,0332,0332,0332,0222,0333,0333,0333,0335,0222,0334,0334,0330,0330,0330,0330,0330,0322,0330,0331,0331,0222,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M50 250 L75 225 L100 225 L75 250 L50 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M75 250 L100 225 L125 225 L100 250 L75 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M100 250 L125 225 L150 225 L125 250 L100 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M125 250 L150 225 L175 225 L150 250 L125 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M150 250 L175 225 L200 225 L175 250 L150 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M175 250 L200 225 L225 225 L200 250 L175 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M200 250 L225 225 L250 225 L225 250 L200 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M225 250 L250 225 L275 225 L250 250 L225 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M250 250 L275 225 L300 225 L275 250 L250 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M275 250 L300 225 L325 225 L300 250 L275 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M300 250 L325 225 L350 225 L325 250 L300 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M325 250 L350 225 L375 225 L350 250 L325 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M350 250 L375 225 L400 225 L375 250 L350 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M375 250 L400 225 L425 225 L400 250 L375 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M400 250 L425 225 L450 225 L425 250 L400 250 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M425 250 L450 225 L475 225 L450 250 L425 250 Z" stroke = "yellow" stroke-width = "6" fill = "yellow" />	<path d = "M250 100 L237 100 L244 89 L250 78 L256 89 L262 100 L250 100 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M250 63 L237 63 L244 52 L250 41 L256 52 L262 63 L250 63 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M250 138 L237 138 L244 127 L250 116 L256 127 L262 138 L250 138 Z" stroke = "black" stroke-width = "6" fill = "black" />    <line x1="375" y1="200" x2="375" y2="150" style="stroke:black;stroke-width:6" />
+	<path d = "M375 150 L369 150 L375 139 L381 150 L375 150 Z" stroke = "black" stroke-width = "6" fill = "black" />	<path d = "M250 400 L200 400 L200 350 L200 325 L175 325 L200 300 L225 275 L250 300 L275 325 L250 325 L250 350 L250 375 L250 400 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M375 425 L375 375 L425 375 L450 375 L450 350 L475 375 L500 400 L475 425 L450 450 L450 425 L425 425 L400 425 L375 425 Z" stroke = "black" stroke-width = "6" fill = "none" />	<path d = "M175 375 L175 425 L125 425 L100 425 L100 450 L75 425 L50 400 L75 375 L100 350 L100 375 L125 375 L150 375 L175 375 Z" stroke = "red" stroke-width = "6" fill = "none" /></svg>

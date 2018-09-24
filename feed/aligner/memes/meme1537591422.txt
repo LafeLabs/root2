@@ -1,0 +1,66 @@
+
+<div class = "meme">
+    <div class = "jsondata">
+{
+    "url": "http://localhost:8000/symbol/svg/svg1534892706.svg",
+    "boxes": [
+        {
+            "xoverw": 0.03216374269005845,
+            "yoverw": 0.030075187969924755,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.046783625730994094,
+            "yoverw": 0.518796992481203,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.7297410192147035,
+            "yoverw": 0.47076023391812866,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.6545530492898914,
+            "yoverw": 0.6942355889724311,
+            "woverw": 0.12873851294903924,
+            "fontoverw": -0.37631578947368427,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.4039264828738513,
+            "yoverw": 0.42063492063492064,
+            "woverw": 0.18095238095238092,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.3663324979114453,
+            "yoverw": 0.6106934001670844,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.17418546365914783,
+            "yoverw": 0.2723475355054302,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        },
+        {
+            "xoverw": 0.37050960735171257,
+            "yoverw": 0.011278195488721776,
+            "woverw": 0.25,
+            "fontoverw": 0.15,
+            "angle": 0
+        }
+    ]
+}
+    </div>
+    <div class = "box"><a href="../">../</a>    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534897356.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896799.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896512.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896622.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534896470.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534897591.svg" style="width: 100%;">    </div>    <div class = "box"><img src="http://localhost:8000/symbol/svg/svg1534897450.svg" style="width: 100%;">    </div></div>

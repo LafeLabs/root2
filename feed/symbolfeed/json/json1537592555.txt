@@ -1,0 +1,8 @@
+{
+    "symbols": [
+        "http://localhost:8000/symbol/arrows/svg/svg1537592539.svg",
+        "http://localhost:8000/symbol/arrows/svg/svg1537592526.svg",
+        "http://localhost:8000/symbol/arrows/svg/svg1537592519.svg",
+        "http://localhost:8000/symbol/arrows/svg/svg1537592513.svg"
+    ]
+}
