@@ -1,6 +1,9 @@
 body{
     overflow:hidden;
 }
+.hidden{
+    display:none;
+}
 #pngimage{
     position:absolute;
     z-index:3;

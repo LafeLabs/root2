@@ -16,7 +16,7 @@
 <canvas id="mainCanvas"></canvas>
 <img id  = "pngimage" style = "display:none"/>
 <textarea id="textIO"></textarea>
-<table id = "zoompan">
+<table id = "zoompan" class = "hidden">
     <tr>
         <td class = "button">up</td>
         <td class = "button">down</td>

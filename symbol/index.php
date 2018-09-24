@@ -61,6 +61,9 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "softkeydata" style = "display:none"><?php
+    echo file_get_contents("json/softkeys.txt");
+?></div>
 <div id = "backurldata" style = "display:none"><?php
 
     if(isset($_GET['backlink'])){

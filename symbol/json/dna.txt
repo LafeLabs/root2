@@ -35,6 +35,7 @@
 		"files":[
 			"currentjson.txt",
 			"dna.txt",
+			"softkeys.txt",
 			"stylejson.txt",
 			"treedna.txt"
 		]

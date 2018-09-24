@@ -79,13 +79,7 @@ imgbuttons = document.getElementById("imageTable").getElementsByClassName("butto
 
 controls[1].select();
 
-softkeys = [
-    "010,020,021,030,031,032,033,01101,",
-    "0304,0305,0306,0350,0351,0352,0353,0340,",
-    "0310,0311,0312,0313,0314,0316,0341,0201,",
-    "0330,0331,0332,0333,0334,0335,0336,0337,",
-    "0362,0203,0363,0200,0220,0221,0222,0223,"
-    ];
+softkeys = JSON.parse(document.getElementById("softkeydata").innerHTML);
     
 for(var index = 0;index < softkeys.length;index++){
     var newtr = document.createElement("TR");

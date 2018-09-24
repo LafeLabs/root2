@@ -80,6 +80,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "json file">json/stylejson.txt</div>
     <div class = "json file">json/treedna.txt</div>
     <div class = "json file">json/dna.txt</div>
+    <div class = "json file">json/softkeys.txt</div>
 
 </div>
 

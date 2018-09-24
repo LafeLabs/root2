@@ -176,6 +176,15 @@
             currentGlyph = currentTable[currentAddress] + ",0207,";
         }
     }
+    if(localCommand == 027){//reset x, y, unit
+        currentJSON.x0rel = 0;
+        currentJSON.y0rel = 0;
+        x0 =  0.5*innerWidth + currentJSON.x0rel;
+        y0 = 0.5*innerHeight + currentJSON.y0rel;
+        unit = 100;
+        currentJSON.unit = 100;    
+        redraw();
+    }
     
     if(localCommand == 030){
 //<page030>
