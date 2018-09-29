@@ -20,7 +20,20 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>
-<a href = "index.php">SYMBOL EDITOR</a>
+<div id = "pathdiv" style= "display:none"><?php
+    if(isset($_GET['path'])){
+        echo $_GET['path'];
+    }
+?></div>
+<div style = "display:none" id = "datadiv"><?php
+    if(isset($_GET['path'])){
+        echo file_get_contents($_GET['path']."/json/stylejson.txt");
+    }
+    else{
+        echo file_get_contents("json/stylejson.txt");
+    }
+?></div>    
+<a href = "index.php" id = "indexlink">SYMBOL EDITOR</a>
 
 <table id = "maintable">
     <tr>
@@ -96,10 +109,17 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
         <td><canvas></canvas></td>
     </tr>
 </table>
-<textarea id = "textIO"></textarea>
 <script>
 
-currentFile = "json/stylejson.txt";
+
+path = document.getElementById("pathdiv").innerHTML;
+if(path.length>1){
+    currentFile = path + "json/stylejson.txt";
+    document.getElementById("indexlink").href = "index.php?path=" + path; 
+}
+else{
+    currentFile = "json/stylejson.txt";
+}
 
 canvaswidth = 100;
 canvasheight = 20;
@@ -108,7 +128,6 @@ var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
-        document.getElementById("textIO").value = filedata;
         stylejson = JSON.parse(filedata);
         init();
     }
@@ -153,7 +172,7 @@ function redraw(){
         ctx.fillRect(0,0,canvaswidth,canvasheight);
     
     }
-    document.getElementById("textIO").value = JSON.stringify(stylejson,null,"    ");
+    document.getElementById("datadiv").innerHTML = JSON.stringify(stylejson,null,"    ");
     
     data = encodeURIComponent(JSON.stringify(stylejson,null,"    "));
     var httpc = new XMLHttpRequest();
@@ -189,16 +208,11 @@ for(var index = 0;index < 8;index++){
 </script>
 <style>
 body,input{
-    font-size:30px;
+    font-size:22px;
     font-family:helvetica;
 }
-textarea{
-    width:100%;
-    font-family:courier;
-    font-size:20px;
-    height:20em;
-    background-color:black;
-    color:#00ff00;
+input{
+    width:3em;
 }
 canvas{
     border:solid;
@@ -206,6 +220,7 @@ canvas{
 td{
     text-align:center;
     border:solid;
+    width:200px;
 }
 table{
     border-collapse:collapse;
