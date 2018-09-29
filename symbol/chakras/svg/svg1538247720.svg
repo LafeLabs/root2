@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewbox = "0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 200,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0223,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M75,57 C75,32 100,50 100,25" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M125,57 C125,32 100,50 100,25" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M125,57 C147,44 143,75 165,63" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M150,100 C172,88 143,75 165,63" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M150,100 C172,113 143,125 165,138" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M125,143 C147,156 143,125 165,138" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M125,143 C125,168 100,150 100,175" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M75,143 C75,168 100,150 100,175" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M75,143 C53,156 57,125 35,138" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M50,100 C28,112 57,125 35,137" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M50,100 C28,87 57,75 35,62" fill = "none" stroke-width = "4" stroke = "orange" /><path    d = "M75,57 C53,44 57,75 35,62" fill = "none" stroke-width = "4" stroke = "orange" />    <circle cx="100" cy = "100" r = "50" stroke = "orange" stroke-width = "4" fill = "none" />
+    <circle cx="100" cy = "100" r = "40" stroke = "orange" stroke-width = "4" fill = "none" />
+    <circle cx="100" cy = "87" r = "26.666666666666668" stroke = "orange" stroke-width = "4" fill = "none" />
+</svg>

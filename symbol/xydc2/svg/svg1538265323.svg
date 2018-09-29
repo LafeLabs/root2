@@ -1,0 +1,41 @@
+<svg width="800" height="300" viewbox = "0 0 800 300"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 800,
+    "svgheight": 300,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0211,0211,0332,0332,0332,0336,01061,01062,01063,01064,01065,01066,01067,01070,",
+    "table": []
+}
+</json>
+-->
+    <circle cx="56" cy = "117" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <text x="48" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">1</text>
+    <circle cx="138" cy = "117" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="171" cy = "117" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <text x="146" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">2</text>
+    <circle cx="236" cy = "134" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="269" cy = "134" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="253" cy = "109" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <text x="245" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">3</text>
+    <circle cx="335" cy = "134" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="367" cy = "134" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="335" cy = "101" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <circle cx="367" cy = "101" r = "8.18135621484342" stroke = "black" stroke-width = "4" fill = "black" />
+    <text x="343" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">4</text>
+	<path d = "M416 101 L482 101 L429 139 L449 77 L469 139 L416 101 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="441" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">5</text>
+	<path d = "M515 85 L580 85 L547 141 L515 85 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M547 66 L580 122 L515 122 L547 66 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="539" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">6</text>
+	<path d = "M613 101 L678 101 L619 129 L660 78 L645 142 L631 78 L672 129 L613 101 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="637" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">7</text>
+	<path d = "M776 134 L776 68 L711 68 L711 134 L776 134 Z" stroke = "black" stroke-width = "4" fill = "none" />	<path d = "M744 55 L790 101 L744 147 L697 101 L744 55 Z" stroke = "black" stroke-width = "4" fill = "none" />    <text x="735" y = "183" fill = "black" font-size = "32.72542485937368px" font-family = "arial">8</text>
+</svg>

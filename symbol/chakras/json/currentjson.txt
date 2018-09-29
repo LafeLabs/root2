@@ -4,13 +4,13 @@
     "imgleft": -1.4873205904167783,
     "imgtop": -1.0519856642188752,
     "imgangle": 0,
-    "svgwidth": 400,
-    "svgheight": 400,
+    "svgwidth": 200,
+    "svgheight": 200,
     "unit": 100,
-    "x0": 615.5,
-    "y0": 359,
+    "x0": 684,
+    "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0327,0236,",
+    "glyph": "0336,0236,",
     "table": []
 }

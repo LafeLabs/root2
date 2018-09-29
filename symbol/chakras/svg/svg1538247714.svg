@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewbox = "0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 2.983971328437751,
+    "imgleft": -1.4873205904167783,
+    "imgtop": -1.0519856642188752,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 200,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0221,",
+    "table": []
+}
+</json>
+-->
+<path    d = "M100,50 C118,32 135,65 171,29" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M171,29 C135,65 168,82 150,100" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M150,100 C168,118 135,135 171,171" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M171,171 C135,135 118,168 100,150" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M100,150 C82,168 65,135 29,171" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M29,171 C65,135 32,118 50,100" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M50,100 C32,82 65,65 29,29" fill = "none" stroke-width = "4" stroke = "red" /><path    d = "M29,29 C65,65 82,32 100,50" fill = "none" stroke-width = "4" stroke = "red" />    <circle cx="100" cy = "100" r = "50" stroke = "red" stroke-width = "4" fill = "none" />
+	<path d = "M135 65 L65 65 L65 135 L135 135 L135 65 Z" stroke = "red" stroke-width = "4" fill = "none" />	<path d = "M100 90 L118 90 L109 105 L100 120 L91 105 L82 90 L100 90 Z" stroke = "red" stroke-width = "4" fill = "none" /></svg>
