@@ -55,7 +55,7 @@ document.getElementById("savepng").onclick = function(){
 
     doTheThing(0300);
     drawGlyph(cleanGlyph);
-    var pngdata = document.getElementById("invisibleCanvas").toDataURL();
+    var pngdata = document.getElementById("invisibleCanvas").toDataURL("image/png");
     document.getElementById("invisibleCanvas").display = "none";
     document.getElementById("textIO").value = pngdata;
 
