@@ -1,0 +1,24 @@
+<svg width="370" height="220" viewbox = "0 0 370 220"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "",
+    "imgw": 4.743971328437736,
+    "imgleft": -2.2873205904167726,
+    "imgtop": -3.171985664218851,
+    "imgangle": 0,
+    "svgwidth": 370,
+    "svgheight": 220,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "glyph": "0336,0331,0332,0332,0336,0333,0337,0337,0244,",
+    "table": []
+}
+</json>
+-->
+	<path d = "M10 160 L10 110 L10 60 M10.000000000000007 59.99999999999999           A50 50 0 0 1 60.00000000000001 10L110 10 L160 10 L210 10 L260 10 L310 10 M310 10           A50 50 0 0 1 360 60L360 110 L360 160 M360 160           A50 50 0 0 1 310 210L260 210 L210 210 L160 210 L110 210 L60 210 M59.99999999999999 210           A50 50 0 0 1 9.999999999999993 160" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M131 143 L131 56 L43 56 L43 143 L131 143 Z" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M109 122 L109 78 L65 78 L65 122 L109 122 Z" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M87 100 L87 78 L65 78 L65 100 L87 100 Z" stroke = "black" stroke-width = "8" fill = "none" />	<path d = "M153 116 L153 83 L185 83 L202 83 L202 67 L218 83 L234 100 L218 116 L202 132 L202 116 L185 116 L153 116 Z" stroke = "black" stroke-width = "1" fill = "black" /><path    d = "M284,83 C269,75 298,42 284,34" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M298,92 C298,75 340,83 340,67" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M298,108 C312,100 326,141 340,132" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M284,116 C298,124 269,157 284,165" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M269,108 C269,124 227,116 227,132" fill = "none" stroke-width = "8" stroke = "black" /><path    d = "M269,92 C255,100 241,59 227,67" fill = "none" stroke-width = "8" stroke = "black" />    <circle cx="284" cy = "100" r = "8.18135621484342" stroke = "black" stroke-width = "8" fill = "black" />
+</svg>

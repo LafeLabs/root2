@@ -15,9 +15,9 @@
     "y0": 399,
     "x0rel": 0,
     "y0rel": 0,
-    "glyph": "0336,0330,0332,0332,0336,0330,0332,0330,0336,0333,0331,0337,0337,0211,0230,",
+    "glyph": "",
     "table": []
 }
 </json>
 -->
-<path    d = "M123,148 C123,134 109,34 138,34" fill = "none" stroke-width = "10" stroke = "black" /><path    d = "M138,34 C166,34 152,134 152,148" fill = "none" stroke-width = "10" stroke = "black" />	<path d = "M195 148 L80 148 L80 163 L195 163 L195 148 Z" stroke = "black" stroke-width = "10" fill = "none" /><path    d = "M152,348 C152,363 166,463 137,463" fill = "none" stroke-width = "10" stroke = "black" /><path    d = "M137,463 C109,463 123,363 123,348" fill = "none" stroke-width = "10" stroke = "black" />	<path d = "M80 348 L195 348 L195 334 L80 334 L80 348 Z" stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M109 334 L109 220 L109 162 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M166 162 L166 220 L166 277 L166 334 " stroke = "black" stroke-width = "10" fill = "none" /><path    d = "M352,148 C352,134 338,34 366,34" fill = "none" stroke-width = "10" stroke = "black" /><path    d = "M366,34 C395,34 381,134 381,148" fill = "none" stroke-width = "10" stroke = "black" />	<path d = "M424 148 L309 148 L309 162 L424 162 L424 148 Z" stroke = "black" stroke-width = "10" fill = "none" /><path    d = "M381,348 C381,363 395,463 366,463" fill = "none" stroke-width = "10" stroke = "black" /><path    d = "M366,463 C338,463 352,363 352,348" fill = "none" stroke-width = "10" stroke = "black" />	<path d = "M309 348 L424 348 L424 334 L309 334 L309 348 Z" stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M338 334 L338 220 L338 162 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M395 162 L395 220 L395 277 L395 334 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M338 306 L223 306 L166 306 " stroke = "black" stroke-width = "10" fill = "none" />	<path d = "M166 191 L223 191 L281 191 L338 191 " stroke = "black" stroke-width = "10" fill = "none" /></svg>
+</svg>

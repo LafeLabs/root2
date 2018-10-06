@@ -73,8 +73,15 @@ function doTheThing(localCommand){
 ?></div>
 <div id = "stylejsondiv"  style = "display:none"><?php
 
-echo file_get_contents("json/stylejson.txt");
-    
+    if(isset($_GET['path'])){
+
+        echo file_get_contents($_GET['path']."json/stylejson.txt");
+
+    }
+    else{
+        echo file_get_contents("json/stylejson.txt");
+    }
+
 ?></div>
 <div id = "datadiv" style = "display:none">
 <?php
